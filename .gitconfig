@@ -1,0 +1,10 @@
+[user]
+	name = Jesse Malinosky
+	email = j2@jessemalinosky.com
+[color]
+	ui = auto
+[core]
+	editor = vim
+	pager = more
+[merge]
+	ff = no
