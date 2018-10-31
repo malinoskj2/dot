@@ -5,11 +5,7 @@
 local bin_dir="$HOME/env/scripts/bin"
 local scripts=($(find $HOME/env/scripts -name "*.js" | grep -v node_modules | grep -v bin))
 
-local counter=1
-
 for script in $scripts; do
-    echo "counter: $counter " 
-    let "counter = $counter + 1 "
     local base=${$( basename $script)};
     local base_min=${$( basename $script ".js" )};
     print "found node script: $base "
