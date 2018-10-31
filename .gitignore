@@ -1,6 +1,6 @@
-Scripts/temp/*
-Scripts/bin/*
-Scripts/js/*/node_modules/*
+scripts/temp/*
+scripts/bin/*
+scripts/js/*/node_modules/*
 
 *.env
 
