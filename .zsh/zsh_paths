@@ -5,8 +5,7 @@ path=(
 	/usr/bin
 	/usr/local/sbin
 	/usr/local/bin:$HOME/bin
-	~/Desktop/Scripts
-	~/env/Scripts/bin
+	~/env/scripts/bin
 	~/.cargo/bin
 	$path
 )

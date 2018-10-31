@@ -4,8 +4,7 @@ const chalk = require('chalk');
 const cliSpinners = require('cli-spinners');
 const ansiEscapes = require('ansi-escapes');
 const axios = require('axios'); 
-require('dotenv').config();
-
+require('dotenv').config({ path: __dirname + "/.env" })
 async function getIP(testSite) {
     
     let response = await axios.get(testSite);
