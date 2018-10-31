@@ -1,0 +1,12 @@
+#!/usr/local/bin/bash
+EDITOR=vim;  export EDITOR
+PAGER=more;   export PAGER
+
+#Locations
+SCRIPT_DIR=/usr/home/jesse/env/Scripts/bin; export SCRIPT_DIR #Sym links
+XDG_CONFIG_HOME=/usr/home/jesse/.config; export XDG_CONFIG_HOME
+
+#Postgres
+PGDATA=/var/db/postgres/data10; export PGDATA
+
+

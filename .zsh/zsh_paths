@@ -1,0 +1,18 @@
+path=(
+	/sbin
+	/bin
+	/usr/sbin
+	/usr/bin
+	/usr/local/sbin
+	/usr/local/bin:$HOME/bin
+	~/Desktop/Scripts
+	~/env/Scripts/bin
+	~/.cargo/bin
+	$path
+)
+
+fpath=(
+	~/env/.zsh/mod/* 
+	$fpath
+)
+

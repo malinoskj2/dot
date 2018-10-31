@@ -1,0 +1,24 @@
+setopt extendedglob
+
+# Command Completion
+autoload -Uz compinit
+compinit
+
+# Auto Detect new executables in path
+zstyle ':completion:*' rehash true
+
+# History 
+setopt hist_ignore_dups
+setopt hist_expire_dups_first
+setopt hist_find_no_dups
+setopt hist_no_store
+setopt hist_reduce_blanks
+
+# System
+unsetopt beep   	# no beeping
+setopt bsd_echo 	# echo like bsd
+unsetopt flow_control 	# ^S/^Q disabled
+
+# Zsh
+setopt LOCAL_TRAPS
+
