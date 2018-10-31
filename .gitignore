@@ -1,2 +1,7 @@
-Scripts/*
+Scripts/temp/*
+Scripts/bin/*
+Scripts/js/*/node_modules/*
+
+*.env
+
 *zcompdump

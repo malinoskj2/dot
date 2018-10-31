@@ -1,0 +1,18 @@
+{
+  "name": "pack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "pubip.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ansi-escapes": "^3.1.0",
+    "axios": "^0.18.0",
+    "chalk": "^2.4.1",
+    "cli-spinners": "^1.3.1",
+    "dotenv": "^6.1.0"
+  }
+}
