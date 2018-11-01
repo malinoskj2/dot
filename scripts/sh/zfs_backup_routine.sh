@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 DATE=`date +%Y-%m-%d`
 BACKUP_DIR="$1"
