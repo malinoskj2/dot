@@ -33,5 +33,17 @@ link_js_scripts() {
   done
 }
 
+link_zsh_scripts() {
+  for script in $zsh_scripts; do 
+    local base=${$( basename $script)};
+    local base_min=${$( basename $script ".zsh" )};
+
+    ln -sf $script "$bin_dir/$base_min"
+    print -P "%(0?.successfully linked as $base_min.failed to link $base) \n"
+  done
+}
+
 create_bin_dir
 link_js_scripts
+link_zsh_scripts
+
