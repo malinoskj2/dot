@@ -14,7 +14,7 @@ typeset -A links
 links[$HOME/env/x11/.xinitrc]=~/.xinitrc
 links[$HOME/env/.zsh/.zshrc]=~/.zshrc
 links[$HOME/env/terminal/alacritty.yml]=~/.config/alacritty.yml
-links[$HOME/env/.gitconfig]=~/.gitconfig
+links[$HOME/env/git/.gitconfig]=~/.gitconfig
 
 for source dest	in ${(kv)links}; do
     check_exists $source
