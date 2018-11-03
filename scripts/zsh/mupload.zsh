@@ -12,6 +12,6 @@ fi
 
 megarm "$remote_dir/$file_name" &> /dev/null
 
-megaput -path /Root/temp ${file_name}
+megaput --reload --path /Root/temp ${file_name}
 
 megals -e $remote_dir | rg $file_name
