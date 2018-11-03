@@ -5,14 +5,22 @@ const cliSpinners = require('cli-spinners');
 const ansiEscapes = require('ansi-escapes');
 const axios = require('axios'); 
 require('dotenv').config({ path: __dirname + "/.env" })
+
 async function getIP(testSite) {
     
     let response = await axios.get(testSite);
-	
-    return response.data;	
+    
+    await print_ip(response.data);	
 }
 
-(function main(){
+async function print_ip(ip){
+	  process.stdout.write(ansiEscapes.eraseLine);
+	  process.stdout.cursorTo(0);
+          console.log( "ip: " + chalk.bold.greenBright(ip));  
+	  process.stdout.write(ansiEscapes.cursorShow);
+}
+
+(async function main(){
 	let testSite = process.env.TEST_URL;
 
 	let spinner = cliSpinners.pong;
@@ -29,12 +37,8 @@ async function getIP(testSite) {
 		i++;
 	},spinner.interval);
 	
-	getIP(testSite).then((ip)=>{
-	  process.stdout.write(ansiEscapes.eraseLine);
-	  process.stdout.cursorTo(0);
-          console.log( "ip: " + chalk.bold.greenBright(ip));  
-	  process.stdout.write(ansiEscapes.cursorShow);
-	  clearInterval(interv);
-	});
+      await getIP(testSite)
+	
+      clearInterval(interv);
 })();
 
