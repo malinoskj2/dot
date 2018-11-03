@@ -4,7 +4,7 @@
 
 local script_dir=${0:a:h}
 
-git pull origin master
+git pull -ff origin master
 
 local setup_scripts=( link_cfgs.zsh
 	      	      get_node_depends.zsh
