@@ -1,6 +1,6 @@
 #!/usr/local/bin/bash
 EDITOR=vim;  export EDITOR
-PAGER=more;   export PAGER
+PAGER=less;   export PAGER
 
 #Locations
 SCRIPT_DIR=/usr/home/jesse/env/Scripts/bin; export SCRIPT_DIR #Sym links
