@@ -13,5 +13,6 @@ alias cat='bat'
 alias iomon='top -m io -o total'
 alias df='df -H'
 
-
+# Git
+alias gpom='git push origin master'
 
