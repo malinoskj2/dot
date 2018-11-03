@@ -14,4 +14,7 @@ megarm "$remote_dir/$file_name" &> /dev/null
 
 megaput --reload --path /Root/temp ${file_name}
 
-megals -e $remote_dir | rg $file_name
+local ul_info=$(megals -e $remote_dir | rg $file_name )
+print "$ul_info \n"
+
+echo ${ul_info} | sed -e "s/^[ \t]*//" -e 's/[ \t]*\/Root.*//' | xclip -selection c
