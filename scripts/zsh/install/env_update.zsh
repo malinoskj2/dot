@@ -8,6 +8,7 @@ git pull -ff origin master
 
 local setup_scripts=( link_cfgs.zsh
 		      get_cargo_crates.zsh
+		      get_npm_packs.zsh
 	      	      get_node_depends.zsh
 	              link_scripts.zsh )
 
