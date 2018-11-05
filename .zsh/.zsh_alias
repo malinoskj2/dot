@@ -12,6 +12,7 @@ alias cat='bat'
 # Info
 alias iomon='top -m io -o total'
 alias df='df -H'
+alias drives='camcontrol devlist'
 
 # Git
 alias gpom='git push origin master'
