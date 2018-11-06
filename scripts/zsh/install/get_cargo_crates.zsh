@@ -1,13 +1,16 @@
 #!/usr/bin/env zsh
 
+zmodload zsh/mapfile # Allows mapping of file to array
+
 # Check to see if desired cargo crates are already installed. 
 # Attempt to install them via cargo if they arent.
 
 local os="$(uname)"
 local cargo_bin="${HOME}/.cargo/bin"
 
-local cargo_crates=( rg
-		    bat )
+local script_path="${0:A:h}"
+local crate_cfg="${script_path}/cfg/crates.cfg"
+local cargo_crates=( "${(f)mapfile[$crate_cfg]}" )
 
 install_crates() {
   for crate in $cargo_crates; do
