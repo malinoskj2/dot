@@ -4,8 +4,7 @@
 
 local os="$(uname)"
 
-local npm_packs=( gtop
-		   git-open)
+local npm_packs=( git-open )
 
 local npm_lib=$HOME/.npm/lib
 local npm_bin=$HOME/.npm/bin
@@ -13,7 +12,6 @@ local npm_bin=$HOME/.npm/bin
 install_npm_packs() {
   for pack in $npm_packs; do
     npm install --prefix $npm_lib $pack
-    ln -sf $npm_lib/node_modules/$pack/bin/$pack $npm_bin/$pack
   done
 }
 
