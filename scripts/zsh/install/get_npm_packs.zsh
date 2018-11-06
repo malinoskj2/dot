@@ -4,7 +4,8 @@
 
 local os="$(uname)"
 
-local npm_packs=( git-open )
+local npm_packs=( gtop
+                  git-open )
 
 local npm_lib=$HOME/.npm/lib
 local npm_bin=$HOME/.npm/bin
