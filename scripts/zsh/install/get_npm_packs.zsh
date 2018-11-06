@@ -8,7 +8,6 @@ local npm_packs=( gtop
                   git-open )
 
 local npm_lib=$HOME/.npm/lib
-local npm_bin=$HOME/.npm/bin
 
 install_npm_packs() {
   for pack in $npm_packs; do
