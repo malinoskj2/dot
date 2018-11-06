@@ -25,16 +25,5 @@ init_node_lib() {
   fi
 }
 
-init_node_bin() {
-  if [ -d $npm_bin ]; then
-    print "npm bin dir already exists \n"
-  else
-    print "npm bin dir does not exists\ncreating directory \n"
-    mkdir $npm_bin
-  fi
-}
-
 init_node_lib
-init_node_bin
 install_npm_packs
-
