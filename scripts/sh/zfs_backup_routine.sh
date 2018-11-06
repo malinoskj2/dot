@@ -7,5 +7,5 @@ SS_NAME="zroot@nightly_${DATE}"
 FILE_NAME="nightly_${DATE}-H:${HOUR}.zfs.xz"
 
 zfs snapshot -r $SS_NAME &&
-zfs send -R  $SS_NAME  | xz -1 --threads=6 > "$BACKUP_DIR/${FILE_NAME}" &&
+zfs send -R  $SS_NAME > "$BACKUP_DIR/${FILE_NAME}" &&
 zfs list -t snapshot -o name | grep "@nightly" | xargs -n 1 zfs destroy
