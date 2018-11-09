@@ -17,3 +17,5 @@ alias drives='camcontrol devlist'
 # Git
 alias gpom='git push origin master'
 
+# Misc
+alias cls='clear'
