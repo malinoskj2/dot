@@ -30,7 +30,7 @@ window:
     y: 16
 
   # Window decorations
-  decorations: false
+  decorations: true
 
 # Display tabs using this many cells (changes require restart)
 tabspaces: 4
@@ -77,7 +77,7 @@ font:
     # style: Italic
 
   # Point size of the font
-  size: 12.0
+  size: 13.0
 
   # Offset is the extra space around each character. offset.y can be thought of
   # as modifying the linespacing, and offset.x as modifying the letter spacing.
@@ -106,7 +106,7 @@ font:
 colors:
   # Default colors
   primary:
-    background: '0x0f2d54'
+    background: '0x200116'
     foreground: '0xeaeaea'
 
   # Normal colors
@@ -116,7 +116,7 @@ colors:
     green:   '0xb9ca4a'
     yellow:  '0xe6c547'
     blue:    '0x7aa6da'
-    magenta: '0xff908a'
+    magenta: '0xc397d8'
     cyan:    '0x70c0ba'
     white:   '0x424242'
 
@@ -127,7 +127,7 @@ colors:
     green:   '0x9ec400'
     yellow:  '0xe7c547'
     blue:    '0x7aa6da'
-    magenta: '0xff908a'
+    magenta: '0xb77ee0'
     cyan:    '0x54ced6'
     white:   '0x2a2a2a'
 
