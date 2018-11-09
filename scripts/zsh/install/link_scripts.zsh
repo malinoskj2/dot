@@ -8,6 +8,8 @@ local js_scripts=($(find $HOME/env/scripts -name "*.js" | grep -v node_modules |
 
 local zsh_scripts=($HOME/env/scripts/zsh/*(.))
 
+local sh_scripts=($HOME/env/scripts/sh/**/*(.))
+
 
 create_bin_dir() {
   if [ -d $bin_dir ]; then
@@ -43,7 +45,17 @@ link_zsh_scripts() {
   done
 }
 
+link_sh_scripts() {
+   for script in $sh_scripts; do
+    local base=${$( basename $script)};
+    local base_min=${$( basename $script ".sh" )};
+
+    ln -sf $script "$bin_dir/$base_min"
+    print -P "%(0?.successfully linked as $base_min.failed to link $base) \n"
+   done 
+}
+
 create_bin_dir
 link_js_scripts
 link_zsh_scripts
-
+link_sh_scripts
