@@ -2,7 +2,7 @@
 
 alias ls='ls -F'
 alias ll='ls -lh'
-alias lls='ls -lhtr' #Sort by mod fate, show last modified at bottom
+alias llr='ls -lhtr' #Sort by mod fate, show last modified at bottom
 # Search
 alias rgi='rg -i'
 
