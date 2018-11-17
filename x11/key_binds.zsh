@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-OS="$(uname)"
+local hostname="$(hostname)"
 
 xmodmap -e "keycode 51 = BackSpace" # backslash -> BackSpace
 xmodmap -e "keycode 22 = backslash bar" # BackSpace -> backslash bar
@@ -15,7 +15,7 @@ xmodmap -e "add Control = Control_L Control_R"
 
 #xmodmap -e "keycode 66 = Control_L" # Caps_Lock -> Control_L
 
-if [[ "$OS" == "FreeBSD" ]]; then
+if [[ "$hostname" == "home" ]]; then
 xmodmap -e "keycode 66 = Mode_switch Mode_switch" # Caps_Lock -> Mode_switch
 
 # Disable arrow keys
@@ -38,7 +38,7 @@ xmodmap -e "keycode 104 = "       # Right Disable
 
 fi
 
-if [[ "$OS" == "Linux" ]]; then
+if [[ "$hostname" == "jessecb3" ]]; then
 xmodmap -e "keycode 133 = Mode_switch Mode_switch" # Caps_Lock -> Mode_switch
 
 # Disable arrow keys
