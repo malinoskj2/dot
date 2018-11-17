@@ -1,3 +1,3 @@
 [submodule ".zsh/mod/prompt_j2"]
-	path = .zsh/mod/prompt_j2
+	path = zsh/mod/prompt_j2
 	url = https://github.com/malinoskj2/prompt_j2
