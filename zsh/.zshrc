@@ -1,7 +1,7 @@
 # Created by jesse for 5.6.2
 
-ZSH_CFG_DIR=$HOME/env/.zsh
-ZSH_MOD_DIR=$HOME/env/.zsh/mod
+ZSH_CFG_DIR=$HOME/env/zsh
+ZSH_MOD_DIR=$HOME/env/zsh/mod
 
 # load funcs
 cfg_files=(

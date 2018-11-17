@@ -1,5 +1,5 @@
 path=(
-i	~/.npm/global/bin
+	~/.npm/global/bin
 	/sbin
 	/bin
 	/usr/sbin
@@ -12,7 +12,7 @@ i	~/.npm/global/bin
 )
 
 fpath=(
-	~/env/.zsh/mod/* 
+	~/env/zsh/mod/* 
 	$fpath
 )
 
