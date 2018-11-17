@@ -1,18 +1,25 @@
 #!/usr/bin/env zsh
 
+OS="$(uname)"
+
 xmodmap -e "keycode 51 = BackSpace" # backslash -> BackSpace
 xmodmap -e "keycode 22 = backslash bar" # BackSpace -> backslash bar
 
 xmodmap -e "clear Lock"
 xmodmap -e "clear Control"
 
-#xmodmap -e "keycode 66 = Control_L" # Caps_Lock -> Control_L
-
-xmodmap -e "keycode 66 = Mode_switch Mode_switch" # Caps_Lock -> Mode_switch
 
 # Assigns all keys with Keysym Control_L or Control_R to
 # the control modifier.
 xmodmap -e "add Control = Control_L Control_R"
+
+
+#xmodmap -e "keycode 66 = Control_L" # Caps_Lock -> Control_L
+
+if [ "$OS" == "FreeBSD" ]; then
+  
+xmodmap -e "keycode 66 = Mode_switch Mode_switch" # Caps_Lock -> Mode_switch
+
 
 # Make Mode_switch + ijkl function as arrow keys
 
@@ -40,3 +47,4 @@ xmodmap -e "keycode 102 = "       # Down Disable
 # Right Bindings
 #xmodmap -e "keycode 104 = Right" # Right Enable
 xmodmap -e "keycode 104 = "       # Right Disable
+fi
