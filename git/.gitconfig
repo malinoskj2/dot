@@ -7,4 +7,4 @@
 	editor = vim
 	pager = more
 [merge]
-	ff = no
+	ff = yes
