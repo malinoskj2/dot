@@ -2,11 +2,14 @@
 EDITOR=vim;  export EDITOR
 PAGER=less;   export PAGER
 BROWSER=firefox; export BROWSER
-#Locations
+
+# PGP
+GPG_TTY=$(tty); export GPG_TTY
+# Locations
 SCRIPT_DIR=/usr/home/jesse/env/Scripts/bin; export SCRIPT_DIR #Sym links
 XDG_CONFIG_HOME=/usr/home/jesse/.config; export XDG_CONFIG_HOME
 
-#Postgres
+# Postgres
 PGDATA=/var/db/postgres/data10; export PGDATA
 
 
