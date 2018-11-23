@@ -3,6 +3,9 @@ EDITOR=vim;  export EDITOR
 PAGER=less;   export PAGER
 BROWSER=firefox; export BROWSER
 
+LANG=en_US.UTF-8;   export LANG
+CHARSET=UTF-8;  export CHARSET
+
 # PGP
 GPG_TTY=$(tty); export GPG_TTY
 # Locations
