@@ -15,4 +15,5 @@ XDG_CONFIG_HOME=/usr/home/jesse/.config; export XDG_CONFIG_HOME
 # Postgres
 PGDATA=/var/db/postgres/data10; export PGDATA
 
-
+# jdk
+JAVA_HOME=/usr/local/openjdk8; export JAVA_HOME
