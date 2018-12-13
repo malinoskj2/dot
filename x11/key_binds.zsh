@@ -70,4 +70,5 @@ xmodmap -e "keycode 44 = j J Left" # j binding
 xmodmap -e "keycode 45 = k K Down" # k binding
 xmodmap -e "keycode 46 = l L Right" # l binding
 
-
+xmodmap -e "keycode 30 = u U Home" # Mod + u -> Home
+xmodmap -e "keycode 32 = o O End"  # Mod + o -> End
