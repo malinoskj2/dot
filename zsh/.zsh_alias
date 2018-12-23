@@ -19,3 +19,4 @@ alias gpom='git push origin master'
 
 # Misc
 alias cls='clear'
+alias curl='curl_json_pretty'
