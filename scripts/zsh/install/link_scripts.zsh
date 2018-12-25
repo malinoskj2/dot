@@ -6,7 +6,7 @@ local bin_dir="$HOME/env/scripts/bin"
 
 local js_scripts=($(find $HOME/env/scripts -name "*.js" | grep -v node_modules | grep -v bin))
 
-local zsh_scripts=($HOME/env/scripts/zsh/*(.))
+local zsh_scripts=($HOME/env/scripts/zsh/**/**/*(.))
 
 local sh_scripts=($HOME/env/scripts/sh/**/*(.))
 
