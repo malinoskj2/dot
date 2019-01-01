@@ -1,0 +1,3 @@
+[target.wasm32-unknown-unknown]
+
+linker = "/home/jesse/sys/llvm2/llvm-build/llvm/bin/lld"
