@@ -3,11 +3,6 @@
 alias ls='ls -F'
 alias ll='ls -lh'
 alias llr='ls -lhtr' #Sort by mod fate, show last modified at bottom
-# Search
-alias rgi='rg -i'
-
-# Page
-alias cat='bat'
 
 # Info
 alias iomon='top -m io -o total'
@@ -19,4 +14,9 @@ alias gpom='git push origin master'
 
 # Misc
 alias cls='clear'
+
+# Overrides
+alias rgi='rg -i'
+alias cat='bat'
+alias cp='xcp'
 alias curlp='curl_json_pretty'
