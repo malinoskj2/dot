@@ -4,11 +4,11 @@
 
 echo "formatting $1"
 
-dd if=/dev/zero of=$1 bs=1M && # zero out disk
-
+gpart destroy -F $1 &&
 gpart create -s GPT $1 &&
 gpart add -t freebsd-ufs -a 1M $1 &&
  
 newfs -U $1 &&
+gpart recover $1
 
 echo "formatted $1 successfully"
