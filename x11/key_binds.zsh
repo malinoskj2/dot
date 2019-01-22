@@ -38,7 +38,7 @@ xmodmap -e "keycode 104 = "       # Right Disable
 
 fi
 
-if [[ "$hostname" == "jessecb3" ]]; then
+if [[ "$hostname" == "jesse-cb" ]]; then
 xmodmap -e "keycode 133 = Mode_switch Mode_switch" # Caps_Lock -> Mode_switch
 
 # Disable arrow keys

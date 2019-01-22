@@ -16,4 +16,9 @@ XDG_CONFIG_HOME=/usr/home/jesse/.config; export XDG_CONFIG_HOME
 PGDATA=/var/db/postgres/data10; export PGDATA
 
 # jdk
+if [ $(uname) = "FreeBSD" ]; then
 JAVA_HOME=/usr/local/openjdk8; export JAVA_HOME
+elif [ $(uname) = "Linux" ]; then
+JAVA_HOME='/usr/lib/jvm/java-1.8.0-openjdk-amd64'; export JAVA_HOME
+fi
+
