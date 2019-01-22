@@ -11,6 +11,6 @@
 [merge]
 	ff = yes
 [commit]
-	gpgsign = true
+	gpgsign = false
 [gpg]
 	program = gpg2
