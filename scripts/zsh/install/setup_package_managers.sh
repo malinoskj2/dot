@@ -27,6 +27,7 @@ rustup target add wasm32-unknown-unknown
 rustup target add x86_64-unknown-freebsd
 rustup target add x86_64-unknown-linux-gnu
 rustup component add rustfmt
+rustup component add clippy-preview --toolchain=nightly
 }
 
 install_native
