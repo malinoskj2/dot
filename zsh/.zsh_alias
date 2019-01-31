@@ -23,3 +23,8 @@ alias orig_cp='cp'
 alias cp='xcp'
 
 alias curlp='curl_json_pretty'
+
+# cargo 
+alias cargotestbt='RUST_BACKTRACE=1 cargo test -- --nocapture'
+alias cargorunbt='RUST_BACKTRACE=1 cargo run'
+alias cargotestprint='cargo test -- --nocapture'
