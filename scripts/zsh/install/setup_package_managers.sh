@@ -15,7 +15,7 @@ function install_node() {
   elif [ $(uname) = 'Linux' ]; then
     curl -sL https://deb.nodesource.com/setup_10.x | sudo bash - 
     if $?; then
-      sudo install nodejs
+      sudo apt-get install -y nodejs
     fi
 }
 
