@@ -8,7 +8,7 @@ alias llr='ls -lhtr' #Sort by mod fate, show last modified at bottom
 alias iomon='top -m io -o total'
 alias df='df -H'
 alias drives='camcontrol devlist'
-
+alias acpi='acpiconf -i 0 | grep -i "Remaining capacity"'
 # Git
 alias gpom='git push origin master'
 
