@@ -9,7 +9,8 @@ alias iomon='top -m io -o total'
 alias df='df -H'
 alias drives='camcontrol devlist'
 
-alias sys='acpiconf -i 0 | grep -i "Remaining capacity" && sysctl hw.acpi.thermal.tz0.temperature'
+alias sys='acpiconf -i 0 | grep -i -e "Remaining capacity" -e "Remaining time" && sysctl hw.acpi.thermal.tz0.temperature'
+
 # Git
 alias gpom='git push origin master'
 
