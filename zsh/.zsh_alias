@@ -9,8 +9,6 @@ alias iomon='top -m io -o total'
 alias df='df -H'
 alias drives='camcontrol devlist'
 
-alias sys='acpiconf -i 0 | grep -i -e "Remaining capacity" -e "Remaining time" && sysctl hw.acpi.thermal.tz0.temperature'
-
 # Git
 alias gpom='git push origin master'
 
@@ -19,12 +17,11 @@ alias cls='clear'
 
 # Overrides
 alias rgi='rg -i'
+
 # alias cat='bat' # doesnt build on freebsd 12 as of 2/10
 # maintainer is aware
-
 alias orig_cp='cp'
 alias cp='xcp'
-
 alias curlp='curl_json_pretty'
 
 # cargo 
@@ -33,4 +30,5 @@ alias cargorunbt='RUST_BACKTRACE=1 cargo run'
 alias cargotestprint='cargo test -- --nocapture'
 
 # for x230
+alias sys='acpiconf -i 0 | grep -i -e "Remaining capacity" -e "Remaining time" && sysctl hw.acpi.thermal.tz0.temperature && sysctl dev.acpi_ibm.0.fan_speed'
 alias zzz='/usr/local/bin/sudo /usr/sbin/zzz'
