@@ -19,7 +19,8 @@ alias cls='clear'
 
 # Overrides
 alias rgi='rg -i'
-alias cat='bat'
+# alias cat='bat' # doesnt build on freebsd 12 as of 2/10
+# maintainer is aware
 
 alias orig_cp='cp'
 alias cp='xcp'
