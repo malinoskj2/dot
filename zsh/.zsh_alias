@@ -2,8 +2,10 @@
 
 alias ls='ls -F'
 alias ll='ls -lh'
-alias llr='ls -lhtr' #Sort by mod fate, show last modified at bottom
+alias llr='ls -lhtr' # Sort by mod fate, show last modified at bottom
 
+# Download files at url recursively, ignore index
+alias wgetr='wget -r -np -nH --cut-dirs=3 -e robots=off -R "index.html*"'
 # Info
 alias iomon='top -m io -o total'
 alias df='df -H'
