@@ -17,6 +17,7 @@ function install_node() {
     if $?; then
       sudo apt-get install -y nodejs
     fi
+  fi 
 }
 
 function install_rust() {
