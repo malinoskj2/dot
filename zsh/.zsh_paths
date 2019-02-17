@@ -6,9 +6,9 @@ path=(
 	/usr/bin
 	/usr/local/sbin
 	/usr/local/bin:$HOME/bin
+  /home/jesse/Apps/wasm-pack/target/debug
 	~/env/scripts/bin
 	~/.cargo/bin
-  /home/jesse/Apps/wasm-pack/target/debug
 	$path
 )
 
