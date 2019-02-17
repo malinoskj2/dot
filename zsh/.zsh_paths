@@ -8,6 +8,7 @@ path=(
 	/usr/local/bin:$HOME/bin
 	~/env/scripts/bin
 	~/.cargo/bin
+  /home/jesse/Apps/wasm-pack/target/debug
 	$path
 )
 
