@@ -22,13 +22,15 @@ function install_node() {
 
 function install_rust() {
   curl https://sh.rustup.rs -sSf | sh -s -- --default-toolchain nightly --no-modify-path -y &&
+local rustup_path=~/.cargo/bin/rustup
 
-rustup target add i686-pc-windows-msvc 
-rustup target add wasm32-unknown-unknown
-rustup target add x86_64-unknown-freebsd
-rustup target add x86_64-unknown-linux-gnu
-rustup component add rustfmt
-rustup component add clippy-preview --toolchain=nightly
+$rustup_path add i686-pc-windows-msvc 
+$rustup_path target add wasm32-unknown-unknown
+$rustup_path target add x86_64-unknown-freebsd
+$rustup_path target add x86_64-unknown-linux-gnu
+$rustup_path component add rustfmt
+$rustup_path component add clippy-preview --toolchain=nightly
+
 }
 
 install_native
