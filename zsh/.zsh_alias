@@ -19,7 +19,6 @@ alias cls='clear'
 
 # Overrides
 alias rgi='rg -i'
-
 alias cat='bat'
 alias orig_cp='cp'
 alias cp='xcp'

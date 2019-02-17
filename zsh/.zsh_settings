@@ -19,6 +19,9 @@ unsetopt beep   	# no beeping
 setopt bsd_echo 	# echo like bsd
 unsetopt flow_control 	# ^S/^Q disabled
 
-# Zsh
 setopt LOCAL_TRAPS
+
+[[ -s /home/jesse/.autojump/etc/profile.d/autojump.sh ]] && source /home/jesse/.autojump/etc/profile.d/autojump.sh
+
+autoload -U compinit && compinit -u
 
