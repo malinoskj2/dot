@@ -1,14 +1,14 @@
 path=(
+	~/.cargo/bin
 	~/.npm/global/bin
+  /home/jesse/Apps/wasm-pack/target/release
 	/sbin
 	/bin
 	/usr/sbin
 	/usr/bin
 	/usr/local/sbin
 	/usr/local/bin:$HOME/bin
-  /home/jesse/Apps/wasm-pack/target/debug
 	~/env/scripts/bin
-	~/.cargo/bin
 	$path
 )
 
