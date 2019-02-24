@@ -20,6 +20,7 @@ alias cls='clear'
 # Overrides
 alias rgi='rg -i'
 alias rgf='rg --files --no-ignore --hidden -g'
+alias fd='fd -H' # Search hidden directories by default
 alias cat='bat'
 alias orig_cp='cp'
 alias cp='xcp'
