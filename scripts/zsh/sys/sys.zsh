@@ -10,14 +10,37 @@ function battery_rem_time() {
 }
 
 function cpu_temp() {
-  sysctl hw.acpi.thermal.tz0.temperature
+  sysctl dev.cpu | grep -i "temperature" 
 }
+
+function cpu_freq() {
+  sysctl dev.cpu | grep -i "cpu.0.freq:" 
+}
+
 
 function fan_speed() {
   sysctl dev.acpi_ibm.0.fan_speed
 }
 
-battery_rem_cap
-battery_rem_time
-cpu_temp
-fan_speed
+
+function print_info() {
+  cpu_freq
+  cpu_temp
+
+  if $(acpiconf -i 0 &> /dev/null); then
+  battery_rem_cap
+  battery_rem_time
+  fan_speed
+  fi
+}
+
+if [ "$1" = "-l" ]; then
+  while true; do
+    clear
+    print_info
+    sleep 3  
+  done
+else 
+  print_info
+fi
+
