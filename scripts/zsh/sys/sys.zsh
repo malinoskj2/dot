@@ -9,6 +9,10 @@ function battery_rem_time() {
   acpiconf -i 0 | grep -i -e "Remaining time"
 }
 
+function charging_state() {
+  acpiconf -i 0 | grep -i -e "State"
+}
+
 function cpu_temp() {
   sysctl dev.cpu | grep -i "temperature" 
 }
@@ -22,12 +26,12 @@ function fan_speed() {
   sysctl dev.acpi_ibm.0.fan_speed
 }
 
-
 function print_info() {
   cpu_freq
   cpu_temp
 
   if $(acpiconf -i 0 &> /dev/null); then
+  charging_state
   battery_rem_cap
   battery_rem_time
   fan_speed
