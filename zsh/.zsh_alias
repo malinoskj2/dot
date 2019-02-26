@@ -16,6 +16,7 @@ alias gpom='git push origin master'
 
 # Misc
 alias cls='clear'
+alias ldate='date +"%I:%M %p"'
 
 # Overrides
 alias rgi='rg -i'
