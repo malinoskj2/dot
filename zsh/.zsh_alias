@@ -1,9 +1,5 @@
 #!/usr/local/bin/bash
 
-alias ls='ls -F'
-alias ll='ls -lh'
-alias llr='ls -lhtr' # Sort by mod fate, show last modified at bottom
-
 # Download files at url recursively, ignore index
 alias wgetr='wget -r -np -nH --cut-dirs=3 -e robots=off -R "index.html*"'
 # Info
@@ -19,6 +15,10 @@ alias cls='clear'
 alias ldate='date +"%I:%M %p"'
 
 # Overrides
+alias ls='exa -lF'
+alias ll='exa -lh'
+alias llr='exa -lhtr' # Sort by mod fate, show last modified at bottom
+
 alias rgi='rg -i'
 alias rgf='rg --files --no-ignore --hidden -g'
 alias fd='fd -H' # Search hidden directories by default
