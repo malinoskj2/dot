@@ -2,6 +2,7 @@
 
 # Download files at url recursively, ignore index
 alias wgetr='wget -r -np -nH --cut-dirs=3 -e robots=off -R "index.html*"'
+
 # Info
 alias iomon='top -m io -o total'
 alias df='df -H'
@@ -15,9 +16,8 @@ alias cls='clear'
 alias ldate='date +"%I:%M %p"'
 
 # Overrides
-alias ls='exa -lF'
-alias ll='exa -lh'
-alias llr='exa -lhtr' # Sort by mod fate, show last modified at bottom
+alias ls='exa -1F --color=automatic'
+alias tree="exa --long --tree --level=3"
 
 alias rgi='rg -i'
 alias rgf='rg --files --no-ignore --hidden -g'
