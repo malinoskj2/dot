@@ -22,3 +22,6 @@ elif [ $(uname) = "Linux" ]; then
 JAVA_HOME='/usr/lib/jvm/java-1.8.0-openjdk-amd64'; export JAVA_HOME
 fi
 
+# Compilation
+CC=clang; export CC
+CXX=clang++; export CXX
