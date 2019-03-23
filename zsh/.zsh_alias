@@ -37,3 +37,6 @@ alias makecfg='sudo make config-recursive && sudo make install clean'
 alias cargotestbt='RUST_BACKTRACE=1 cargo test -- --nocapture'
 alias cargorunbt='RUST_BACKTRACE=1 cargo run'
 alias cargotestprint='cargo test -- --nocapture'
+
+# web
+alias tb='nc termbin.com 9999 | xclip -selection clipboard'
