@@ -15,6 +15,9 @@ alias gpom='git push origin master'
 alias cls='clear'
 alias ldate='date +"%I:%M %p"'
 
+# port mgmt
+alias portmaster_all="portmaster -m DISABLE_VULNERABILITIES=yes -aGB --no-confirm"
+
 # Overrides
 alias ls='exa -1F --color=automatic'
 alias tree="exa --long --tree --level=3"
