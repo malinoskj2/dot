@@ -6,19 +6,25 @@ config-map:
   xinitrc:
     source: /x11/.xinitrc 
     destination: ~/.xinitrc
+    method: link
   zshrc:
     source: /zsh/.zshrc
     destination: ~/.zshrc 
+    method: link
   alacritty:
     source: /terminal/alacritty.yml 
     destination: ~/.config/alacritty.yml
+    method: link 
   git:
     source: /git/.gitconfig
     destination: ~/.gitconfig   
+    method: link
   cargo:
     source: /cargo/config
     destination: ~/.cargo/config
+    method: link
   make:
     source: /make/make.conf
     destination: /etc/make.conf 
+    method: copy
 ...
