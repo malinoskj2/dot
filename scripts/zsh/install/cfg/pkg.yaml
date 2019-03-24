@@ -75,3 +75,5 @@ packages:
     options: []
   - name: linux_base-c7
     options: []
+  - name: intellij-ultimate
+    options: []
