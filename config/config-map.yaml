@@ -1,0 +1,21 @@
+---
+# Maps location of config file in repo to expected locatoin
+# source is relative to root of repo
+
+config-map:
+  xinitrc:
+    source: /x11/.xinitrc 
+    destination: ~/.xinitrc
+  zshrc:
+    source: /zsh/.zshrc
+    destination: ~/.zshrc 
+  alacritty:
+    source: /terminal/alacritty.yml 
+    destination: ~/.config/alacritty.yml
+  git:
+    source: /git/.gitconfig
+    destination: ~/.gitconfig   
+  cargo:
+    source: /cargo/config
+    destination: ~/.cargo/config
+...
