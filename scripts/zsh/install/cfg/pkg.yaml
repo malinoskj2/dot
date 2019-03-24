@@ -27,8 +27,6 @@ packages:
     options: []
   - name: linux-c7-devtools
     options: []
-  - name: llvm38
-    options: []
   - name: mpv
     options: []
   - name: gnupg
@@ -38,8 +36,6 @@ packages:
   - name: python
     options: []
   - name: python2
-    options: []
-  - name: redis
     options: []
   - name: rubygem-travis
     options: []
@@ -58,10 +54,6 @@ packages:
   - name: thunar-archive-plugin
     options: []
   - name: portmaster
-    options: []
-  - name: postgresql10-client
-    options: []
-  - name: postgresql10-server
     options: []
   - name: curl
     options: []
