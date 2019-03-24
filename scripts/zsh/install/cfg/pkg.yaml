@@ -1,0 +1,95 @@
+# Freebsd Packages
+
+packages: 
+  - name: node
+    options: []
+  - name: openjdk8
+    options: []
+  - name: gradle
+    options: []
+  - name: gcc9-devel
+    options: []
+  - name: gccmakedep
+    options: []
+  - name: git
+    options: []
+  - name: gradle
+    options: []
+  - name: xorg
+    options: []
+  - name: firefox
+    options: []
+  - name: chromium
+    options: []
+  - name: vim
+    options: []
+  - name: keepassxc
+    options: []
+  - name: linux-c7-devtools
+    options: []
+  - name: llvm38
+    options: []
+  - name: mpv
+    options: []
+  - name: gnupg
+    options: []
+  - name: sudo
+    options: []
+  - name: python
+    options: []
+  - name: python2
+    options: []
+  - name: redis
+    options: []
+  - name: rubygem-travis
+    options: []
+  - name: webfonts
+    options: []
+  - name: xarchiver
+    options: []
+  - name: xclip
+    options: []
+  - name: xfce
+    options: []
+  - name: xfce4-whiskermenu-plugin
+    options: []
+  - name: subversion
+    options: []
+  - name: thunar-archive-plugin
+    options: []
+  - name: portmaster
+    options: []
+  - name: postgresql10-client
+    options: []
+  - name: postgresql10-server
+    options: []
+  - name: curl
+    options: []
+  - name: xclip
+    options: []
+  - name: openvpn
+    options: []
+  - name: bash
+    options: []
+  - name: pkgconf
+    options: []
+  - name: alacritty
+    options: []
+  - name: tshark
+    options: []
+  - name: wget
+    options: []
+  - name: htop
+    options: []
+  - name: ImageMagick
+    options: []
+  - name: beadm
+    options: []
+  - name: cmake
+    options: []
+  - name: fusefs-ntfs
+    options: []
+  - name: fusefs-simple-ntfs
+    options: []
+  - name: exa
+    options: []

@@ -1,0 +1,25 @@
+# npm packages
+
+packages: 
+  - name: npm
+    options: []
+  - name: eslint
+    options: []
+  - name: nodemon
+    options: []
+  - name: gtop
+    options: []
+  - name: git-open
+    options: []
+  - name: @vue/cli
+    options: []
+  - name: webpack
+    options: []
+  - name: webpack-dev-server
+    options: []
+  - name: webpack-cli
+    options: []
+  - name: markdown-spellcheck
+    options: []
+  - name: prettyjson
+    options: []

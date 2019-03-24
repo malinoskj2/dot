@@ -1,0 +1,28 @@
+# Cargo Crates
+
+packages:
+  - name: ripgrep
+    options: []
+  - name: bat
+    options: []
+  - name: tokei
+    options: []
+  - name: tealdeer
+    options: []
+  - name: xcp
+    options: []
+  - name: fd-find
+    options: []
+  - name: battop
+    options: []
+  - name: ffsend
+    options: []
+  - name: cargo-generate
+    options: []
+  - name: wasm-bindgen-cli
+    options: 
+      - +nightly
+  - name: wasm-pack
+    options: []
+  - name: cargo-update
+    options: []
