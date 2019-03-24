@@ -73,3 +73,5 @@ packages:
     options: []
   - name: exa
     options: []
+  - name: linux_base-c7
+    options: []
