@@ -7,13 +7,7 @@ packages:
     options: []
   - name: gradle
     options: []
-  - name: gcc9-devel
-    options: []
-  - name: gccmakedep
-    options: []
   - name: git
-    options: []
-  - name: gradle
     options: []
   - name: xorg
     options: []
@@ -24,8 +18,6 @@ packages:
   - name: vim
     options: []
   - name: keepassxc
-    options: []
-  - name: linux-c7-devtools
     options: []
   - name: mpv
     options: []
@@ -42,8 +34,6 @@ packages:
   - name: webfonts
     options: []
   - name: xarchiver
-    options: []
-  - name: xclip
     options: []
   - name: xfce
     options: []
@@ -73,15 +63,13 @@ packages:
     options: []
   - name: htop
     options: []
-  - name: ImageMagick
+  - name: ImageMagick6
     options: []
   - name: beadm
     options: []
   - name: cmake
     options: []
   - name: fusefs-ntfs
-    options: []
-  - name: fusefs-simple-ntfs
     options: []
   - name: exa
     options: []
