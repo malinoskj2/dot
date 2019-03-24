@@ -26,7 +26,7 @@ alias cat='bat'
 alias orig_cp='cp'
 alias cp='xcp'
 alias curlp='curl_json_pretty'
-
+alias xclip='xclip -selection clipboard'
 # for x230
 alias zzz='/usr/local/bin/sudo /usr/sbin/zzz'
 
