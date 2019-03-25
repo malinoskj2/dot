@@ -7,8 +7,6 @@ packages:
     options: []
   - name: nodemon
     options: []
-  - name: gtop
-    options: []
   - name: git-open
     options: []
   - name: @vue/cli
@@ -18,8 +16,6 @@ packages:
   - name: webpack-dev-server
     options: []
   - name: webpack-cli
-    options: []
-  - name: markdown-spellcheck
     options: []
   - name: prettyjson
     options: []
