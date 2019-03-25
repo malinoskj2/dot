@@ -5,10 +5,10 @@ ZSH_MOD_DIR=$HOME/env/zsh/mod
 
 # load funcs
 cfg_files=(
-    $ZSH_CFG_DIR/.zsh_var
-    $ZSH_CFG_DIR/.zsh_paths
-    $ZSH_CFG_DIR/.zsh_alias
-    $ZSH_CFG_DIR/.zsh_settings
+    $ZSH_CFG_DIR/zsh_var
+    $ZSH_CFG_DIR/zsh_path
+    $ZSH_CFG_DIR/zsh_alias
+    $ZSH_CFG_DIR/zsh_setting
 )
 
 # compile and load cfg files
