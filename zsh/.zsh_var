@@ -8,12 +8,11 @@ CHARSET=UTF-8;  export CHARSET
 
 # PGP
 GPG_TTY=$(tty); export GPG_TTY
+
 # Locations
 SCRIPT_DIR=/usr/home/jesse/env/Scripts/bin; export SCRIPT_DIR #Sym links
 XDG_CONFIG_HOME=/usr/home/jesse/.config; export XDG_CONFIG_HOME
-
-# Postgres
-PGDATA=/var/db/postgres/data10; export PGDATA
+XCLIP_PATH=/usr/local/bin/xclip; export XCLIP_PATH
 
 # jdk
 if [ $(uname) = "FreeBSD" ]; then
