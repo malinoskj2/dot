@@ -1,5 +1,5 @@
 ---
-# Maps location of config file in repo to expected locatoin
+# Maps location of config file in repo to expected location
 # source is relative to root of repo
 
 config-map:
@@ -23,8 +23,4 @@ config-map:
     source: /cargo/config
     destination: ~/.cargo/config
     method: link
-  make:
-    source: /make/make.conf
-    destination: /etc/make.conf 
-    method: copy
 ...

@@ -1,0 +1,10 @@
+---
+# Maps location of config file in repo to expected location
+# source is relative to root of repo
+
+config-map:
+ make:
+    source: /make/make.conf
+    destination: /etc/make.conf 
+    method: copy
+...
