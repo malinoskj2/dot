@@ -22,4 +22,8 @@ cargo:
   source: /config/cargo/config
   destination: ~/.cargo/config
   method: link
+npm:
+  source: /config/npm/.npmrc
+  destination: ~/.npmrc
+  method: link
 ...
