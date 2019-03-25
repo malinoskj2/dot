@@ -4,7 +4,7 @@
 
 config-map:
   xinitrc:
-    source: /x11/.xinitrc 
+    source: /config/x11/.xinitrc 
     destination: ~/.xinitrc
     method: link
   zshrc:
@@ -12,15 +12,15 @@ config-map:
     destination: ~/.zshrc 
     method: link
   alacritty:
-    source: /terminal/alacritty.yml 
+    source: /config/alacritty/alacritty.yml 
     destination: ~/.config/alacritty.yml
     method: link 
   git:
-    source: /git/.gitconfig
+    source: /config/git/.gitconfig
     destination: ~/.gitconfig   
     method: link
   cargo:
-    source: /cargo/config
+    source: /config/cargo/config
     destination: ~/.cargo/config
     method: link
 ...
