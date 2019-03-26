@@ -1,21 +1,11 @@
 # npm packages
 
-packages: 
-  - name: npm
-    options: []
-  - name: eslint
-    options: []
-  - name: nodemon
-    options: []
-  - name: git-open
-    options: []
-  - name: @vue/cli
-    options: []
-  - name: webpack
-    options: []
-  - name: webpack-dev-server
-    options: []
-  - name: webpack-cli
-    options: []
-  - name: prettyjson
-    options: []
+- name: npm
+- name: eslint
+- name: nodemon
+- name: git-open
+  # - name: @vue/cli
+- name: webpack
+- name: webpack-dev-server
+- name: webpack-cli
+- name: prettyjson

@@ -1,79 +1,39 @@
 # Freebsd Packages
 
-packages: 
-  - name: node
-    options: []
-  - name: openjdk8
-    options: []
-  - name: gradle
-    options: []
-  - name: git
-    options: []
-  - name: xorg
-    options: []
-  - name: firefox
-    options: []
-  - name: chromium
-    options: []
-  - name: vim
-    options: []
-  - name: keepassxc
-    options: []
-  - name: mpv
-    options: []
-  - name: gnupg
-    options: []
-  - name: sudo
-    options: []
-  - name: python
-    options: []
-  - name: python2
-    options: []
-  - name: rubygem-travis
-    options: []
-  - name: webfonts
-    options: []
-  - name: xarchiver
-    options: []
-  - name: xfce
-    options: []
-  - name: xfce4-whiskermenu-plugin
-    options: []
-  - name: subversion
-    options: []
-  - name: thunar-archive-plugin
-    options: []
-  - name: portmaster
-    options: []
-  - name: curl
-    options: []
-  - name: xclip
-    options: []
-  - name: openvpn
-    options: []
-  - name: bash
-    options: []
-  - name: pkgconf
-    options: []
-  - name: alacritty
-    options: []
-  - name: tshark
-    options: []
-  - name: wget
-    options: []
-  - name: htop
-    options: []
-  - name: ImageMagick6
-    options: []
-  - name: beadm
-    options: []
-  - name: cmake
-    options: []
-  - name: fusefs-ntfs
-    options: []
-  - name: exa
-    options: []
-  - name: linux_base-c7
-    options: []
-  - name: intellij-ultimate
-    options: []
+- name: node
+- name: openjdk8
+- name: gradle
+- name: git
+- name: xorg
+- name: firefox
+- name: chromium
+- name: vim
+- name: keepassxc
+- name: mpv
+- name: gnupg
+- name: sudo
+- name: python
+- name: python2
+- name: rubygem-travis
+- name: webfonts
+- name: xarchiver
+- name: xfce
+- name: xfce4-whiskermenu-plugin
+- name: subversion
+- name: thunar-archive-plugin
+- name: portmaster
+- name: curl
+- name: xclip
+- name: openvpn
+- name: bash
+- name: pkgconf
+- name: alacritty
+- name: tshark
+- name: wget
+- name: htop
+- name: ImageMagick6
+- name: beadm
+- name: cmake
+- name: fusefs-ntfs
+- name: exa
+- name: intellij-ultimate
