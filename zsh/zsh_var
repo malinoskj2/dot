@@ -24,3 +24,6 @@ fi
 # Compilation
 CC=clang; export CC
 CXX=clang++; export CXX
+
+# app cfg
+ENHANCED_FILTER=fzy; export ENHANCED_FILTER
