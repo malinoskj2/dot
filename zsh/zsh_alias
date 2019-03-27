@@ -20,13 +20,12 @@ alias portmaster_all="portmaster -m DISABLE_VULNERABILITIES=yes -aGB --no-confir
 
 # Overrides
 alias ls='exa -1F --color=automatic'
+alias ll='exa -ll'
 alias tree="exa --long --tree --level=3"
 alias rgi='rg -i'
 alias rgf='rg --files --no-ignore --hidden -g'
 alias fd='fd -H' # Search hidden directories by default
 alias cat='bat'
-alias orig_cp='cp'
-alias cp='xcp'
 alias xclip='xclip -selection clipboard'
 
 # for x230
