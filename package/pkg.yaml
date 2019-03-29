@@ -39,3 +39,5 @@
 - name: intellij-ultimate
 - name: fzy
 - name: hs-pandoc
+- name: intellij-fsnotifier
+- name: intellij-pty4j
