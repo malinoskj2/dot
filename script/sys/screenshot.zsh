@@ -1,10 +1,12 @@
 #!/usr/bin/env zsh
 
 SS_DIR="/tmp/screenshot"
-FILE_PATH="/tmp/screenshot/ss_$(date +%s).jpg"
+FILE_PATH="${SS_DIR}/ss_$(date +%s).jpg"
 
-mkdir -p "${SS_DIR}" 
+mkdir -p "${SS_DIR}" && 
 import "${FILE_PATH}" &&
 echo "screenshot saved @ ${FILE_PATH}" &&
-ffsend upload "${FILE_PATH}"
-
+OUTPUT=$(curl -F file="@${FILE_PATH}" \
+https://imagebin.ca/upload.php | tail -n 1 | sed 's/.*url://')
+echo $OUTPUT 
+echo $OUTPUT | xclip -selection clipboard
