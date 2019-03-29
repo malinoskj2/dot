@@ -9,4 +9,5 @@ echo "screenshot saved @ ${FILE_PATH}" &&
 OUTPUT=$(curl -F file="@${FILE_PATH}" \
 https://imagebin.ca/upload.php | tail -n 1 | sed 's/.*url://')
 echo $OUTPUT 
-echo $OUTPUT | xclip -selection clipboard
+echo $OUTPUT | xclip -selection clipboard &&
+notify-send 'Upload Finished!' "${OUTPUT}" -i ${FILE_PATH}
