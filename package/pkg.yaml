@@ -42,3 +42,4 @@
 - name: intellij-fsnotifier
 - name: intellij-pty4j
 - name: jq
+- name: lcov
