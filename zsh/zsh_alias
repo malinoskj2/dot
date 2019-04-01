@@ -8,9 +8,6 @@ alias iomon='top -m io -o total'
 alias df='df -H'
 alias drives='camcontrol devlist'
 
-# Git
-alias gpom='git push origin master'
-
 # Misc
 alias cls='clear'
 alias ldate='date +"%I:%M %p"'

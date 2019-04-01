@@ -3,6 +3,10 @@
 	email = jesse@malinoskj2.dev
 	signingkey = F53C35CF347C4DF7F2F10B26938C4F6A0E64D71E 
 
+[alias]
+	pom = push origin master
+	cloners = clone --recurse-submodules
+
 [color]
 	ui = auto
 
