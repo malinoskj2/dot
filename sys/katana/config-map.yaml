@@ -1,0 +1,21 @@
+---
+# Maps location of config file in repo to expected location
+# source is relative to root of repo
+#
+fstab:
+  source: /sys/katana/etc/fstab
+  destination: /etc/fstab 
+  method: copy
+sysctl:
+  source: /sys/katana/etc/sysctl.conf
+  destination: /etc/sysctl.conf 
+  method: copy
+rc:
+  source: /sys/katana/etc/rc.conf
+  destination: /etc/rc.conf 
+  method: copy
+loader:
+  source: /sys/katana/boot/loader.conf
+  destination: /boot/loader.conf 
+  method: copy
+...
