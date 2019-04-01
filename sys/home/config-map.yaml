@@ -3,7 +3,27 @@
 # source is relative to root of repo
 #
 make:
-  source: /make/make.conf
+  source: /sys/home/etc/make.conf
   destination: /etc/make.conf 
+  method: copy
+devfs:
+  source: /sys/home/etc/devfs.conf
+  destination: /etc/devfs.conf 
+  method: copy
+fstab:
+  source: /sys/home/etc/fstab
+  destination: /etc/fstab 
+  method: copy
+sysctl:
+  source: /sys/home/etc/sysctl.conf
+  destination: /etc/sysctl.conf 
+  method: copy
+rc:
+  source: /sys/home/etc/rc.conf
+  destination: /etc/rc.conf 
+  method: copy
+loader:
+  source: /sys/home/boot/loader.conf
+  destination: /boot/loader.conf 
   method: copy
 ...
