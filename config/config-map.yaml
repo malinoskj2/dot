@@ -2,28 +2,27 @@
 # Maps location of config file in repo to expected location
 # source is relative to root of repo
 
-xinitrc:
-  source: /config/x11/.xinitrc 
-  destination: ~/.xinitrc
-  method: link
-zshrc:
-  source: /zsh/.zshrc
-  destination: ~/.zshrc 
-  method: link
-alacritty:
-  source: /config/alacritty/alacritty.yml 
-  destination: ~/.config/alacritty.yml
-  method: link 
-git:
-  source: /config/git/.gitconfig
-  destination: ~/.gitconfig   
-  method: link
-cargo:
-  source: /config/cargo/config
-  destination: ~/.cargo/config
-  method: link
-npm:
-  source: /config/npm/.npmrc
-  destination: ~/.npmrc
-  method: link
+tags:
+  - "config"
+  - "dot"
+
+links: 
+  - source: /usr/home/jesse/env/config/x11/.xinitrc 
+    destination: /usr/home/jesse/.xinitrc
+    method: link
+  - source: /usr/home/jesse/env/config/zsh/.zshrc
+    destination: /usr/home/jesse/.zshrc 
+    method: link
+  - source: /usr/home/jesse/env/config/alacritty/alacritty.yml 
+    destination: /usr/home/jesse/.config/alacritty.yml
+    method: link 
+  - source: /usr/home/jesse/env/config/git/.gitconfig
+    destination: /usr/home/jesse/.gitconfig   
+    method: link
+  - source: /usr/home/jesse/env/config/cargo/config
+    destination: /usr/home/jesse/.cargo/config
+    method: link
+  - source: /usr/home/jesse/env/config/npm/.npmrc
+    destination: /usr/home/jesse/.npmrc
+    method: link
 ...
