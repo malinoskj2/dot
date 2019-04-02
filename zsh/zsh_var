@@ -26,4 +26,6 @@ CC=clang; export CC
 CXX=clang++; export CXX
 
 # app cfg
-ENHANCED_FILTER=fzy; export ENHANCED_FILTER
+ENHANCED_FILTER=fzf; export ENHANCED_FILTER
+FZF_DEFAULT_COMMAND='rg --files --follow'; export FZF_DEFAULT_COMMAND
+FZF_DEFAULT_OPTS='--height 40% --layout=reverse --prompt="‣ "  --border --preview "bat {}"'; export FZF_DEFAULT_OPTS
