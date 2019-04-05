@@ -16,7 +16,7 @@ alias ldate='date +"%I:%M %p"'
 alias portmaster_all="portmaster -m DISABLE_VULNERABILITIES=yes -aGB --no-confirm"
 
 # Overrides
-alias ls='exa -1F --color=automatic'
+alias ls='exa -1F'
 alias ll='exa -ll'
 alias tree="exa --long --tree --level=3"
 alias rgi='rg -i'

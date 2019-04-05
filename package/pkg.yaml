@@ -43,3 +43,7 @@
 - name: intellij-pty4j
 - name: jq
 - name: lcov
+- name: vm-bhyve
+- name: bhyve-firmware
+- name: gdb
+- name: llvm80
