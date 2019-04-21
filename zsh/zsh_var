@@ -28,6 +28,9 @@ CXX=clang++; export CXX
 CMAKE_C_COMPILER=clang; export CMAKE_C_COMPILER
 CMAKE_CXX_COMPILER=clang++; export CMAKE_CXX_COMPILER
 
+# dockker
+DOCKER_HOST="tcp://10.0.0.186:2375"; export DOCKER_HOST
+
 # app cfg
 ENHANCED_FILTER=fzf; export ENHANCED_FILTER
 FZF_DEFAULT_COMMAND='rg --files --follow'; export FZF_DEFAULT_COMMAND

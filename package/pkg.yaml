@@ -47,3 +47,5 @@
 - name: bhyve-firmware
 - name: gdb
 - name: llvm80
+- name: docker
+
