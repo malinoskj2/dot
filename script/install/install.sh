@@ -2,10 +2,10 @@
 
 SCRIPT_PATH=${0:a:h}
 
-${SCRIPT_PATH}/resource.sh && 
+## ${SCRIPT_PATH}/resource.sh && 
 
 /usr/home/jesse/app/yamlink /usr/home/jesse/env -t dot -c config-map.yaml
 /usr/home/jesse/app/yamlink /usr/home/jesse/resource -c config-map.yaml
 
-${SCRIPT_PATH}/npm_setup.sh 
-${SCRIPT_PATH}/rust_setup.sh && 
+## ${SCRIPT_PATH}/npm_setup.sh 
+## ${SCRIPT_PATH}/rust_setup.sh && 

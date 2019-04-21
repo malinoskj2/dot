@@ -1,6 +1,6 @@
 #!/usr/local/bin/bash
 EDITOR=vim;  export EDITOR
-PAGER=less;   export PAGER
+PAGER='less -R';   export PAGER
 BROWSER=firefox; export BROWSER
 
 LANG=en_US.UTF-8;   export LANG
@@ -32,6 +32,3 @@ CMAKE_CXX_COMPILER=clang++; export CMAKE_CXX_COMPILER
 DOCKER_HOST="tcp://10.0.0.186:2375"; export DOCKER_HOST
 
 # app cfg
-ENHANCED_FILTER=fzf; export ENHANCED_FILTER
-FZF_DEFAULT_COMMAND='rg --files --follow'; export FZF_DEFAULT_COMMAND
-FZF_DEFAULT_OPTS='--height 40% --layout=reverse --prompt="‣ "  --border --preview "bat {}"'; export FZF_DEFAULT_OPTS

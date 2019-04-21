@@ -44,5 +44,3 @@ for mod ($zmodules) {
   fi
 }
 
-
-source "$HOME/env/zsh/mod/enhanced/init.sh" 

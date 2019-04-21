@@ -10,7 +10,7 @@ links:
   - source: /usr/home/jesse/env/config/x11/.xinitrc 
     destination: /usr/home/jesse/.xinitrc
     method: link
-  - source: /usr/home/jesse/env/config/zsh/.zshrc
+  - source: /usr/home/jesse/env/zsh/.zshrc
     destination: /usr/home/jesse/.zshrc 
     method: link
   - source: /usr/home/jesse/env/config/alacritty/alacritty.yml 
@@ -24,5 +24,8 @@ links:
     method: link
   - source: /usr/home/jesse/env/config/npm/.npmrc
     destination: /usr/home/jesse/.npmrc
+    method: link
+  - source: /usr/home/jesse/env/config/aws/config
+    destination: /usr/home/jesse/.aws/config
     method: link
 ...

@@ -37,7 +37,6 @@
 - name: fusefs-ntfs
 - name: exa
 - name: intellij-ultimate
-- name: fzf
 - name: hs-pandoc
 - name: intellij-fsnotifier
 - name: intellij-pty4j
