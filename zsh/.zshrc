@@ -21,6 +21,8 @@ for cfg_file ($cfg_files) {
   fi
 }
 # load module functions
+source ${ZSH_MOD_DIR}/z/zsh-z.plugin.zsh
+
 zmodules=(
  prompt_j2
 )

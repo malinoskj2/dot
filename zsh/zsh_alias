@@ -25,9 +25,9 @@ alias fd='fd -H' # Search hidden directories by default
 alias cat='bat'
 alias xclip='xclip -selection clipboard'
 
+alias j='z'
 # for x230
 alias zzz='/usr/local/bin/sudo /usr/sbin/zzz'
-
 
 # compilation
 ## Set compilation options up front
