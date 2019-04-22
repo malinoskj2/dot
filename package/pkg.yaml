@@ -49,3 +49,5 @@
 - name: docker
 - name: awscli
 - name: groff
+- name: nmap
+
