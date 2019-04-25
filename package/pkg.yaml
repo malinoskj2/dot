@@ -49,3 +49,6 @@
 - name: docker
 - name: awscli
 - name: groff
+- name: nmap
+- name: py36-pip
+
