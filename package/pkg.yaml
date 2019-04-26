@@ -51,4 +51,5 @@
 - name: groff
 - name: nmap
 - name: py36-pip
+- name: dnsmasq
 
