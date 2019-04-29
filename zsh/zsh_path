@@ -8,7 +8,7 @@ path=(
 	/usr/bin
 	/usr/local/sbin
 	/usr/local/bin:$HOME/bin
-	~/env/scripts/bin
+	~/env/script/bin
 	/usr/local/llvm80/bin
 	~/.local/bin
 	$path

@@ -3,7 +3,6 @@
 - name: npm
 - name: eslint
 - name: nodemon
-- name: git-open
   # - name: @vue/cli
 - name: webpack
 - name: webpack-dev-server

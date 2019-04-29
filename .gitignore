@@ -1,5 +1,5 @@
 scripts/temp/*
-scripts/bin/*
+script/bin/*
 scripts/js/*/node_modules/*
 
 *.env
