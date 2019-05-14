@@ -24,6 +24,7 @@ alias rgf='rg --files --no-ignore --hidden -g'
 alias fd='fd -H' # Search hidden directories by default
 alias cat='bat'
 alias xclip='xclip -selection clipboard'
+alias du='du -sh'
 
 alias j='z'
 # for x230
