@@ -52,4 +52,4 @@
 - name: nmap
 - name: py36-pip
 - name: dnsmasq
-
+- name: docker-compose
