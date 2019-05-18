@@ -1,7 +1,6 @@
 path=(
 	~/.cargo/bin
 	~/.npm/global/bin
-  /home/jesse/Apps/wasm-pack/target/release
 	/sbin
 	/bin
 	/usr/sbin
@@ -9,7 +8,6 @@ path=(
 	/usr/local/sbin
 	/usr/local/bin:$HOME/bin
 	~/env/script/bin
-	/usr/local/llvm80/bin
 	~/.local/bin
 	$path
 )

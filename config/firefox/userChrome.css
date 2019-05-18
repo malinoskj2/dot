@@ -1,0 +1,8 @@
+
+#contextAreaContextMenu{ margin: 5px 0 0 5px }
+
+.tab-line[selected="true"] {
+  background-color: red !important;
+  opacity: 100 !important;
+}
+

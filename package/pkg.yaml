@@ -53,3 +53,6 @@
 - name: py36-pip
 - name: dnsmasq
 - name: docker-compose
+- name: bspwm
+- name: feh
+- name: polybar

@@ -2,6 +2,7 @@
 EDITOR=vim;  export EDITOR
 PAGER='less -R';   export PAGER
 BROWSER=firefox; export BROWSER
+TERMINAL=alacritty; export TERMINAL
 
 LANG=en_US.UTF-8;   export LANG
 LC_TIME=en_US.UTF-8; export LC_TIME
@@ -11,9 +12,15 @@ CHARSET=UTF-8;  export CHARSET
 GPG_TTY=$(tty); export GPG_TTY
 
 # Locations
-SCRIPT_DIR=/usr/home/jesse/env/Scripts/bin; export SCRIPT_DIR #Sym links
+SCRIPT_DIR=/usr/home/jesse/env/script/bin; export SCRIPT_DIR #Sym links
 XDG_CONFIG_HOME=/usr/home/jesse/.config; export XDG_CONFIG_HOME
 XCLIP_PATH=/usr/local/bin/xclip; export XCLIP_PATH
+
+if [ "$(hostname)" = 'home' ]; then
+  SS_DIR=/disk/work/screenshot; export SS_DIR;
+elif [ "$(hostname)" = 'katana' ]; then
+  SS_DIR=/tmp/screenshot; export SS_DIR;
+fi
 
 # jdk
 if [ $(uname) = "FreeBSD" ]; then
@@ -33,3 +40,7 @@ CMAKE_CXX_COMPILER=clang++; export CMAKE_CXX_COMPILER
 DOCKER_HOST="tcp://10.34.34.20:2376"; export DOCKER_HOST
 
 # app cfg
+LS_COLORS="di=34:ex=35"; export LS_COLORS
+
+export _JAVA_AWT_WM_NONREPARENTING=1
+export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -DactionSystem.xWindow.remove.focus.from.nonFocusable.popups=false -Dsun.java2d.opengl=true'

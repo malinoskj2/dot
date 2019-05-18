@@ -1,0 +1,47 @@
+#
+# wm independent hotkeys
+#
+
+# launch terminal emulator
+super + t
+	$TERMINAL
+
+# launch browser
+super + f
+	$BROWSER
+
+# program launcher
+super + space
+	rofi -show combi -m -1 
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+# take screenshot and save to screenshot dir 
+Print
+	$HOME/env/script/sys/screenshot.zsh save $SS_DIR
+
+# take screenshot, save to screenshot dir, and upload
+ctrl + Print
+	$HOME/env/script/sys/screenshot.zsh upload $SS_DIR
+
+#
+# bspwm hotkeys
+#
+
+# close and kill
+super + {_,shift + }q
+	bspc node -{c,k}
+
+# focus/swapnode in the given direction
+super + {_,shift + }{j,k,i,l}
+	bspc node -{f,s} {west,south,north,east}
+
+# focus or send to the given desktop
+super + {1-9}
+	focus_desktop '{1-9}'
+
+# focus second monitor
+super + grave
+	toggle_monitor
