@@ -43,5 +43,5 @@ super + {1-9}
 	focus_desktop '{1-9}'
 
 # focus second monitor
-super + grave
-	toggle_monitor
+super + {u,o}
+	bspc desktop -f {prev,next}.local
