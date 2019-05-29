@@ -8,10 +8,14 @@ compinit
 # zstyle ':completion:*' rehash true
 
 # History 
+ [ -z "$HISTFILE" ] && HISTFILE="/tmp/.zsh_history"
+HISTSIZE=50000
+SAVEHIST=10000
 setopt hist_ignore_dups
 setopt hist_expire_dups_first
 setopt hist_find_no_dups
 # setopt hist_no_store
+setopt inc_append_history
 setopt share_history
 setopt hist_reduce_blanks
 
@@ -21,4 +25,3 @@ setopt bsd_echo 	# echo like bsd
 unsetopt flow_control 	# ^S/^Q disabled
 
 setopt LOCAL_TRAPS
-
