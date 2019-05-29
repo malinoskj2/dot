@@ -40,3 +40,8 @@ alias cargotestprint='cargo test -- --nocapture'
 
 # web
 alias tb='nc termbin.com 9999 | xclip -selection clipboard'
+
+# docker
+alias dockerc='docker-compose'
+alias dockerm='docker-machine'
+
