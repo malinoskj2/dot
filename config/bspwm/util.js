@@ -1,6 +1,6 @@
 const sh = require('shelljs');
 const os = require('os');
-const { handle } = require('./error.js');
+const { handleExports } = require('./error.js');
 
 sh.config.silent = true;
 
@@ -30,6 +30,4 @@ const isInstalled = (dep) => {
   return sh.exec(`command -v ${dep}`)
 };
 
-module.exports = { getColors: handle(getColors), 
-		   getHost: handle(getHost),
-		   isInstalled: handle(getHost) };
+module.exports = handleExports(getColors, getHost, isInstalled);
