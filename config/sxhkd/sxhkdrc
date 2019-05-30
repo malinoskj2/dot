@@ -45,3 +45,8 @@ super + {1-9}
 # focus second monitor
 super + {u,o}
 	bspc desktop -f {prev,next}.local
+
+# send to prev or next desktop
+super + {_,shift + }{u,o}
+	bspc node -d {prev,next}.local 
+
