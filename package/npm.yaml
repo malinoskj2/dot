@@ -8,3 +8,4 @@
 - name: webpack-dev-server
 - name: webpack-cli
 - name: prettyjson
+- name: shelljs

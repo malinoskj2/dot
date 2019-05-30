@@ -25,7 +25,7 @@ links:
   - source: /usr/home/jesse/env/config/aws/config
     destination: /usr/home/jesse/.aws/config
     method: link
-  - source: /usr/home/jesse/env/config/bspwm/bspwmrc
+  - source: /usr/home/jesse/env/config/bspwm/bspwmrc.js
     destination: /usr/home/jesse/.config/bspwm/bspwmrc
     method: link
   - source: /usr/home/jesse/env/config/sxhkd/sxhkdrc

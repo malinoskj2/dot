@@ -39,8 +39,14 @@ CMAKE_CXX_COMPILER=clang++; export CMAKE_CXX_COMPILER
 # docker
 DOCKER_HOST="tcp://10.34.34.20:2376"; export DOCKER_HOST
 
+# node
+
+export NODE_PATH="/home/jesse/.npm/global/lib/node_modules"; export NODE_PATH
+
+# java
+export _JAVA_AWT_WM_NONREPARENTING=1
+export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -DactionSystem.xWindow.remove.focus.from.nonFocusable.popups=false -Dsun.java2d.opengl=true'
+
 # app cfg
 LS_COLORS="di=34:ex=35"; export LS_COLORS
 
-export _JAVA_AWT_WM_NONREPARENTING=1
-export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -DactionSystem.xWindow.remove.focus.from.nonFocusable.popups=false -Dsun.java2d.opengl=true'
