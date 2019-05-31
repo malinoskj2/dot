@@ -1,0 +1,7 @@
+# .zlogin
+
+vm=docker1
+
+if [ "$HOST" = "home" ];then
+  docker-machine start $vm &> /dev/null &
+fi

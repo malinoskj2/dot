@@ -37,10 +37,12 @@ CMAKE_C_COMPILER=clang; export CMAKE_C_COMPILER
 CMAKE_CXX_COMPILER=clang++; export CMAKE_CXX_COMPILER
 
 # docker
-DOCKER_HOST="tcp://10.34.34.20:2376"; export DOCKER_HOST
+export DOCKER_TLS_VERIFY="1"
+export DOCKER_HOST="tcp://192.168.99.100:2376"
+export DOCKER_CERT_PATH="/home/jesse/.docker/machine/machines/docker1"
+export DOCKER_MACHINE_NAME="docker1"
 
 # node
-
 export NODE_PATH="/home/jesse/.npm/global/lib/node_modules"; export NODE_PATH
 
 # java

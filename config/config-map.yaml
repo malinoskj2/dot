@@ -13,6 +13,9 @@ links:
   - source: /usr/home/jesse/env/zsh/zshrc
     destination: /usr/home/jesse/.zshrc 
     method: link
+  - source: /usr/home/jesse/env/zsh/zlogin
+    destination: /usr/home/jesse/.zlogin
+    method: link
   - source: /usr/home/jesse/env/config/alacritty/alacritty.yml 
     destination: /usr/home/jesse/.config/alacritty.yml
     method: link 
