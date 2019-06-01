@@ -50,7 +50,7 @@ setBackground('/usr/home/jesse/resource/wallpapers/1552441584675.png');
 bspwm.removeDesktop('Desktop');
 bspwm.removeDesktop('Desktop');
 
-bspwm.addRule('Firefox', 'state=titled', 'follow=on', 'border=on');
+bspwm.addRule('Firefox', 'state=tiled', 'follow=on', 'border=on');
 bspwm.addRule('Alacritty', 'state=tiled', 'follow=on', 'border=on');
 bspwm.addRule('IntelliJ IDEA', 'state=tiled', 'follow=on', 'border=off', 'focus=on');
 
