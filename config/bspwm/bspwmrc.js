@@ -37,19 +37,22 @@ if (util.getHost() === 'home') {
 
 
   bspwm.addDesktops('HDMI-0', 'lg_a');
+  bspwm.addDesktops('DP-2', 'a', 'b', 'c');
+} 
 
+if (util.getHost() === 'katana') {
+  bspwm.addDesktops('LVDS-1', 'a', 'b', 'c');
 }
 
 // set rules for all
-bspwm.addDesktops('DP-2', 'a', 'b', 'c');
 setBackground('/usr/home/jesse/resource/wallpapers/1552441584675.png');
 
 bspwm.removeDesktop('Desktop');
 bspwm.removeDesktop('Desktop');
 
-  bspwm.addRule('Firefox', 'state=titled', 'follow=on', 'border=on');
-  bspwm.addRule('Alacritty', 'state=tiled', 'follow=on', 'border=on');
-  bspwm.addRule('IntelliJ IDEA', 'state=tiled', 'follow=on', 'border=off', 'focus=on');
+bspwm.addRule('Firefox', 'state=titled', 'follow=on', 'border=on');
+bspwm.addRule('Alacritty', 'state=tiled', 'follow=on', 'border=on');
+bspwm.addRule('IntelliJ IDEA', 'state=tiled', 'follow=on', 'border=off', 'focus=on');
 
 bspwm.setConfig('border_width', '2');
 bspwm.setConfig('window_gap', '12');
