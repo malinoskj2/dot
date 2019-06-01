@@ -26,6 +26,7 @@ if (notInstalled) {
 // get colors
 const colors2 = util.getColors(); 
 
+
 // set rules for home
 if (util.getHost() === 'home') {
 
@@ -34,18 +35,21 @@ if (util.getHost() === 'home') {
   sh.exec('xrandr --output DP-2 --primary --mode 1920x1080 --rotate normal --rate 144.0 ' + 
 	  '--output HDMI-0 --left-of DP-2 --mode 1366x768 --rotate left --rate 60.0');
 
-  setBackground('/usr/home/jesse/resource/wallpapers/1552441584675.png');
 
   bspwm.addDesktops('HDMI-0', 'lg_a');
-  bspwm.addDesktops('DP-2', 'a', 'b', 'c');
 
-  bspwm.removeDesktop('Desktop');
-  bspwm.removeDesktop('Desktop');
+}
+
+// set rules for all
+bspwm.addDesktops('DP-2', 'a', 'b', 'c');
+setBackground('/usr/home/jesse/resource/wallpapers/1552441584675.png');
+
+bspwm.removeDesktop('Desktop');
+bspwm.removeDesktop('Desktop');
 
   bspwm.addRule('Firefox', 'state=titled', 'follow=on', 'border=on');
   bspwm.addRule('Alacritty', 'state=tiled', 'follow=on', 'border=on');
   bspwm.addRule('IntelliJ IDEA', 'state=tiled', 'follow=on', 'border=off', 'focus=on');
-}
 
 bspwm.setConfig('border_width', '2');
 bspwm.setConfig('window_gap', '12');
