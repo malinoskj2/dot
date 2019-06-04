@@ -11,7 +11,7 @@ function setDisplayOpts(display, ...opts) {
 }
 
 function setBackground(bgPath) {
-  sh.exec(`feh --bg-center ${bgPath}`);
+  sh.exec(`feh --bg-scale ${bgPath}`);
 }
 
 // dep checks:
@@ -38,19 +38,23 @@ if (util.getHost() === 'home') {
 
   bspwm.addDesktops('HDMI-0', 'lg_a');
   bspwm.addDesktops('DP-2', 'a', 'b', 'c');
+
+  setBackground('/usr/home/jesse/resource/wallpapers/1552441584675.png');
+  bspwm.setConfig('focused_border_color', '#FF6663');
 } 
 
 if (util.getHost() === 'katana') {
   bspwm.addDesktops('LVDS-1', 'a', 'b', 'c');
+  setBackground('/usr/home/jesse/resource/wallpapers/640690.jpg');
+  bspwm.setConfig('focused_border_color', '#FF0000');
 }
 
 // set rules for all
-setBackground('/usr/home/jesse/resource/wallpapers/1552441584675.png');
 
 bspwm.removeDesktop('Desktop');
 bspwm.removeDesktop('Desktop');
 
-bspwm.addRule('Firefox', 'state=tiled', 'follow=on', 'border=on');
+bspwm.addRule('Firefox', 'state=tiled', 'follow=on', 'border=off');
 bspwm.addRule('Alacritty', 'state=tiled', 'follow=on', 'border=on');
 bspwm.addRule('IntelliJ IDEA', 'state=tiled', 'follow=on', 'border=off', 'focus=on');
 
@@ -59,7 +63,7 @@ bspwm.setConfig('window_gap', '12');
 bspwm.setConfig('split_ratio', '0.56');
 bspwm.setConfig('borderless_monocle', true );
 bspwm.setConfig('gapless_monocle', true );
-bspwm.setConfig('focused_border_color', '#FF6663');
+
 bspwm.addRule('Screenkey', 'manage=off');
 
 // start bar
