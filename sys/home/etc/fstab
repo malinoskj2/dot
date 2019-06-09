@@ -1,0 +1,8 @@
+# Device		Mountpoint	FStype	Options		Dump	Pass#
+/dev/ada0p2		none	swap	sw		0	0
+/dev/ada1p2		none	swap	sw		0	0
+linprocfs		/compat/linux/proc	linprocfs	rw	0	0
+tmpfs		/tmp	tmpfs	rw,mode=777	0	0
+/dev/ada2p1	/disk/backup	ufs	rw	1	1
+/dev/ada3	/disk/media	ufs	rw	1	1
+/dev/ada4	/disk/work	ufs	rw	1	1
