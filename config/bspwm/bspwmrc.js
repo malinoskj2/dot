@@ -53,6 +53,7 @@ bspwm.removeDesktop('Desktop');
 bspwm.addRule('Firefox', 'state=tiled', 'follow=on', 'border=on');
 bspwm.addRule('Alacritty', 'state=tiled', 'follow=on', 'border=on');
 bspwm.addRule('IntelliJ IDEA', 'state=tiled', 'follow=on', 'border=off', 'focus=on');
+bspwm.addRule('mpv', 'state=tiled', 'desktop=b', 'follow=on', 'border=off', 'focus=on');
 
 bspwm.setConfig('border_width', '2');
 bspwm.setConfig('window_gap', '12');
