@@ -1,0 +1,28 @@
+---
+# Maps location of config file in repo to expected location
+# source is relative to root of repo
+#
+
+tags:
+  - "home"
+
+links:
+  - source: /usr/home/jesse/env/sys/katana/etc/make.conf
+    destination: /etc/make.conf 
+    method: copy
+  - source: /usr/home/jesse/env/sys/katana/etc/devfs.conf
+    destination: /etc/devfs.conf 
+    method: copy
+  - source: /usr/home/jesse/env/sys/katana/etc/fstab
+    destination: /etc/fstab 
+    method: copy
+  - source: /usr/home/jesse/env/sys/katana/etc/sysctl.conf
+    destination: /etc/sysctl.conf 
+    method: copy
+  - source: /usr/home/jesse/env/sys/katana/etc/rc.conf
+    destination: /etc/rc.conf 
+    method: copy
+  - source: /usr/home/jesse/env/sys/katana/boot/loader.conf
+    destination: /boot/loader.conf 
+    method: copy
+...
