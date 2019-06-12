@@ -1,0 +1,10 @@
+#!/bin/sh
+
+hot_val=80
+temp=$(sysctl -n dev.cpu.0.temperature)
+
+if [ "$( echo $temp | head -c 2 )" -gt "$hot_val" ]; then
+  echo "temp"
+else
+  exit 1
+fi
