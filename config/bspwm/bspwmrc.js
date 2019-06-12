@@ -39,7 +39,7 @@ if (util.getHost() === 'home') {
   bspwm.addDesktops('HDMI-0', 'lg_a');
   bspwm.addDesktops('DP-2', 'a', 'b', 'c');
 
-  setBackground('/usr/home/jesse/resource/wallpapers/1552441584675.png');
+  setBackground('/usr/home/jesse/resource/wallpapers/7865.jpg');
   bspwm.setConfig('focused_border_color', '#FF6663');
 } 
 
@@ -54,7 +54,7 @@ if (util.getHost() === 'katana') {
 bspwm.removeDesktop('Desktop');
 bspwm.removeDesktop('Desktop');
 
-bspwm.addRule('Firefox', 'state=tiled', 'follow=on', 'border=off', 'focus=on');
+bspwm.addRule('Firefox', 'desktop=a', 'state=tiled', 'follow=on', 'border=off', 'focus=on');
 bspwm.addRule('Alacritty', 'state=tiled', 'follow=on', 'border=on', 'focus=on');
 bspwm.addRule('IntelliJ IDEA', 'state=tiled', 'follow=on', 'border=off', 'focus=on');
 bspwm.addRule('mpv', 'state=tiled', 'desktop=b', 'follow=on', 'border=off', 'focus=on');
