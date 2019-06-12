@@ -58,12 +58,14 @@ bspwm.addRule('Firefox', 'state=tiled', 'follow=on', 'border=off');
 bspwm.addRule('Alacritty', 'state=tiled', 'follow=on', 'border=on');
 bspwm.addRule('IntelliJ IDEA', 'state=tiled', 'follow=on', 'border=off', 'focus=on');
 bspwm.addRule('mpv', 'state=tiled', 'desktop=b', 'follow=on', 'border=off', 'focus=on');
+bspwm.addRule('polybar-mybar3_DP-2', 'focus=on', 'border=on', 'floating=on');
 
 bspwm.setConfig('border_width', '2');
 bspwm.setConfig('window_gap', '12');
 bspwm.setConfig('split_ratio', '0.56');
 bspwm.setConfig('borderless_monocle', true );
 bspwm.setConfig('gapless_monocle', true );
+bspwm.setConfig('focus_follows_pointer', false);
 
 bspwm.addRule('Screenkey', 'manage=off');
 

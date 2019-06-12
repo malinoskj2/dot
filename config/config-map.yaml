@@ -46,4 +46,10 @@ links:
   - source: /usr/home/jesse/env/config/idea/idea.properties
     destination: /usr/home/jesse/.IntelliJIdea2019.1/config/idea.properties
     method: link
+  - source: /usr/home/jesse/env/config/compton/compton.conf
+    destination: /usr/home/jesse/.config/compton.conf
+    method: link
+  - source: /usr/home/jesse/env/config/rofi/j2.rasi
+    destination: /usr/home/jesse/.config/rofi/j2.rasi
+    method: link
 ...

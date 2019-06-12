@@ -25,13 +25,13 @@
 *.color15:      COLOR15
 
 ! Rofi 
-! rofi.theme: j2_theme
+rofi.theme: j2
 
 ! Rofi Colors
-rofi.color-window: COLOR1, BACKGROUND, COLOR0
-rofi.color-normal: COLOR1, FOREGROUND, COLOR1, COLOR1, COLOR0 
-rofi.color-active: COLOR1, FOREGROUND, COLOR1, COLOR1, FOREGROUND
-rofi.color-urgent: COLOR1, FOREGROUND, COLOR1, COLOR1, FOREGROUND
+rofi.color-window: #222127, #222127, COLOR0
+rofi.color-normal: COLOR1,  COLOR0, COLOR1, COLOR1, COLOR0 
+!rofi.color-active: COLOR1, FOREGROUND, COLOR1, COLOR1, FOREGROUND
+!rofi.color-urgent: COLOR1, FOREGROUND, COLOR1, COLOR1, FOREGROUND
 
 ! Rofi Mode Settings
 rofi.combi-modi: drun
@@ -40,12 +40,12 @@ rofi.display-combi: ::
 rofi.combi-hide-mode-prefix: false
 
 ! Rofi Styling
-rofi.width: 800
-rofi.lines: 5
+rofi.width: 300
+!rofi.lines: 5
 rofi.columns: 1 
-rofi.font: Lato Mono 12
-rofi.bw: 0
-rofi.padding: 10
-rofi.eh: 1
-rofi.separator-style: none
-rofi.hide-scrollbar: true
+rofi.font: Fira Mono 10
+!rofi.bw: 0
+!rofi.padding: 0
+!rofi.eh: 1
+!rofi.separator-style: none
+!rofi.hide-scrollbar: true
