@@ -3,12 +3,8 @@
 # target the desired monitor, show bar and rofi 
 # functions as run dialog
 
-bar_name=runbar
 target_display=DP-2
-
 
 bspc monitor -f $target_display &&
 CFG_FILE3=$HOME/env/config/polybar/$bar_name
-polybar $bar_name --config=$CFG_FILE3 &
-rofi -location 7 -yoffset -6 -xoffset 110 -show combi -theme-str "#window mainbox inputbar box { index: 0; }" 
-pkill -f $bar_name
+rofi -location 7 -yoffset -6 -xoffset 163 -show combi -theme-str "#window mainbox inputbar box { index: 0; }" 
