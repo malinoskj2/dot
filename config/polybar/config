@@ -24,13 +24,13 @@ reverse-scroll = false
 fuzzy-match = true
 
 ; formatting
-format = <label-state> <label-mode>
+;format = <label-state> <label-mode>
 
-label-focused = %name%
-label-unfocused = %name%
-label-visible = %name
-label-urgent = %name%
-label-mode = %mode%
+;label-focused = %name%
+;label-unfocused = %name%
+;label-visible = %name
+;label-urgent = %name%
+;label-mode = %mode%
 
 label-active-font = 0
 label-focused-foreground = ${xrdb:color0}
@@ -38,6 +38,5 @@ label-indicator-underline = #FF0000
 label-focused-underline = #FF0000
 
 ; formatting
-label-separator = " "
-label-separator-padding = 0
-
+;label-separator = " "
+;label-separator-padding = 0
