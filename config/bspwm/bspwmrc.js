@@ -54,11 +54,12 @@ if (util.getHost() === 'katana') {
 bspwm.removeDesktop('Desktop');
 bspwm.removeDesktop('Desktop');
 
-bspwm.addRule('Firefox', 'desktop=a', 'state=tiled', 'follow=on', 'border=off', 'focus=on');
+bspwm.addRule('Firefox:Navigator', 'desktop=a', 'state=tiled', 'follow=on', 'border=off', 'focus=on');
 bspwm.addRule('Alacritty', 'state=tiled', 'follow=on', 'border=on', 'focus=on');
 bspwm.addRule('IntelliJ IDEA', 'state=tiled', 'follow=on', 'border=off', 'focus=on');
 bspwm.addRule('mpv', 'state=tiled', 'desktop=b', 'follow=on', 'border=off', 'focus=on');
 bspwm.addRule('polybar-mybar3_DP-2', 'focus=on', 'border=on', 'floating=on');
+bspwm.addRule('Firefox:*', 'focus=on', 'border=on', 'floating=on');
 
 bspwm.setConfig('border_width', '2');
 bspwm.setConfig('window_gap', '12');
