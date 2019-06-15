@@ -13,6 +13,12 @@
 127.0.0.1 	localhost home
 ::1       	localhost home 
 192.168.99.100	docker    home
+
+## block
+127.0.0.1       www.youtube.com
+127.0.0.1       www.facebook.com
+127.0.0.1       www.reddit.com
+
 #
 # Imaginary network.
 #10.0.0.2		myname.my.domain myname
