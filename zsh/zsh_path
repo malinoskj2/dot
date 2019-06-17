@@ -1,14 +1,14 @@
 path=(
 	~/.cargo/bin
 	~/.npm/global/bin
+	~/.local/bin
 	/sbin
 	/bin
 	/usr/sbin
 	/usr/bin
 	/usr/local/sbin
 	/usr/local/bin:$HOME/bin
-	~/env/script/bin
-	~/.local/bin
+	~/env/script/**/*
 	$path
 )
 
