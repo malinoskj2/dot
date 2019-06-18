@@ -20,6 +20,7 @@
 	editor = vim
 	pager = more
 	autocrlf = false
+	excludesfile = /home/jesse/env/config/git/gitignore_global
 
 [merge]
 	ff = yes
