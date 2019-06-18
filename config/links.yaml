@@ -9,47 +9,28 @@ tags:
 links: 
   - source: /usr/home/jesse/env/config/x11/xinitrc 
     destination: /usr/home/jesse/.xinitrc
-    method: link
   - source: /usr/home/jesse/env/zsh/zshrc
     destination: /usr/home/jesse/.zshrc 
-    method: link
   - source: /usr/home/jesse/env/zsh/zlogin
     destination: /usr/home/jesse/.zlogin
-    method: link
   - source: /usr/home/jesse/env/config/alacritty/alacritty.yml 
     destination: /usr/home/jesse/.config/alacritty.yml
-    method: link 
   - source: /usr/home/jesse/env/config/git/gitconfig
     destination: /usr/home/jesse/.gitconfig   
-    method: link
   - source: /usr/home/jesse/env/config/npm/.npmrc
     destination: /usr/home/jesse/.npmrc
-    method: link
   - source: /usr/home/jesse/env/config/aws/config
     destination: /usr/home/jesse/.aws/config
-    method: link
   - source: /usr/home/jesse/env/config/bspwm/bspwmrc.js
     destination: /usr/home/jesse/.config/bspwm/bspwmrc
-    method: link
   - source: /usr/home/jesse/env/config/sxhkd/sxhkdrc
     destination: /usr/home/jesse/.config/sxhkd/sxhkdrc
-    method: link
   - source: /usr/home/jesse/env/config/x11/Xresources
     destination: /usr/home/jesse/.Xresources
-    method: link
-  - source: /usr/home/jesse/env/config/rofi/j2_theme.rasi
-    destination: /usr/home/jesse/.config/rofi/j2_theme.rasi
-    method: link
-  - source: /usr/home/jesse/env/config/config
-    destination: /usr/home/jesse/.config/rofi/config
-    method: link
   - source: /usr/home/jesse/env/config/idea/idea.properties
     destination: /usr/home/jesse/.IntelliJIdea2019.1/config/idea.properties
-    method: link
   - source: /usr/home/jesse/env/config/compton/compton.conf
     destination: /usr/home/jesse/.config/compton.conf
-    method: link
   - source: /usr/home/jesse/env/config/rofi/j2.rasi
     destination: /usr/home/jesse/.config/rofi/j2.rasi
-    method: link
 ...
