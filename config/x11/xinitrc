@@ -5,5 +5,9 @@ zsh ~/env/config/x11/settings.zsh # Run script that sets settings
 xrdb -merge ~/.Xresources
 xsetroot -cursor_name left_ptr 
 sxhkd &
-compton &
+
+if [ "$(hostname)" = "home" ]; then
+  compton &
+fi
+
 exec bspwm 
