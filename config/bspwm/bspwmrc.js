@@ -39,18 +39,17 @@ if (util.getHost() === 'home') {
   bspwm.addDesktops('HDMI-0', 'lg_a');
   bspwm.addDesktops('DP-2', 'a', 'b', 'c');
 
-  setBackground('/usr/home/jesse/resource/wallpapers/7865.jpg');
   bspwm.setConfig('focused_border_color', '#FF6663');
 } 
 
 if (util.getHost() === 'katana') {
   bspwm.addDesktops('LVDS-1', 'a', 'b', 'c');
-  setBackground('/usr/home/jesse/resource/wallpapers/640690.jpg');
   bspwm.setConfig('focused_border_color', '#FF0000');
 }
 
 // set rules for all
 
+setBackground('/usr/home/jesse/resource/wallpapers/default/default');
 bspwm.removeDesktop('Desktop');
 bspwm.removeDesktop('Desktop');
 
@@ -71,4 +70,4 @@ bspwm.setConfig('focus_follows_pointer', false);
 bspwm.addRule('Screenkey', 'manage=off');
 
 // start bar
-sh.exec(`${process.env.HOME}/env/config/polybar/launch.sh`);
+sh.exec(`${process.env.HOME}/env/config/polybar/launch`);

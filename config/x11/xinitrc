@@ -1,6 +1,5 @@
-zsh ~/env/config/x11/key_binds.zsh # Run script that sets keybinds
-zsh ~/env/config/x11/settings.zsh # Run script that sets settings
-
+~/env/config/x11/key_binds # Run script that sets keybinds
+~/env/config/x11/settings  # Run script that sets settings
 
 xrdb -merge ~/.Xresources
 xsetroot -cursor_name left_ptr 

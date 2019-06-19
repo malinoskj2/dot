@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env sh
 
 xset s off -dpms	# disable screen power saving
 xset m 0 0 		# disable mouse accel/set sense
