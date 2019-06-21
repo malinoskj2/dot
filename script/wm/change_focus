@@ -1,0 +1,17 @@
+#!/usr/bin/env sh
+
+# determines whether to focus or swap
+# $1={f,s} 
+
+# determines whether to focus or swap
+# $2={west, south, north, east}
+
+current_node="$(bspc query -N -n)"
+
+if bspc node "-${1}" $2; then
+    [ "$1" = "s" ] && bspc node -f "$current_node" 
+else 
+    [ "$1" = "s" ] && bspc node -m "$2" && bspc node -f "$current_node"
+    [ "$1" = "f" ] && bspc monitor -f "$2"
+fi
+
