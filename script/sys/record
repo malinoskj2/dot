@@ -1,8 +1,15 @@
 #!/usr/bin/env sh
 
 # record the selected monitor
-# SS_DIR must be set
-[ -z "${SS_DIR}" ] && echo "SS_DIR is not set" && exit 0
+
+## Tests ##
+
+command -v mpv >/dev/null \
+	||  ( printf "%s\n" "mpv not found" && exit 1 )
+command -v youtube-dl >/dev/null \
+	|| ( printf "%s\n" "youtube-dl not found" && exit 1 )
+[ -z "${SS_DIR}" ] \
+	&& ( echo "SS_DIR is not set" && exit 1 )
 
 FILE_PATH="${SS_DIR}/recording_$(date +%s).mkv"
 
