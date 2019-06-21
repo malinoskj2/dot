@@ -1,0 +1,25 @@
+#!/usr/bin/env sh
+
+# record the selected monitor
+# SS_DIR must be set
+[ -z "${SS_DIR}" ] && echo "SS_DIR is not set" && exit 0
+
+FILE_PATH="${SS_DIR}/recording_$(date +%s).mkv"
+
+selection=$(xrandr -q \
+	| grep ' connected ' \
+	| awk '{print $1;}' \
+	| rofi  -dmenu -e "select monitor:" \
+	       	-location 7 \
+		-yoffset -6 -xoffset 163 \
+		-show combi \
+		-theme-str "#window mainbox inputbar box { index: 0; }")
+
+x_offset="$(xrandr -q \
+	| grep $selection \
+	| cut -d'+' -f2 )" 
+
+ffmpeg -y -f x11grab -r 60 -s 1920x1080 -i :0.0+${x_offset},0 -vcodec libx264 -threads 0 "${FILE_PATH}"
+
+echo "saved @ -> $FILE_PATH"
+echo $FILE_PATH | xclip -selection clipboard
