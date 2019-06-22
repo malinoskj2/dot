@@ -16,7 +16,10 @@ font-3 = NotoSans-Regular:size=8;-1
 font-4 = MaterialIcons:size=10;-1
 font-5 = Termsynu:size=8;-1
 
-background = #222127
+;background = #4FCED5
+background = #389CB3
+background-radius = 3
+radius = 3
 
 locale = en_US.UTF-8
 
