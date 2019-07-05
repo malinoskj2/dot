@@ -8,8 +8,8 @@ path=(
 	/usr/bin
 	/usr/local/sbin
 	/usr/local/bin:$HOME/bin
-	~/env/script/**/*
-	$path
+	~/env/script/*/
+#	~/resource/app/bsd/**/*
 )
 
 fpath=(

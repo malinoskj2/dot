@@ -8,29 +8,31 @@ tags:
 
 links: 
   - source: /usr/home/jesse/env/config/x11/xinitrc 
-    destination: /usr/home/jesse/.xinitrc
+    link: /usr/home/jesse/.xinitrc
   - source: /usr/home/jesse/env/zsh/zshrc
-    destination: /usr/home/jesse/.zshrc 
+    link: /usr/home/jesse/.zshrc 
   - source: /usr/home/jesse/env/zsh/zlogin
-    destination: /usr/home/jesse/.zlogin
+    link: /usr/home/jesse/.zlogin
   - source: /usr/home/jesse/env/config/alacritty/alacritty.yml 
-    destination: /usr/home/jesse/.config/alacritty.yml
+    link: /usr/home/jesse/.config/alacritty.yml
   - source: /usr/home/jesse/env/config/git/gitconfig
-    destination: /usr/home/jesse/.gitconfig   
+    link: /usr/home/jesse/.gitconfig   
   - source: /usr/home/jesse/env/config/npm/.npmrc
-    destination: /usr/home/jesse/.npmrc
+    link: /usr/home/jesse/.npmrc
   - source: /usr/home/jesse/env/config/aws/config
-    destination: /usr/home/jesse/.aws/config
+    link: /usr/home/jesse/.aws/config
   - source: /usr/home/jesse/env/config/bspwm/bspwmrc.js
-    destination: /usr/home/jesse/.config/bspwm/bspwmrc
+    link: /usr/home/jesse/.config/bspwm/bspwmrc
   - source: /usr/home/jesse/env/config/sxhkd/sxhkdrc
-    destination: /usr/home/jesse/.config/sxhkd/sxhkdrc
+    link: /usr/home/jesse/.config/sxhkd/sxhkdrc
   - source: /usr/home/jesse/env/config/x11/Xresources
-    destination: /usr/home/jesse/.Xresources
+    link: /usr/home/jesse/.Xresources
   - source: /usr/home/jesse/env/config/idea/idea.properties
-    destination: /usr/home/jesse/.IntelliJIdea2019.1/config/idea.properties
+    link: /usr/home/jesse/.IntelliJIdea2019.1/config/idea.properties
   - source: /usr/home/jesse/env/config/compton/compton.conf
-    destination: /usr/home/jesse/.config/compton.conf
+    link: /usr/home/jesse/.config/compton.conf
   - source: /usr/home/jesse/env/config/rofi/j2.rasi
-    destination: /usr/home/jesse/.config/rofi/j2.rasi
+    link: /usr/home/jesse/.config/rofi/j2.rasi
+  - source: /usr/home/jesse/env/config/ncmpcpp/config
+    link: /usr/home/jesse/.ncmpcpp/config
 ...

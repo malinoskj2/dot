@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+
+# get status of mpd
+
+status="$(mpc --host=/tmp/mpd-socket status)"
+playing="$(echo $status | grep -i playing)"
+
+if [ "$?" -eq "0" ]; then
+	echo " $(mpc --host=/tmp/mpd-socket status | head -n 1)"
+else 
+	exit 1
+fi

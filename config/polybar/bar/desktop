@@ -1,0 +1,45 @@
+[bar/desktop]
+modules-left = bspwm 
+
+bottom = true
+width = 46
+padding = 1
+height = 23
+offset-x = 6
+offset-y = 6
+
+font-0 = "Fira Mono:size=10;2"
+font-1 = FontAwesome:size=10;2
+
+;background = #00000000
+background = #DE7E495B
+foreground = #FFD4C0
+
+background-radius = 3
+radius = 3
+
+locale = en_US.UTF-8
+
+;line-size = 4
+
+[module/bspwm]
+type = internal/bspwm
+
+ws-icon-0 = a;A 
+ws-icon-1 = b;B 
+ws-icon-2 = c;C 
+ws-icon-default = Z
+
+pin-workspaces = true
+
+;inline-mode = false
+enable-click = true
+enable-scroll = false
+reverse-scroll = false
+fuzzy-match = true
+
+format = <label-state>
+label-focused = "%icon%"
+label-occupied = 
+label-occupied-foreground = #FFFFFF
+label-empty =

@@ -11,7 +11,7 @@ function setDisplayOpts(display, ...opts) {
 }
 
 function setBackground(bgPath) {
-  sh.exec(`feh --bg-scale ${bgPath}`);
+  sh.exec(`feh --bg-scale --no-fehbg ${bgPath}`);
 }
 
 // dep checks:
@@ -39,7 +39,10 @@ if (util.getHost() === 'home') {
   bspwm.addDesktops('HDMI-0', 'lg_a');
   bspwm.addDesktops('DP-2', 'a', 'b', 'c');
 
-  bspwm.setConfig('focused_border_color', '#FF6663');
+  //bspwm.setConfig('focused_border_color', '#FF6663');
+	//6F3950 855666
+  bspwm.setConfig('focused_border_color', '#D57755');
+  bspwm.setConfig('normal_border_color', '#855666');
 } 
 
 if (util.getHost() === 'katana') {
@@ -59,8 +62,13 @@ bspwm.addRule('IntelliJ IDEA', 'state=tiled', 'follow=on', 'border=off', 'focus=
 bspwm.addRule('mpv', 'state=tiled', 'follow=on', 'border=on', 'focus=on');
 bspwm.addRule('polybar-mybar3_DP-2', 'focus=on', 'border=on', 'floating=on');
 bspwm.addRule('Firefox:*', 'focus=on', 'border=on', 'floating=on');
+bspwm.addRule('feh', 'focus=off', 'border=off', 'floating=on',  
+	      'layer=below', 'state=floating');
+bspwm.addRule('Pqiv', 'focus=off', 'border=off', 'floating=on',  
+	      'layer=below', 'state=floating');
 
 bspwm.setConfig('border_width', '2');
+bspwm.setConfig('border_radius', '6');
 bspwm.setConfig('window_gap', '12');
 bspwm.setConfig('split_ratio', '0.56');
 bspwm.setConfig('borderless_monocle', true );

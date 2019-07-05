@@ -41,7 +41,7 @@ rofi.combi-hide-mode-prefix: false
 
 ! Rofi Styling
 rofi.width: 300
-!rofi.lines: 5
+rofi.lines: 1
 rofi.columns: 1 
 rofi.font: Fira Mono 10
 !rofi.bw: 0

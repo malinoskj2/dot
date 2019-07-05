@@ -1,30 +1,22 @@
 #!/usr/local/bin/bash
 
-# Download files at url recursively, ignore index
-alias wgetr='wget -r -np -nH --cut-dirs=3 -e robots=off -R "index.html*"'
-
 # Info
-alias iomon='top -m io -o total'
 alias df='df -H'
-alias drives='camcontrol devlist'
 
 # Misc
 alias cls='clear'
+alias rgi='rg -i'
+alias rgf='rg --files --no-ignore --hidden -g'
+alias fd='fd -H' # Search hidden directories by default
+alias xclip='xclip -selection clipboard'
+alias du='du -sh'
 alias ldate='date +"%I:%M %p"'
-
-# port mgmt
-alias portmaster_all="portmaster -m DISABLE_VULNERABILITIES=yes -aGB --no-confirm"
 
 # Overrides
 alias ls='exa -1F'
 alias ll='exa -ll'
 alias tree="exa --long --tree --level=4"
-alias rgi='rg -i'
-alias rgf='rg --files --no-ignore --hidden -g'
-alias fd='fd -H' # Search hidden directories by default
 alias cat='bat'
-alias xclip='xclip -selection clipboard'
-alias du='du -sh'
 
 # for x230
 alias zzz='/usr/local/bin/sudo /usr/sbin/zzz'
@@ -32,6 +24,7 @@ alias zzz='/usr/local/bin/sudo /usr/sbin/zzz'
 # compilation
 ## Set compilation options up front
 alias makecfg='sudo make config-recursive && sudo make install clean' 
+
 # cargo 
 alias cargotestbt='RUST_BACKTRACE=1 cargo test -- --nocapture'
 alias cargorunbt='RUST_BACKTRACE=1 cargo run'
@@ -44,5 +37,6 @@ alias tb='nc termbin.com 9999 | xclip -selection clipboard'
 alias dockerc='docker-compose'
 alias dockerm='docker-machine'
 
-# mpc
+# mpd
+alias music="ncmpcpp"
 alias mpc="mpc --host=/tmp/mpd-socket"

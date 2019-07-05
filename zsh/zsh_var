@@ -1,40 +1,41 @@
 #!/usr/local/bin/bash
-EDITOR=vim;  export EDITOR
-PAGER='less -R';   export PAGER
-BROWSER=firefox; export BROWSER
-TERMINAL=alacritty; export TERMINAL
+export EDITOR=vim
+export PAGER='less -R'
+export BROWSER=firefox
+export TERMINAL=alacritty
 
-LANG=en_US.UTF-8;   export LANG
-LC_TIME=en_US.UTF-8; export LC_TIME
-CHARSET=UTF-8;  export CHARSET
+export LANG=en_US.UTF-8
+export LC_TIME=en_US.UTF-8
+export CHARSET=UTF-8
 
 # PGP
-GPG_TTY=$(tty); export GPG_TTY
+export GPG_TTY=$(tty)
 
 # Locations
-SCRIPT_DIR=/usr/home/jesse/env/script/bin; export SCRIPT_DIR #Sym links
-XDG_CONFIG_HOME=/usr/home/jesse/.config; export XDG_CONFIG_HOME
-XCLIP_PATH=/usr/local/bin/xclip; export XCLIP_PATH
+export SCRIPT_DIR=/usr/home/jesse/env/script/bin
+export XDG_CONFIG_HOME=/usr/home/jesse/.config
+export XCLIP_PATH=/usr/local/bin/xclip
 
 if [ "$(hostname)" = 'home' ]; then
-  SS_DIR=/disk/work/screenshot; export SS_DIR;
+	export SS_DIR=/disk/work/screenshot
+	export DOWNLOAD=/disk/work/downloads
 elif [ "$(hostname)" = 'katana' ]; then
-  SS_DIR=/tmp/screenshot; export SS_DIR;
+	export SS_DIR=/tmp/screenshot
+	export DOWNLOAD=/tmp/download
 fi
 
 # jdk
 if [ $(uname) = "FreeBSD" ]; then
-JAVA_HOME=/usr/local/openjdk8; export JAVA_HOME
+	export JAVA_HOME=/usr/local/openjdk8
 elif [ $(uname) = "Linux" ]; then
-JAVA_HOME='/usr/lib/jvm/java-1.8.0-openjdk-amd64'; export JAVA_HOME
+	export JAVA_HOME='/usr/lib/jvm/java-1.8.0-openjdk-amd64'
 fi
 
 # Compilation
-CC=clang; export CC
-CXX=clang++; export CXX
-
-CMAKE_C_COMPILER=clang; export CMAKE_C_COMPILER
-CMAKE_CXX_COMPILER=clang++; export CMAKE_CXX_COMPILER
+export CC=clang
+export CXX=clang++
+export CMAKE_C_COMPILER=clang
+export CMAKE_CXX_COMPILER=clang++
 
 # docker
 export DOCKER_TLS_VERIFY="1"
@@ -43,7 +44,7 @@ export DOCKER_CERT_PATH="/home/jesse/.docker/machine/machines/docker1"
 export DOCKER_MACHINE_NAME="docker1"
 
 # node
-export NODE_PATH="/home/jesse/.npm/global/lib/node_modules"; export NODE_PATH
+export NODE_PATH="/home/jesse/.npm/global/lib/node_modules"
 
 # java
 export _JAVA_AWT_WM_NONREPARENTING=1
@@ -51,8 +52,11 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 
 # app cfg
 # exa
-LS_COLORS="di=34:ex=35"; export LS_COLORS
+export LS_COLORS="di=34:ex=35"
 
 # zsh-z
-ZSHZ_CMD=j; export ZSHZ_CMD
-LIBGIT2_SYS_USE_PKG_CONFIG=1; export LIBGIT2_SYS_USE_PKG_CONFIG 
+export ZSHZ_CMD=j
+export LIBGIT2_SYS_USE_PKG_CONFIG=1
+
+#firefox
+export MOZ_WEBRENDER=1
