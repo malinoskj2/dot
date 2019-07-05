@@ -1,6 +1,6 @@
 # ncmpcpp config
 
-mpd_host = "/usr/home/jesse/resource/mpd/socket"
+mpd_host = "/tmp/mpd-socket"
 # mpd_port = "6600"
 mpd_music_dir = "/disk/media/Music"
 mpd_connection_timeout = "5"
