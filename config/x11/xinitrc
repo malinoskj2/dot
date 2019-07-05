@@ -6,7 +6,7 @@ xsetroot -cursor_name left_ptr
 sxhkd &
 
 if [ "$(hostname)" = "home" ]; then
-  compton &
+ # compton &
 fi
 
 exec bspwm 
