@@ -9,7 +9,8 @@ path=(
 	/usr/local/sbin
 	/usr/local/bin:$HOME/bin
 	~/env/script/*/
-#	~/resource/app/bsd/**/*
+#	~/resource/app/bsd/**/
+	/disk/work/projects/rust/yamlink/target/debug
 )
 
 fpath=(
