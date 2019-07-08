@@ -1,9 +1,13 @@
 # Browser
-user_pref( "browser.link.open_newwindow.override.external", 3 );
 user_pref( "browser.discovery.enabled", false );
 user_pref( "browser.discovery.enabled", "https://duckduckgo.com" );
 user_pref( "browser.tabs.drawInTitlebar", true )
 user_pref( "browser.urlbar.placeholderName", "DuckDuckGo" )
+
+// window opening prefs
+user_pref( "browser.link.open_newwindow.override.external", 3 );
+user_pref( "browser.link.open_newwindow.restriction", 1 );
+user_pref( "browser.link.open_newwindow", 1 );
 
 user_pref( "dom.battery.enabled", false );
 user_pref( "device.sensors.enabled", false );
