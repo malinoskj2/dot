@@ -8,7 +8,7 @@
 
 current_node="$(bspc query -N -n)"
 
-if bspc node "-${1}" $2; then
+if bspc node "-${1}" "$2"; then
     [ "$1" = "s" ] && bspc node -f "$current_node" 
 else 
     [ "$1" = "s" ] && bspc node -m "$2" && bspc node -f "$current_node"
