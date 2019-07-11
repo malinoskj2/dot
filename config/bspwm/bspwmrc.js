@@ -37,7 +37,7 @@ if (util.getHost() === 'home') {
 
 
   bspwm.addDesktops('HDMI-0', 'lg_a');
-  bspwm.addDesktops('DP-2', 'a', 'b', 'c');
+  bspwm.addDesktops('DP-2', 'A', 'B', 'C');
 
   //bspwm.setConfig('focused_border_color', '#FF6663');
 	//6F3950 855666
