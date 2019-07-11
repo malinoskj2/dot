@@ -26,13 +26,20 @@ Print
 ctrl + Print
 	$HOME/env/script/sys/screenshot.zsh upload $SS_DIR
 
-#
+
 # bspwm hotkeys
-#
 
 # close and kill
 super + {_,shift + }q
 	bspc node -{c,k}
+
+# add desktop
+super + equal
+	$HOME/env/script/wm/add_desktop
+
+# remove desktop
+super + minus
+	bspc desktop "$(bspc query -D -d)" -r
 
 # focus/swapnode in the given direction
 super + {_,shift + }{j,k,i,l}
