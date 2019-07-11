@@ -25,10 +25,10 @@ locale = en_US.UTF-8
 [module/bspwm]
 type = internal/bspwm
 
-ws-icon-0 = a;A 
-ws-icon-1 = b;B 
-ws-icon-2 = c;C 
-ws-icon-default = Z
+;ws-icon-0 = a;A 
+;ws-icon-1 = b;B 
+;ws-icon-2 = c;C 
+ws-icon-default = 
 
 pin-workspaces = true
 
@@ -39,7 +39,7 @@ reverse-scroll = false
 fuzzy-match = true
 
 format = <label-state>
-label-focused = "%icon%"
+label-focused = %name% %icon%
 label-occupied = 
 label-occupied-foreground = #FFFFFF
 label-empty =

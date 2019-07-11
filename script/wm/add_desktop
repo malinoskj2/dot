@@ -1,0 +1,17 @@
+#!/usr/bin/env sh
+
+chr() {
+  [ "$1" -lt 256 ] || return 1
+  printf "\\$(printf '%03o' "$1")"
+}
+
+ord() {
+  LC_CTYPE=C printf '%d' "'$1"
+}
+
+focused_monitor="$(bspc query -M -m)"
+
+letter_asci_val="$(ord "$(bspc query -D -m --names | sed '$!d')")"
+next_letter="$(chr "$(expr $letter_asci_val + 1)")"
+
+bspc monitor $focused_monitor -a $next_letter
