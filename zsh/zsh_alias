@@ -1,7 +1,7 @@
 #!/usr/local/bin/bash
 
 # Info
-alias cmd=type -m '*'
+alias cmd="type -m '*'"
 
 # Misc
 alias df='df -H'
