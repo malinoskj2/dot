@@ -1,9 +1,10 @@
 #!/usr/local/bin/bash
 
 # Info
-alias df='df -H'
+alias cmd=type -m '*'
 
 # Misc
+alias df='df -H'
 alias cls='clear'
 alias rgi='rg -i'
 alias rgf='rg --files --no-ignore --hidden -g'
