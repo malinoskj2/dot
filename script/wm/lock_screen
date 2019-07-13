@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+
+# lock desktop screen
+
+lock_screen='/tmp/lock_screen.png'
+wallpaper="$HOME/resource/wallpapers/default/default"
+lock_icon="$HOME/resource/icons/misc/lock2.png"
+
+create_lock_screen "$wallpaper" \
+	"$lock_icon" \
+	'#835665' \
+	"$lock_screen"
+
+~/resource/script/i3lock-multimonitor/lock -i "$lock_screen"
