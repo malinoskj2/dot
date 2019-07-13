@@ -1,0 +1,19 @@
+#!/usr/bin/env sh
+
+# generates an image to use as a lockscreen 
+# $1 = the path to the background image
+# $2 = the path to the icon image 
+# $3 = fill color for the icon 
+# $4 = output path for the lock creen
+
+lock_screen="${HOME}/resource/wallpapers/default/lock_screen.png"
+
+convert -size 1920x1080 xc:transparent \
+	-gravity 'south' \
+	"$2" -fill "$3" -colorize 60 -blur 0x7 -geometry +6+86 -composite \
+	-channel RGBA \
+	"$2" -fill "$3" -colorize 100 -geometry +0+90 -composite \
+	-insert 0 $1 \
+	-swap 0,1 \
+	-composite -compose screen \
+	"$4"
