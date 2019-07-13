@@ -26,8 +26,11 @@ Print
 ctrl + Print
 	$HOME/env/script/sys/screenshot.zsh upload $SS_DIR
 
-
 # bspwm hotkeys
+
+# locak desktop screen
+super + backslash
+	$HOME/env/script/wm/lock_screen
 
 # close and kill
 super + {_,shift + }q
