@@ -30,12 +30,12 @@ import "${FILE_PATH}"
 if [ "$UPLOAD" = "NO" ]; then
   echo "screenshot saved @ ${FILE_PATH}" 
   notify-send -t 5000 'Capture Finished!' "${FILE_PATH}" -i ${FILE_PATH}
-  echo $FILE_PATH | xclip -selection clipboard 
+  echo $FILE_PATH | tr -d '\n' | xclip -selection clipboard 
 else 
   OUTPUT=$(curl -F file="@${FILE_PATH}" \
   https://vgy.me/upload | jq -r .url | sed -e 's/u\///g' -e 's/$/.jpg/')
   echo $OUTPUT 
-  echo $OUTPUT | xclip -selection clipboard &&
+  echo $OUTPUT | tr -d '\n' | xclip -selection clipboard &&
   notify-send -t 5000 'Upload Finished!' "${OUTPUT}" -i ${FILE_PATH}
 fi
 
