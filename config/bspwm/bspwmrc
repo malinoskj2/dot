@@ -79,7 +79,7 @@ set_katana () {
 set_common () {
 
   # set bg 
-  feh --bg-scale --no-fehbg "$default_wallpaper"
+  feh --bg-fill --no-fehbg "$default_wallpaper"
 
   # remove desktops
   bspc desktop 'Desktop' -r
