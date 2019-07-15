@@ -1,0 +1,12 @@
+" misc settings
+" set number
+set nocompatible 
+
+filetype on
+set autoindent
+set scrolloff=3
+
+" tab/space
+set ts=2
+set expandtab
+

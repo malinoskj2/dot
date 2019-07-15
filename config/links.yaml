@@ -35,4 +35,6 @@ links:
     link: /usr/home/jesse/.config/rofi/j2.rasi
   - source: /usr/home/jesse/env/config/ncmpcpp/config
     link: /usr/home/jesse/.ncmpcpp/config
+  - source: /usr/home/jesse/env/config/vim/vimrc
+    link: /usr/home/jesse/.vimrc
 ...
