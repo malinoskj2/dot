@@ -121,9 +121,15 @@ exit_init () {
 ###########
 
 if check_dependencies; then
-  echo "inside check deps"
-  [ "$(hostname)" = 'home' ]    && set_home   && set_common && exit_init
-  [ "$(hostname)" = 'katana' ]  && set_katana && set_common && exit_init 
+  case "$(hostname)" in
+  "home")
+      set_home
+      ;;
+  "katana")
+      set_katana
+      ;;
+  esac && \
+  set_common && exit_init
 else 
   printf %s\\n "missing dependency"
 fi
