@@ -22,7 +22,7 @@ normal_border_color='#855666'
 
 ## deps
 ext_files="$default_wallpaper $bar_launch_script"
-ext_commands="bpsc xrandr feh xrdb"
+ext_commands="bspc xrandr feh xrdb"
 
 ##############
 ## function ##
@@ -33,25 +33,30 @@ exit_if_missing () {
   if [ "$1" = 'command' ]; then 
     [ "$(command -v "$2")" ] || ( printf %s\\n "$2 not found " && exit 1 ) 
   elif [ "$1" = 'variable' ]; then
-    [ -n "$2" ] || ( printf %s\\n "$2 not found " && exit 1 ) 
+    [ -n "$2" ] || ( printf %s\\n "$2 not found " && exit 1 )
   elif [ "$1" = 'path' ]; then
-    [ -e "$2" ] || ( printf %s\\n "$2 not found " && exit 1 ) 
+    [ -e "$2" ] || ( printf %s\\n "$2 not found " && exit 1 )
   fi
 }
 
 check_dependencies () { 
-  [ -n "$ext_files" ] && echo "$ext_files" \
-  | xargs printf %s\\n | while read -r i; do
-    exit_if_missing 'path' "$i"
-  done
-  [ -n "$ext_commands" ] && echo "$ext_commands" \
-  | xargs printf %s\\n | while read -r i; do
-    exit_if_missing 'command' "$i"
-  done
-  [ -n "$ext_variables" ] && echo "$ext_variables" \
-  | xargs printf %s\\n | while read -r i; do
-    exit_if_missing 'variable' "$i"
-  done
+  if [ -n "$ext_files" ]; then
+    echo "$ext_files" | tr ' ' '\n' | while read -r i; do
+      exit_if_missing 'path' "$i"
+    done
+  fi
+
+  if [ -n "$ext_commands" ]; then
+    echo "$ext_commands" | tr ' ' '\n' | while read -r i; do
+      exit_if_missing 'command' "$i"
+    done
+  fi
+
+  if [ -n "$ext_variables" ]; then 
+    echo "$ext_variables" | tr ' ' '\n' | while read -r i; do
+      exit_if_missing 'variable' "$i"
+    done
+  fi
 }
 
 # set rules for home hostname
@@ -115,10 +120,10 @@ exit_init () {
 ## start ##
 ###########
 
-check_dependencies
-
-( [ "$(hostname)" = 'home' ]    && set_home 
-  [ "$(hostname)" = 'katana' ]  && set_katana ) 
-
-set_common
-exit_init
+if check_dependencies; then
+  echo "inside check deps"
+  [ "$(hostname)" = 'home' ]    && set_home   && set_common && exit_init
+  [ "$(hostname)" = 'katana' ]  && set_katana && set_common && exit_init 
+else 
+  printf %s\\n "missing dependency"
+fi

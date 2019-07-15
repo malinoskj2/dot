@@ -21,7 +21,7 @@ links:
     link: /usr/home/jesse/.npmrc
   - source: /usr/home/jesse/env/config/aws/config
     link: /usr/home/jesse/.aws/config
-  - source: /usr/home/jesse/env/config/bspwm/bspwmrc.js
+  - source: /usr/home/jesse/env/config/bspwm/bspwmrc
     link: /usr/home/jesse/.config/bspwm/bspwmrc
   - source: /usr/home/jesse/env/config/sxhkd/sxhkdrc
     link: /usr/home/jesse/.config/sxhkd/sxhkdrc
