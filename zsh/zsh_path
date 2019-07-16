@@ -13,6 +13,13 @@ path=(
 	/disk/work/projects/rust/yamlink/target/debug
 )
 
+if [ "$(hostname)" = 'katana' ];then
+  path=(
+  	~/resource/app/linux
+	$path
+  )
+fi
+
 fpath=(
 	~/env/zsh/mod/* 
 	$fpath
