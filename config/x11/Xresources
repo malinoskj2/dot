@@ -1,4 +1,4 @@
-#include "/usr/home/jesse/env/config/x11/colors.h"
+#include "./colors.h"
 
 ! Set Colors
 *.foreground:  FOREGROUND

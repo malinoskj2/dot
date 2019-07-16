@@ -12,8 +12,8 @@ export CHARSET=UTF-8
 export GPG_TTY=$(tty)
 
 # Locations
-export SCRIPT_DIR=/usr/home/jesse/env/script/bin
-export XDG_CONFIG_HOME=/usr/home/jesse/.config
+export SCRIPT_DIR="$HOME/env/script/bin"
+export XDG_CONFIG_HOME="$HOME/.config"
 export XCLIP_PATH=/usr/local/bin/xclip
 
 if [ "$(hostname)" = 'home' ]; then
