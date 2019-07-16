@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+# temporarily disable GPG signing and commit
+git -c commit.gpgsign=false commit
