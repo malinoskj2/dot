@@ -4,15 +4,16 @@ modules-right = battery
 bottom = true
 width = 36
 padding = 3
-;height = 27
-offset-x = 1202
+height = 24
+offset-x = 1221
 background-radius = 3
 offset-y = 6
 radius = 3
 
 font-0 = FontAwesome:size=10;2
 ; background = #222127
-background = #DE7E495B
+;background = #DE7E495B
+background = #AD4955
 foreground = #FFD4C0
 
 [module/battery]
