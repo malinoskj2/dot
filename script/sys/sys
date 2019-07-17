@@ -2,7 +2,11 @@
 # Sy s
 # Display a few stats about system @ current time 
 function battery_rem_cap() {
-  acpiconf -i 0 | grep -i -e "Remaining capacity"
+  if [ "$(uname)" = 'FreeBSD' ]; then
+    acpiconf -i 0 | grep -i -e "Remaining capacity"
+  elif [ "$(uname)" = 'Linux' ]; then 
+    cat /sys/class/power_supply/BAT0/capacity 
+  fi
 } 
 
 function battery_rem_time() {
@@ -10,11 +14,20 @@ function battery_rem_time() {
 }
 
 function charging_state() {
-  acpiconf -i 0 | grep -i -e "State"
+  if [ "$(uname)" = 'FreeBSD' ]; then
+    acpiconf -i 0 | grep -i -e "State"
+  elif [ "$(uname)" = 'Linux' ]; then 
+    cat /sys/class/power_supply/BAT0/status
+  fi
 }
 
 function cpu_temp() {
-  sysctl dev.cpu | grep -i "temperature" 
+  if [ "$(uname)" = 'FreeBSD' ]; then 
+    sysctl dev.cpu | grep -i "temperature" 
+  elif [ "$(uname)" = 'Linux' ]; then 
+    temp_milli="$(cat /sys/class/thermal/thermal_zone*/temp)"
+    temp=`expr $temp_milli / 100`
+  fi
 }
 
 function cpu_freq() {
