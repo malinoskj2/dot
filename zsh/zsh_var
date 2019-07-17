@@ -19,6 +19,13 @@ export XCLIP_PATH=/usr/local/bin/xclip
 if [ "$(hostname)" = 'home' ]; then
 	export SS_DIR=/disk/work/screenshot
 	export DOWNLOAD=/disk/work/downloads
+
+# docker
+  export DOCKER_TLS_VERIFY="1"
+  export DOCKER_HOST="tcp://192.168.99.100:2376"
+  export DOCKER_CERT_PATH="/home/jesse/.docker/machine/machines/docker1"
+  export DOCKER_MACHINE_NAME="docker1"
+
 elif [ "$(hostname)" = 'katana' ]; then
 	export SS_DIR=/tmp/screenshot
 	export DOWNLOAD=/tmp/download
@@ -28,7 +35,6 @@ fi
 if [ $(uname) = "FreeBSD" ]; then
 	export JAVA_HOME=/usr/local/openjdk8
 elif [ $(uname) = "Linux" ]; then
-	export JAVA_HOME='/usr/lib/jvm/java-1.8.0-openjdk-amd64'
 fi
 
 # Compilation
@@ -37,11 +43,6 @@ export CXX=clang++
 export CMAKE_C_COMPILER=clang
 export CMAKE_CXX_COMPILER=clang++
 
-# docker
-export DOCKER_TLS_VERIFY="1"
-export DOCKER_HOST="tcp://192.168.99.100:2376"
-export DOCKER_CERT_PATH="/home/jesse/.docker/machine/machines/docker1"
-export DOCKER_MACHINE_NAME="docker1"
 
 # node
 export NODE_PATH="/home/jesse/.npm/global/lib/node_modules"
