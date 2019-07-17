@@ -4,11 +4,8 @@ online_wifi=" "
 online_ethernet=" "
 offline=" "
 
-ping -c 1 -W 2000 1.1.1.1 > /dev/null 2>&1
-
-if [ "$?" -eq "0" ]; then
-	ifconfig | grep -i "wlan" >/dev/null
-	if [ "$?" -eq "0" ]; then
+if ifconfig | grep status | sed 1q | grep active >/dev/null; then
+	if ifconfig | grep -i "wlan" >/dev/null; then
 	  echo $online_wifi
 	else 
 	  echo $online_ethernet

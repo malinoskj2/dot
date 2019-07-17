@@ -26,14 +26,14 @@ elif [ "$(hostname)" = 'katana' ]; then
 
 K_CFG_FILE=$HOME/env/config/polybar/bar/desktop
 K_CFG_FILE2=$HOME/env/config/polybar/bar/k_time
-K_CFG_FILE3=$HOME/env/config/polybar/bar/music
-K_CFG_FILE4=$HOME/env/config/polybar/bar/k_network
+K_CFG_FILE3=$HOME/env/config/polybar/bar/k_network
+K_CFG_FILE4=$HOME/env/config/polybar/bar/k_battery
 
 # Launch bar1 and bar2
 polybar desktop --config=$K_CFG_FILE &
 polybar time --config=$K_CFG_FILE2 & 
-polybar network --config=$K_CFG_FILE4
-# polybar music --config=$K_CFG_FILE3 &
+polybar network --config=$K_CFG_FILE3 & 
+polybar battery --config=$K_CFG_FILE4
 
 fi
 

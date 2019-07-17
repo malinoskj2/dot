@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-if [ "$(hostname)" = 'home']; then 
+if [ "$(hostname)" = 'home' ]; then 
  xset s off -dpms	# disable screen power saving
  xset m 0 0 		# disable mouse accel/set sense
 elif [ "$(hostname)" = 'katana' ]; then

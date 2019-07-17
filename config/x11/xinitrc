@@ -8,7 +8,7 @@ sxhkd &
 if [ "$(hostname)" = "home" ]; then
   $HOME/resource/app/bsd/compton/compton &
 elif [ "$(hostname)" = 'katana' ]; then
-  compton &
+  $HOME/resource/app/linux/compton/compton &
 fi
 
 exec bspwm 
