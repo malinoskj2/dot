@@ -1,0 +1,20 @@
+#!/usr/bin/env sh
+
+set_vol_percentage () {
+  amixer set Master "${1}%" >/dev/null 
+}
+
+show_vol_percentage () {
+  amixer get Master | grep '%' | awk '{ print $4 }'
+}
+
+if [ "$1" = 'vol' ] && [ -n "$2" ]; then
+  set_vol_percentage "$2" 
+  show_vol_percentage
+elif [ -n "$1" ]; then
+  set_vol_percentage "$1"
+  show_vol_percentage
+else 
+  show_vol_percentage
+fi
+

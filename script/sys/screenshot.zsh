@@ -16,12 +16,17 @@ else
   UPLOAD="NO" 
 fi
 
+# set SS_DIR
 if [ -z "$2" ]; then
   SS_DIR="/tmp/screenshot"
   mkdir -p "${SS_DIR}"
 else
   SS_DIR="$2"
 fi
+
+# create SS_DIR if it does not exist
+[ -e "$SS_DIR" ] || mkdir -p $SS_DIR 
+
 
 ## Take the SS and save
 FILE_PATH="${SS_DIR}/ss_$(date +%s).jpg"
