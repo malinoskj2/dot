@@ -1,5 +1,10 @@
 #!/usr/bin/env sh
 
-xset s off -dpms	# disable screen power saving
-xset m 0 0 		# disable mouse accel/set sense
+if [ "$(hostname)" = 'home']; then 
+ xset s off -dpms	# disable screen power saving
+ xset m 0 0 		# disable mouse accel/set sense
+elif [ "$(hostname)" = 'katana' ]; then
+  xinput --set-prop "10" "libinput Accel Speed" -0.5
+fi
+
 xset r rate 260 55	#  repeat delay/rate
