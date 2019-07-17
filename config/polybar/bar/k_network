@@ -1,0 +1,42 @@
+[bar/network]
+modules-right = net
+
+bottom = true
+width = 28
+;height = 27
+offset-x = 92.5%
+background-radius = 3
+offset-y = 5
+radius = 3
+
+font-0 = "Fira Mono:size=20;2"
+font-1 = FontAwesome:size=10;2
+;background = #DE7E495B
+;background = #727375
+background = #00000000
+foreground = #FFD4C0
+
+border-color = ${xrdb:color0}
+;border-top-size = 0;
+;border-left-size = 10;
+
+[module/net]
+type = internal/network
+interface = wlp3s0
+
+interval = 10.0
+unknown-as-up = false
+
+format-connected = <label-connected>
+format-disconnected = <label-disconnected>
+
+label-connected =      
+label-disconnected =  
+
+;label-connected-padding-right = 1
+;klabel-connected-padding-left = 1 
+;label-connected-active-font = 0
+
+;label-disconnected-padding-right = 1
+;label-disconnected-padding-left = 1
+;label-disconnected-active-font = 0
