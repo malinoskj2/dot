@@ -18,7 +18,7 @@ alias ls='exa -1F'
 alias ll='exa -ll'
 alias tree="exa --long --tree --level=4"
 alias cat='bat'
-alias neofetch="neofetch --disable Theme --disable Icons"
+alias neofetch="neofetch --disable Theme --disable Icons --disable Packages"
 
 # for x230
 alias zzz='/usr/local/bin/sudo /usr/sbin/zzz'
