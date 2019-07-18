@@ -20,3 +20,6 @@ xmodmap -e "keycode 46 = l L Right" # l binding
 
 xmodmap -e "keycode 30 = u U Home" # Mod + u -> Home
 xmodmap -e "keycode 32 = o O End"  # Mod + o -> End
+
+xmodmap -e "keycode 36 = Return Return Escape" # Mod + Return -> Escape
+xmodmap -e "keycode 9 = " # Disable Escape key
