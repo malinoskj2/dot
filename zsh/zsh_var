@@ -1,63 +1,58 @@
 #!/usr/local/bin/bash
-export EDITOR=vim
-export PAGER='less -R'
-export BROWSER=firefox
-export TERMINAL=alacritty
+EDITOR=vim;           export EDITOR
+PAGER='less -R';      export PAGER
+BROWSER=firefox;      export BROWSER
+TERMINAL=alacritty;   export TERMINAL
 
-export LANG=en_US.UTF-8
-export LC_TIME=en_US.UTF-8
-export CHARSET=UTF-8
+LANG=en_US.UTF-8;     export LANG
+LC_TIME=en_US.UTF-8;  export LC_TIME
+CHARSET=UTF-8;        export CHARSET
 
 # PGP
-export GPG_TTY=$(tty)
+GPG_TTY=$(tty);       export GPG_TTY
 
 # Locations
-export SCRIPT_DIR="$HOME/env/script/bin"
-export XDG_CONFIG_HOME="$HOME/.config"
+SCRIPT_DIR="$HOME/env/script/bin"; export SCRIPT_DIR
+XDG_CONFIG_HOME="$HOME/.config";   export XDG_CONFIG_HOME
 export XCLIP_PATH=/usr/local/bin/xclip
 
+# host specific
 if [ "$(hostname)" = 'home' ]; then
-	export SS_DIR=/disk/work/screenshot
-	export DOWNLOAD=/disk/work/downloads
-
+# locations
+	SS_DIR=/disk/work/screenshot; export SS_DIR
+  DOWNLOAD=/disk/work/downloads; export DOWNLOAD
+  JAVA_HOME=/usr/local/openjdk8; export JAVA_HOME
 # docker
-  export DOCKER_TLS_VERIFY="1"
-  export DOCKER_HOST="tcp://192.168.99.100:2376"
-  export DOCKER_CERT_PATH="/home/jesse/.docker/machine/machines/docker1"
-  export DOCKER_MACHINE_NAME="docker1"
+  DOCKER_TLS_VERIFY="1";                   export DOCKER_TLS_VERIFY
+  DOCKER_HOST="tcp://192.168.99.100:2376"; export DOCKER_HOST
+  DOCKER_CERT_PATH="/home/jesse/.docker/machine/machines/docker1"; 
+  export DOCKER_CERT_PATH
+  DOCKER_MACHINE_NAME="docker1"; export DOCKER_MACHINE_NAME
 
 elif [ "$(hostname)" = 'katana' ]; then
-	export SS_DIR=/tmp/screenshot
-	export DOWNLOAD=/tmp/download
-fi
-
-# jdk
-if [ $(uname) = "FreeBSD" ]; then
-	export JAVA_HOME=/usr/local/openjdk8
-elif [ $(uname) = "Linux" ]; then
+# locations
+  SS_DIR=/tmp/screenshot; export SS_DIR
+  DOWNLOAD=/tmp/download; export DOWNLOAD
 fi
 
 # Compilation
-export CC=clang
-export CXX=clang++
-export CMAKE_C_COMPILER=clang
-export CMAKE_CXX_COMPILER=clang++
-
+CC=clang; export CC
+CXX=clang++; export CXX
+CMAKE_C_COMPILER=clang; export CMAKE_C_COMPILER
+CMAKE_CXX_COMPILER=clang++; export CMAKE_CXX_COMPILER
 
 # node
-export NODE_PATH="/home/jesse/.npm/global/lib/node_modules"
+NODE_PATH="/home/jesse/.npm/global/lib/node_modules"; export NODE_PATH
 
 # java
-export _JAVA_AWT_WM_NONREPARENTING=1
-# export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -DactionSystem.xWindow.remove.focus.from.nonFocusable.popups=false -Dsun.java2d.opengl=true'
+_JAVA_AWT_WM_NONREPARENTING=1; export _JAWA_AWT_WM_NONREPARENTING
 
-# app cfg
 # exa
-export LS_COLORS="di=34:ex=35"
+LS_COLORS="di=34:ex=35"; export LS_COLORS
 
 # zsh-z
-export ZSHZ_CMD=j
-export LIBGIT2_SYS_USE_PKG_CONFIG=1
+ZSHZ_CMD=j; export ZSHZ_CMD
+LIBGIT2_SYS_USE_PKG_CONFIG=1; export LIBGIT2_SYS_USE_PKG_CONFIG
 
 #firefox
-export MOZ_WEBRENDER=1
+MOZ_WEBRENDER=1; export MOZ_WEBRENDER
