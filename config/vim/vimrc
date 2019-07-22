@@ -1,5 +1,4 @@
 " misc settings
-" set number
 set nocompatible 
 
 filetype on
@@ -10,3 +9,5 @@ set scrolloff=3
 set ts=2
 set expandtab
 
+" key
+nnoremap <CR> i
