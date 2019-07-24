@@ -1,20 +1,21 @@
-#!/usr/local/bin/bash
-EDITOR=vim;           export EDITOR
-PAGER='less -R';      export PAGER
-BROWSER=firefox;      export BROWSER
-TERMINAL=alacritty;   export TERMINAL
+#!/usr/bin/env sh
 
-LANG=en_US.UTF-8;     export LANG
-LC_TIME=en_US.UTF-8;  export LC_TIME
-CHARSET=UTF-8;        export CHARSET
+EDITOR=vim;  export EDITOR
+PAGER='less -R';   export PAGER
+BROWSER=firefox; export BROWSER
+TERMINAL=alacritty; export TERMINAL
+
+LANG=en_US.UTF-8;   export LANG
+LC_TIME=en_US.UTF-8; export LC_TIME
+CHARSET=UTF-8;  export CHARSET
 
 # PGP
-GPG_TTY=$(tty);       export GPG_TTY
+GPG_TTY=$(tty); export GPG_TTY
 
 # Locations
-SCRIPT_DIR="$HOME/env/script/bin"; export SCRIPT_DIR
-XDG_CONFIG_HOME="$HOME/.config";   export XDG_CONFIG_HOME
-XCLIP_PATH=/usr/local/bin/xclip;   export XCLIP_PATH
+SCRIPT_DIR=/usr/home/jesse/env/script/bin; export SCRIPT_DIR #Sym links
+XDG_CONFIG_HOME=/usr/home/jesse/.config; export XDG_CONFIG_HOME
+XCLIP_PATH=/usr/local/bin/xclip; export XCLIP_PATH
 
 # host specific
 if [ "$(hostname)" = 'home' ]; then
@@ -38,15 +39,16 @@ fi
 # Compilation
 CC=clang; export CC
 CXX=clang++; export CXX
+
 CMAKE_C_COMPILER=clang; export CMAKE_C_COMPILER
 CMAKE_CXX_COMPILER=clang++; export CMAKE_CXX_COMPILER
 
 # node
-NODE_PATH="/home/jesse/.npm/global/lib/node_modules"; export NODE_PATH
+export NODE_PATH="/home/jesse/.npm/global/lib/node_modules"; export NODE_PATH
 
 # java
 export _JAVA_AWT_WM_NONREPARENTING=1
-export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
+# export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -DactionSystem.xWindow.remove.focus.from.nonFocusable.popups=false -Dsun.java2d.opengl=true'
 
 # exa
 LS_COLORS="di=34:ex=35"; export LS_COLORS
@@ -54,7 +56,6 @@ LS_COLORS="di=34:ex=35"; export LS_COLORS
 # zsh-z
 ZSHZ_CMD=j; export ZSHZ_CMD
 LIBGIT2_SYS_USE_PKG_CONFIG=1; export LIBGIT2_SYS_USE_PKG_CONFIG
-
 #firefox
 MOZ_WEBRENDER=1; export MOZ_WEBRENDER
 
