@@ -9,6 +9,7 @@ path=(
 	/usr/local/sbin
 	/usr/local/bin:$HOME/bin
 	~/env/script/*/
+   /disk/work/projects/rust/yamlink/target/debug
 )
 
 
