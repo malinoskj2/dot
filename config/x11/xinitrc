@@ -6,7 +6,7 @@ xsetroot -cursor_name left_ptr
 sxhkd &
 
 if [ "$(hostname)" = "home" ]; then
-  $HOME/resource/app/bsd/compton/compton &
+  compton &
 elif [ "$(hostname)" = 'katana' ]; then
   $HOME/resource/app/linux/compton/compton &
 fi

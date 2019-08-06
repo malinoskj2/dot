@@ -17,8 +17,8 @@ gapless_monocle='true'
 focus_follows_pointer='false'
 
 # colors
-focused_border_color='#E95420'
-normal_border_color='#855666'
+focused_border_color='#E74445'
+normal_border_color='#B8B9B4'
 
 ## deps
 ext_files="$default_wallpaper $bar_launch_script"

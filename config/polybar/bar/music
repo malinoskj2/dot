@@ -14,7 +14,7 @@ font-0 = "Fira Mono:size=10;2"
 font-1 = FontAwesome:size=10;2
 ;background = #DE7E495B
 background = #00000000
-foreground = #FFD4C0
+foreground = #B8B9B4
 
 border-color = ${xrdb:color0}
 ;border-top-size = 0;
