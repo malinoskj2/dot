@@ -51,3 +51,6 @@
 #urlbar {
    background-color: transparent !important; 
 }
+
+/* dont show url at bottom left */
+#statuspanel-label {display: none;}
