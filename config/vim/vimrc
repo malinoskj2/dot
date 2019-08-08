@@ -10,3 +10,5 @@ set ts=2
 set expandtab
 
 " key
+nnoremap <CR> i
+nnoremap i <Nop>
