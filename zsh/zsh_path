@@ -9,18 +9,16 @@ path=(
 	/usr/local/sbin
 	/usr/local/bin:$HOME/bin
 	~/env/script/*/
-   /disk/work/projects/rust/yamlink/target/debug
+#	~/resource/app/bsd/**/
+	/disk/work/projects/rust/yamlink/target/debug
 )
 
-
-case "$(hostname)" in
-  'katana')
-    path=( ~/resource/app/linux	$path )
-    ;;
-  'home')
-    path=( ~/resource/app/bsd $path )
-    ;;
-esac
+if [ "$(hostname)" = 'katana' ];then
+  path=(
+  	~/resource/app/linux
+	$path
+  )
+fi
 
 fpath=(
 	~/env/zsh/mod/* 
