@@ -3,7 +3,7 @@
 #
 
 # launch terminal emulator
-super + t
+super + Return 
 	$TERMINAL
 
 # launch browser
@@ -28,7 +28,7 @@ ctrl + Print
 
 # bspwm hotkeys
 
-# locak desktop screen
+# lock desktop screen
 super + backslash
 	$HOME/env/script/wm/lock_screen
 
@@ -59,3 +59,7 @@ super + shift + {u,o}
 # resize
 super + alt + {j,k,i,l}
         bspc node {@west -r -10,@south -r +10,@north -r -10,@east -r +10}
+
+# focus/swapnode in the given direction
+super + s
+	$HOME/env/script/wm/toggle_gap 12 130

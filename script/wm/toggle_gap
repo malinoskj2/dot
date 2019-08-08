@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+
+size_a="$1"
+size_b="$2"
+
+if [ "$(bspc config window_gap)" = "$size_a" ]; then
+  bspc config window_gap "$size_b"
+else
+  bspc config window_gap "$size_a"
+fi
+ 
