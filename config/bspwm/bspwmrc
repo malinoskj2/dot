@@ -103,7 +103,7 @@ set_common () {
 
   bspc rule -a 'Firefox:Navigator' 'desktop=a' 'state=tiled' 'follow=on' 'border=off' 'focus=on'
   bspc rule -a 'Alacritty' 'state=tiled' 'follow=on' 'border=on' 'focus=on'
-  bspc rule -a 'IntelliJ IDEA' 'state=tiled' 'follow=on' 'border=off' 'focus=on'
+  bspc rule -a 'IntelliJ IDEA' 'desktop=b' 'state=tiled' 'follow=on' 'border=off' 'focus=on'
   bspc rule -a 'mpv' 'state=tiled' 'follow=on' 'border=on' 'focus=on'
   bspc rule -a 'polybar-mybar3_DP-2' 'focus=on' 'border=on' 'floating=on'
   bspc rule -a 'Firefox:*' 'focus=on' 'border=on' 'floating=on'
