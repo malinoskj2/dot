@@ -48,6 +48,9 @@ NODE_PATH="/home/jesse/.npm/global/lib/node_modules"; export NODE_PATH
 export _JAVA_AWT_WM_NONREPARENTING=1
 # export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
 
+# idea
+IDEA_PROPERTIES=$HOME/env/config/idea/idea.properties
+
 # exa
 LS_COLORS="di=34:ex=35"; export LS_COLORS
 
