@@ -1,5 +1,6 @@
 [bar/desktop]
 modules-left = bspwm 
+modules-right = date
 
 bottom = true
 width = 100%
@@ -44,3 +45,14 @@ label-focused = %name% %icon%
 label-occupied = 
 label-occupied-foreground = #FFFFFF
 label-empty =
+
+[module/date]
+type = internal/date
+date = %I:%M
+interval = 60.0
+
+label-padding-right = 0%
+label-padding-left = 0%
+
+label-active-font = 0
+                              
