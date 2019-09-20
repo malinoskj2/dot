@@ -4,7 +4,7 @@ modules-left = bspwm
 bottom = true
 width = 100%
 padding = 1
-height = 23
+height = 32
 offset-x = 0
 offset-y = 0
 
