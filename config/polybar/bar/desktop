@@ -17,8 +17,8 @@ background = #db4a4f
 :foreground = #FFD4C0
 foreground = #B8B9B4
 
-background-radius = 3
-radius = 3
+;background-radius = 3
+;radius = 3
 
 locale = en_US.UTF-8
 
