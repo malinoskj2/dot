@@ -15,8 +15,8 @@ CFG_FILE3=$HOME/env/config/polybar/bar/music
 CFG_FILE4=$HOME/env/config/polybar/bar/network
 
 # Launch bar1 and bar2
-polybar desktop --config=$CFG_FILE &
-polybar time --config=$CFG_FILE2 
+polybar desktop --config=$CFG_FILE 
+# polybar time --config=$CFG_FILE2 
 # polybar music --config=$CFG_FILE3 &
 # polybar network --config=$CFG_FILE4
 
