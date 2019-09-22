@@ -37,12 +37,12 @@ super + {_,shift + }q
 	bspc node -{c,k}
 
 # add desktop
-super + equal
-	$HOME/env/script/wm/add_desktop
+#super + equal
+#	$HOME/env/script/wm/add_desktop
 
 # remove desktop
-super + minus
-	bspc desktop "$(bspc query -D -d)" -r
+#super + minus
+#	bspc desktop "$(bspc query -D -d)" -r
 
 # focus/swapnode in the given direction
 super + {_,shift + }{j,k,i,l}
@@ -66,5 +66,5 @@ super + s
 	$HOME/env/script/wm/toggle_gap 12 130
 
 # volume level
-super + {9,0}
+super + {minus,equal}
   mixer vol {-1,+1}
