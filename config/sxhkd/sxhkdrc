@@ -56,6 +56,7 @@ super + {u,o}
 super + shift + {u,o}
 	bspc node -d {prev,next}.local 
 
+
 # resize
 super + alt + {j,k,i,l}
         bspc node {@west -r -10,@south -r +10,@north -r -10,@east -r +10}
@@ -63,3 +64,7 @@ super + alt + {j,k,i,l}
 # toggle gap
 super + s
 	$HOME/env/script/wm/toggle_gap 12 130
+
+# volume level
+super + {9,0}
+  mixer vol {-1,+1}
