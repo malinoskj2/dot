@@ -67,4 +67,4 @@ super + s
 
 # volume level
 super + {minus,equal}
-  mixer vol {-1,+1}
+  $HOME/env/script/sys/mixer vol {-1,+1}

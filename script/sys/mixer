@@ -8,7 +8,18 @@ show_vol_percentage () {
   amixer get Master | grep '%' | awk '{ print $4 }'
 }
 
-if [ "$1" = 'vol' ] && [ -n "$2" ]; then
+if [ "$(uname)" = 'Linux' ]; then
+if [ "$1" = 'vol' ] && [ '+' = "$(echo "$2" | cut -c 1)" ]; then
+  new_vol=`expr "$(show_vol_value)" + "$(echo "$2" | cut -c 2-)"`
+  set_vol_percentage "$new_vol"
+  show_vol_percentage
+elif [ "$1" = 'vol' ] && [ '-' = "$(echo "$2" | cut -c 1)" ]; then
+  cur_val="$(show_vol_value)"
+  decr_val="2"
+  new_val=`expr "$cur_val" - "$decr_val"`
+  set_vol_percentage "$new_val"
+  show_vol_percentage
+elif [ "$1" = 'vol' ] && [ -n "$2" ]; then
   set_vol_percentage "$2" 
   show_vol_percentage
 elif [ -n "$1" ]; then
@@ -17,4 +28,7 @@ elif [ -n "$1" ]; then
 else 
   show_vol_percentage
 fi
-
+elif [ "$(uname)" = 'FreeBSD' ]; then
+  /usr/sbin/mixer "$@"
+  dunstify "$(mixer vol | cut -d':' -f2)" --replace=1
+fi
