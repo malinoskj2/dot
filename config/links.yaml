@@ -37,4 +37,6 @@ links:
     link: /home/jesse/.ncmpcpp/config
   - source: /home/jesse/env/config/vim/vimrc
     link: /home/jesse/.vimrc
+  - source: /home/jesse/env/config/dunst/dunstrc
+    link: /home/jesse/.config/dunst/runstrc
 ...
