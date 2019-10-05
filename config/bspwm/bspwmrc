@@ -62,7 +62,7 @@ check_dependencies () {
 # set rules for home hostname
 set_home () {
   # set display config
-  xrandr --output DP-2 --primary --mode 1920x1080 --rotate normal --rate 144.0 \
+  xrandr --output DP-2 --primary --mode 1920x1080 --rotate normal --rate 144.0 --dpi 92 \
 	  --output HDMI-0 --left-of DP-2 --mode 1366x768 --rotate left --rate 60.0
   
   # add desktops
