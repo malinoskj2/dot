@@ -125,6 +125,9 @@ if check_dependencies; then
   "home")
       set_home
       ;;
+  "home2")
+      set_home
+      ;;
   "katana")
       set_katana
       ;;

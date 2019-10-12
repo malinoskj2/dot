@@ -5,7 +5,8 @@ xrdb -merge ~/.Xresources
 xsetroot -cursor_name left_ptr 
 sxhkd &
 
-if [ "$(hostname)" = "home" ]; then
+if [ "$(hostname)" = "home" ] ||
+   [ "$(hostname)" = "home2" ]; then
   $HOME/resource/app/bsd/compton &
   dunst &
 elif [ "$(hostname)" = 'katana' ]; then
