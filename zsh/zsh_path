@@ -9,11 +9,11 @@ path=(
 	/usr/local/sbin
 	/usr/local/bin:$HOME/bin
 	~/env/script/*/
-#	~/resource/app/bsd/**/
 	/disk/work/projects/rust/yamlink/target/debug
 )
 
-if [ "$(hostname)" = 'katana' ];then
+if [ "$(hostname)" = 'katana' ] || 
+   [ "$(hostname)" = 'home2' ];then
   path=(
   	~/resource/app/linux
 	$path
