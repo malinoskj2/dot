@@ -29,8 +29,12 @@ if [ "$(hostname)" = 'home' ]; then
   export DOCKER_CERT_PATH
   DOCKER_MACHINE_NAME="docker1"; export DOCKER_MACHINE_NAME
 
-elif [ "$(hostname)" = 'katana' ]; then
+elif [ "$(hostname)" = 'home2' ]; then
 # locations
+  SS_DIR=/disk/work/screenshot; export SS_DIR
+  DOWNLOAD=/disk/work/download; export DOWNLOAD
+
+elif [ "$(hostname)" = 'katana' ]; then
   SS_DIR=/tmp/screenshot; export SS_DIR
   DOWNLOAD=/tmp/download; export DOWNLOAD
 fi

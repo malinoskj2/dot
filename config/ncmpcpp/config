@@ -2,7 +2,7 @@
 
 mpd_host = "/tmp/mpd-socket"
 # mpd_port = "6600"
-mpd_music_dir = "/zstorage/media/Music"
+mpd_music_dir = "/disk/media/media/Music"
 mpd_connection_timeout = "5"
 mpd_crossfade_time = "5"
 
