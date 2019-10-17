@@ -33,7 +33,7 @@ elif [ "$(hostname)" = 'home2' ]; then
 # locations
   SS_DIR=/disk/work/screenshot; export SS_DIR
   DOWNLOAD=/disk/work/download; export DOWNLOAD
-
+  JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64; export JAVA_HOME
 elif [ "$(hostname)" = 'katana' ]; then
   SS_DIR=/tmp/screenshot; export SS_DIR
   DOWNLOAD=/tmp/download; export DOWNLOAD
