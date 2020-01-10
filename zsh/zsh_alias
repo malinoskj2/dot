@@ -12,6 +12,7 @@ alias fd='fd -H' # Search hidden directories by default
 alias xclip='xclip -selection clipboard'
 alias du='du -sh'
 alias ldate='date +"%I:%M %p"'
+alias lsblk='lsblk -o NAME,SIZE,TYPE,LABEL,MOUNTPOINT'
 
 # Overrides
 alias ls='exa -1F'
