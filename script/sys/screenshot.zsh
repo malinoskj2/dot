@@ -30,7 +30,7 @@ fi
 
 ## Take the SS and save
 FILE_PATH="${SS_DIR}/ss_$(date +%s).jpg"
-import "${FILE_PATH}"
+import -quality 100 "${FILE_PATH}"
 
 if [ "$UPLOAD" = "NO" ]; then
   echo "screenshot saved @ ${FILE_PATH}" 
