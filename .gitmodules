@@ -1,7 +1,6 @@
 [submodule "zsh/mod/prompt_j2"]
 	path = zsh/mod/prompt_j2
 	url = https://github.com/malinoskj2/prompt_j2
-	ignore = all
 [submodule "zsh/mod/z"]
 	path = zsh/mod/z
 	url = https://github.com/agkozak/zsh-z
