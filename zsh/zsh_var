@@ -32,6 +32,7 @@ if [ "$(hostname)" = 'home' ]; then
 elif [ "$(hostname)" = 'home2' ]; then
 # locations
   SS_DIR=/disk/work/screenshot; export SS_DIR
+  SS_BUCKET=j2ss; export SS_BUCKET
   DOWNLOAD=/disk/work/download; export DOWNLOAD
   JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64; export JAVA_HOME
 elif [ "$(hostname)" = 'katana' ]; then
