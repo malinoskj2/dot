@@ -10,6 +10,10 @@ super + Return
 super + f
 	$BROWSER
 
+# launch ide
+super + e 
+	intellij-idea-ultimate
+
 # program launcher
 super + space
 	/$HOME/env/config/rofi/launch_run
@@ -56,15 +60,11 @@ super + {u,o}
 super + shift + {u,o}
 	bspc node -d {prev,next}.local 
 
-
 # resize
 super + alt + {j,k,i,l}
-        bspc node {@west -r -10,@south -r +10,@north -r -10,@east -r +10}
+  bspc node {@west -r -10,@south -r +10,@north -r -10,@east -r +10}
 
 # toggle gap
 super + s
 	$HOME/env/script/wm/toggle_gap 12 130
 
-# volume level
-super + {minus,equal}
-  $HOME/env/script/sys/mixer vol {-1,+1}
