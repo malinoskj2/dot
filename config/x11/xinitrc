@@ -1,20 +1,11 @@
 ~/env/config/x11/key_binds # Run script that sets keybinds
-~/env/config/x11/settings  # Run script that sets settings
 
 xrdb -merge ~/.Xresources
 xsetroot -cursor_name left_ptr 
-sxhkd &
+xset r rate 260 55
 
-if [ "$(hostname)" = "home" ]; then 
-  $HOME/resource/app/bsd/compton &
-  dunst &
-elif [ "$(hostname)" = 'katana' ]; then
-  $HOME/resource/app/linux/compton/compton &
-  dunst &
-elif [ "$(hostname)" = 'home2' ]; then
-  $HOME/resource/app/linux/compton/compton &
-  dunst &
-fi
+sxhkd &
+compton &
+dunst &
 
 exec bspwm 
-
