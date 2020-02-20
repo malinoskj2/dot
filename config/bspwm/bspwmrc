@@ -93,6 +93,7 @@ set_common () {
   bspc config  'borderless_monocle' "$borderless_monocle"  
   bspc config  'gapless_monocle' "$gapless_monocle"  
   bspc config  'focus_follows_pointer' "$focus_follows_pointer"  
+  bspc config  'click_to_focus' "true"  
 
   ## set border colors
   bspc config 'focused_border_color' "$focused_border_color"
