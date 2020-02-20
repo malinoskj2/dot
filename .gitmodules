@@ -4,3 +4,6 @@
 [submodule "zsh/mod/z"]
 	path = zsh/mod/z
 	url = https://github.com/agkozak/zsh-z
+[submodule "zsh/mod/zsh-autosuggestions"]
+	path = zsh/mod/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
