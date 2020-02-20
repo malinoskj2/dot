@@ -12,18 +12,11 @@ path=(
 	/usr/local/bin:$HOME/bin
 	~/env/script/*/
 	/disk/work/projects/rust/yamlink/target/debug
-)
-
-if [ "$(hostname)" = 'katana' ] || 
-   [ "$(hostname)" = 'home2' ];then
-  path=(
-  	~/resource/app/linux
+  ~/resource/app/linux
 	$path
-  )
-fi
+)
 
 fpath=(
 	~/env/zsh/mod/* 
 	$fpath
 )
-
