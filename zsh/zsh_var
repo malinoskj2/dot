@@ -15,31 +15,12 @@ GPG_TTY=$(tty);       export GPG_TTY
 # Locations
 SCRIPT_DIR="$HOME/env/script/bin"; export SCRIPT_DIR
 XDG_CONFIG_HOME="$HOME/.config";   export XDG_CONFIG_HOME
-XCLIP_PATH=/usr/local/bin/xclip;   export XCLIP_PATH
 
-# host specific
-if [ "$(hostname)" = 'home' ]; then
 # locations
-	SS_DIR=/disk/work/screenshot; export SS_DIR
-  DOWNLOAD=/disk/work/downloads; export DOWNLOAD
-  JAVA_HOME=/usr/local/openjdk8; export JAVA_HOME
-# docker
-  DOCKER_TLS_VERIFY="1";                   export DOCKER_TLS_VERIFY
-  DOCKER_HOST="tcp://192.168.99.100:2376"; export DOCKER_HOST
-  DOCKER_CERT_PATH="/home/jesse/.docker/machine/machines/docker1"; 
-  export DOCKER_CERT_PATH
-  DOCKER_MACHINE_NAME="docker1"; export DOCKER_MACHINE_NAME
-
-elif [ "$(hostname)" = 'home2' ]; then
-# locations
-  SS_DIR=/disk/work/screenshot; export SS_DIR
-  SS_BUCKET=j2ss; export SS_BUCKET
-  DOWNLOAD=/disk/work/download; export DOWNLOAD
-  JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64; export JAVA_HOME
-elif [ "$(hostname)" = 'katana' ]; then
-  SS_DIR=/tmp/screenshot; export SS_DIR
-  DOWNLOAD=/tmp/download; export DOWNLOAD
-fi
+SS_DIR=/disk/work/screenshot; export SS_DIR
+SS_BUCKET=j2ss; export SS_BUCKET
+DOWNLOAD=/disk/work/download; export DOWNLOAD
+JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64; export JAVA_HOME
 
 # Compilation
 CC=clang; export CC
@@ -52,7 +33,6 @@ NODE_PATH="/home/jesse/.npm/global/lib/node_modules"; export NODE_PATH
 
 # java
 export _JAVA_AWT_WM_NONREPARENTING=1
-# export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
 
 # idea
 IDEA_PROPERTIES=$HOME/env/config/idea/idea.properties
@@ -66,8 +46,3 @@ LIBGIT2_SYS_USE_PKG_CONFIG=1; export LIBGIT2_SYS_USE_PKG_CONFIG
 
 #firefox
 MOZ_WEBRENDER=1; export MOZ_WEBRENDER
-
-# colors
-SYML_ACTIVE_COLOR="#E16E67";     export SYML_ACTIVE_COLOR
-SYML_INACTIVE_COLOR="#855666";   export SYML_INACTIVE_COLOR
-SYML_FOREGROUND_COLOR="#FFFFFF"; export SYML_FOREGROUND_COLOR
