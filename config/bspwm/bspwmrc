@@ -4,7 +4,7 @@
 ## variable ##
 ##############
 # paths
-default_wallpaper="$HOME/resource/wallpapers/default/default"
+default_wallpaper="https://${RESOURCE_BUCKET}.s3.amazonaws.com/wallpaper/default.png"
 bar_launch_script="$HOME/env/config/polybar/launch"
 
 # styling
@@ -78,11 +78,13 @@ set_katana () {
 # set settigs that apply to all
 set_common () {
 
+  # remove desktop 'Desktop'
+  bspc desktop 'Desktop' -r
+
   # set bg 
   feh --bg-fill --no-fehbg "$default_wallpaper"
 
-  # remove desktops
-  bspc desktop 'Desktop' -r
+  # remove desktop 'Desktop'
   bspc desktop 'Desktop' -r
 
   # add config settings
