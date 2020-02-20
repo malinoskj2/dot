@@ -1,4 +1,5 @@
-#!/usr/local/bin/bash
+#!/usr/bin/env sh
+
 EDITOR=vim;           export EDITOR
 PAGER='less -R';      export PAGER
 BROWSER=firefox;      export BROWSER

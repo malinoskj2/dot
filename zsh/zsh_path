@@ -1,3 +1,5 @@
+#!/usr/bin/env/ sh
+
 path=(
 	~/.cargo/bin
 	~/.npm/global/bin
