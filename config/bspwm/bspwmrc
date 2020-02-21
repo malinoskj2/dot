@@ -4,7 +4,7 @@
 ## variable ##
 ##############
 # paths
-default_wallpaper="https://${RESOURCE_BUCKET}.s3.amazonaws.com/wallpaper/default.png"
+default_wallpaper="$HOME/.wallpapers/default.png"
 bar_launch_script="$HOME/env/config/polybar/launch"
 
 # styling
