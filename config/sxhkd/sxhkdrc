@@ -16,7 +16,7 @@ super + e
 
 # program launcher
 super + space
-	ulauncher
+	ulauncher --no-window-shadow
 
 # make sxhkd reload its configuration files:
 super + Escape
