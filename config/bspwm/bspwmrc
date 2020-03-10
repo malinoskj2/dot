@@ -112,6 +112,7 @@ set_common () {
   bspc rule -a 'Firefox:*' 'focus=on' 'border=on' 'floating=on'
   bspc rule -a 'feh' 'focus=off' 'border=off' 'floating=on' 'layer=below' 'state=floating'
   bspc rule -a 'Pqiv' 'focus=off' 'border=off' 'floating=on' 'layer=below' 'state=floating'
+  bspc rule -a 'Ulauncher' 'focus=on' 'border=off' 'floating=on'
 }
 
 # start applications when all settings are in place
