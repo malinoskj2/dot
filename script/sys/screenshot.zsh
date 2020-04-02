@@ -24,7 +24,7 @@ if [ "$1" = "save" ]; then
   notify-send -t 5000 'Capture Finished!' "${FILE_PATH}" -i ${FILE_PATH}
   echo $FILE_PATH | tr -d '\n' | xclip -selection clipboard 
 else 
-  aws s3 cp --acl=public-read $FILE_PATH "s3://${SS_BUCKET}/${FILE_NAME}"
+  aws s3 cp --profile ss_uploader --acl=public-read $FILE_PATH "s3://${SS_BUCKET}/${FILE_NAME}"
   echo "https://${SS_BUCKET}.s3.amazonaws.com/${FILE_NAME}" | xclip -selection clipboard
 fi
 
