@@ -1,13 +1,9 @@
 #!/usr/bin/env sh
 
-#xmodmap -e "keycode 51 = BackSpace Escape" # backslash -> BackSpace
-xmodmap -e "keycode 51 = BackSpace" # backslash -> BackSpace
 xmodmap -e "keycode 36 = Return Escape" # backslash -> BackSpace
-xmodmap -e "keycode 22 = backslash bar" # BackSpace -> backslash bar
 
 xmodmap -e "clear Lock"
 xmodmap -e "clear Control"
-
 
 # Assigns all keys with Keysym Control_L or Control_R to
 # the control modifier.
