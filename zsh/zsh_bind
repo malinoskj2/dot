@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+bindkey -r "^I"
+bindkey -r "^J"
+bindkey -r "^K"
+bindkey -r "^L"
+
+bindkey -r "^A"
+bindkey "^A" clear-screen

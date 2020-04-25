@@ -9,6 +9,7 @@ cfg_files=(
     $ZSH_CFG_DIR/zsh_path
     $ZSH_CFG_DIR/zsh_alias
     $ZSH_CFG_DIR/zsh_setting
+    $ZSH_CFG_DIR/zsh_bind
 )
 
 # compile and load cfg files
