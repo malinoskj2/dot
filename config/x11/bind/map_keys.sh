@@ -1,8 +1,3 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env sh
 
-SCRIPT_DIR=${0:a:h};
-
-setxkbmap -model pc104 -layout us -option 
-setxkbmap -model pc104 -layout us -option "misc:extend,level5:caps_switch_lock"
-
-xkbcomp -w0 -I$HOME/env/x11/bind/xkb2 ~/env/x11/bind/xkb2/keymap/mykbd $DISPLAY
+xkbcomp -w0 -I$HOME/env/config/x11/bind/xkb2 ~/env/config/x11/bind/xkb2/keymap/mykbd $DISPLAY

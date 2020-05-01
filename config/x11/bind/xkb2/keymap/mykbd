@@ -1,7 +1,68 @@
 xkb_keymap {
-	xkb_keycodes  { include "xfree86+aliases(qwerty)"	};
-	xkb_types     { include "complete"	};
-	xkb_compat    { include "complete"	};
-	xkb_symbols   { include "pc+us+inet(pc105)+overrides(overrides)"	};
-	xkb_geometry  { include "pc(pc105)"	};
+	xkb_keycodes  { 
+    include "evdev+aliases(qwerty)"
+  };
+	xkb_types     { 
+    include "complete"	
+    
+    type "IJKL_NAV" {
+      modifiers= Shift+Control;
+      map[Shift] = Level2;
+      map[Control] = Level3;
+      level_name[Level1]= "Base";
+      level_name[Level2]= "Shift";
+      level_name[Level3]= "Control";
+   };
+  };
+	xkb_compat    { 
+    include "complete"	
+
+    interpret Control_L+AnyOfOrNone(all) {
+       action= SetMods(modifiers=Control);
+    };
+
+    interpret osfUp { 
+      repeat= True;
+      action = RedirectKey(keycode=<UP>, clearmodifiers=Control); 
+    };
+
+    interpret osfLeft { 
+      repeat= True;
+      action = RedirectKey(keycode=<LEFT>, clearmodifiers=Control); 
+    };
+
+    interpret osfDown { 
+      repeat= True;
+      action = RedirectKey(keycode=<DOWN>, clearmodifiers=Control); 
+    };
+
+    interpret osfRight { 
+      repeat= True;
+      action = RedirectKey(keycode=<RGHT>, clearmodifiers=Control); 
+    };
+  };
+	xkb_symbols   { 
+    include "pc+us+inet(evdev)"	
+
+    key <AD08> {
+      type= "IJKL_NAV",
+      symbols[Group1]= [  i,  I,  osfUp]
+    };
+
+    key <AC07> {
+      type= "IJKL_NAV",
+      symbols[Group1]= [  j,  J,  osfLeft]
+    };
+
+    key <AC08> {
+      type= "IJKL_NAV",
+      symbols[Group1]= [  k,  K,  osfDown]
+    };
+
+    key <AC09> {
+      type= "IJKL_NAV",
+      symbols[Group1]= [  l,  L,  osfRight]
+    };
+  };
+	xkb_geometry  { include "pc(pc104)"	};
 };

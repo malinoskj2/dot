@@ -6,7 +6,6 @@ xkb_symbols "overrides" {
     key <AC09> {        [         l, L, Right           ]       };
     key <AD07> {    [     u, U, Home        ]   };
     key <AD09> {    [     o, O, End     ]   };
-    key <BKSL> {    [ BackSpace, BackSpace  ]   };
-    key <BKSP> {    [ backslash, bar    ]   };
-    key <CAPS> { [ ISO_Level3_Shift ] };
+    key <BKSL> {    [ backslash, bar ]   };
+    key <BKSP> {    [ BackSpace,  BackSpace ]   };
 };
