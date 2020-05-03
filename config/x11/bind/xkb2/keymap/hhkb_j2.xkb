@@ -63,6 +63,8 @@ xkb_keymap {
       type= "IJKL_NAV",
       symbols[Group1]= [  l,  L,  osfRight]
     };
+
+    key <RTRN> { [ Return, Escape] };
   };
 	xkb_geometry  { include "pc(pc104)"	};
 };
