@@ -3,6 +3,8 @@
 bindkey -r "^J"
 bindkey -r "^K"
 bindkey -r "^L"
+bindkey -r "^U"
+bindkey -r "^O"
 
 bindkey -r "^A"
 bindkey "^A" clear-screen

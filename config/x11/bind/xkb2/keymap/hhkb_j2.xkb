@@ -40,6 +40,16 @@ xkb_keymap {
       repeat= True;
       action = RedirectKey(keycode=<RGHT>, clearmodifiers=Control); 
     };
+
+    interpret Home { 
+      repeat= True;
+      action = RedirectKey(keycode=<HOME>, clearmodifiers=Control); 
+    };
+
+    interpret End { 
+      repeat= True;
+      action = RedirectKey(keycode=<END>, clearmodifiers=Control); 
+    };
   };
 	xkb_symbols   { 
     include "pc+us+inet(evdev)"	
@@ -65,6 +75,16 @@ xkb_keymap {
     };
 
     key <RTRN> { [ Return, Escape] };
+
+    key <AD07> {
+      type= "IJKL_NAV",
+      symbols[Group1]= [  u,  U, Home]
+    };
+
+    key <AD09> {
+      type= "IJKL_NAV",
+      symbols[Group1]= [  o,  O, End]
+    };
   };
 	xkb_geometry  { include "pc(pc104)"	};
 };
