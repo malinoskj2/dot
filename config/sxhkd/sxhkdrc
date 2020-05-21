@@ -27,7 +27,7 @@ Print
 	$HOME/env/script/sys/screenshot.zsh save $SS_DIR
 
 # take screenshot, save to screenshot dir, and upload
-ctrl + Print
+super + p
 	$HOME/env/script/sys/screenshot.zsh upload $SS_DIR
 
 # bspwm hotkeys

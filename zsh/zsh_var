@@ -17,7 +17,7 @@ SCRIPT_DIR="$HOME/env/script/bin"; export SCRIPT_DIR
 XDG_CONFIG_HOME="$HOME/.config";   export XDG_CONFIG_HOME
 
 # locations
-SS_DIR=/disk/work/screenshot; export SS_DIR
+SS_DIR=/tmp/screenshot; export SS_DIR
 SS_BUCKET=malinoskj2-screenshot; export SS_BUCKET
 RESOURCE_BUCKET=malinoskj2-resource; export RESOURCE_BUCKET;
 DOWNLOAD=/disk/work/download; export DOWNLOAD
