@@ -2,6 +2,7 @@
 xrdb -merge ~/.Xresources
 xsetroot -cursor_name left_ptr 
 xset r rate 260 55
+xset -dpms
 
 sxhkd &
 compton &
