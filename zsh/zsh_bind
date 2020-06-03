@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
 
+bindkey -r "^S"
 bindkey -r "^A"
 bindkey "^A" clear-screen
