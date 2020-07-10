@@ -20,7 +20,7 @@ XDG_CONFIG_HOME="$HOME/.config";   export XDG_CONFIG_HOME
 SS_DIR=/tmp/screenshot; export SS_DIR
 SS_BUCKET=malinoskj2-screenshot; export SS_BUCKET
 RESOURCE_BUCKET=malinoskj2-resource; export RESOURCE_BUCKET;
-DOWNLOAD=/disk/work/download; export DOWNLOAD
+DOWNLOAD=/media/scratch/download; export DOWNLOAD
 JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64; export JAVA_HOME
 
 # Compilation
