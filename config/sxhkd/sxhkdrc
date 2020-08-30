@@ -10,6 +10,10 @@ super + Return
 super + f
 	$BROWSER
 
+# launch chrome browser
+super + c
+	chromium-browser
+
 # launch ide
 super + e 
 	intellij-idea-ultimate
