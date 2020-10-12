@@ -2,7 +2,6 @@
 
 EDITOR=vim;           export EDITOR
 PAGER='less -R';      export PAGER
-BROWSER=firefox;      export BROWSER
 TERMINAL=alacritty;   export TERMINAL
 
 LANG=en_US.UTF-8;     export LANG
@@ -20,7 +19,6 @@ XDG_CONFIG_HOME="$HOME/.config";   export XDG_CONFIG_HOME
 SS_DIR=/tmp/screenshot; export SS_DIR
 SS_BUCKET=malinoskj2-screenshot; export SS_BUCKET
 RESOURCE_BUCKET=malinoskj2-resource; export RESOURCE_BUCKET;
-DOWNLOAD=/media/scratch/download; export DOWNLOAD
 JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64; export JAVA_HOME
 
 # Compilation
@@ -47,3 +45,11 @@ LIBGIT2_SYS_USE_PKG_CONFIG=1; export LIBGIT2_SYS_USE_PKG_CONFIG
 
 #firefox
 MOZ_WEBRENDER=1; export MOZ_WEBRENDER
+
+if [ "$(uname)" = 'Darwin' ]; then
+	BROWSER=chrome;      export BROWSER
+	DOWNLOAD=$HOME/Downloads; export DOWNLOAD
+else
+	BROWSER=firefox;      export BROWSER
+	DOWNLOAD=/media/scratch/download; export DOWNLOAD
+fi
