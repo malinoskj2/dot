@@ -7,9 +7,9 @@ path=(
 	/sbin
 	/bin
 	/usr/sbin
+	/usr/local/bin
 	/usr/bin
 	/usr/local/sbin
-	/usr/local/bin
   $HOME/bin
 	~/env/script/*/
   ~/resource/app/linux
