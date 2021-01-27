@@ -16,7 +16,7 @@ super + c
 
 # launch ide
 super + e 
-	intellij-idea-ultimate
+	intellij-idea-community
 
 # program launcher
 super + space
