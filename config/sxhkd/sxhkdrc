@@ -16,7 +16,7 @@ super + c
 
 # launch ide
 super + e 
-	intellij-idea-community
+	$HOME/bin/idea-IU-203.7148.57/bin/idea.sh
 
 # program launcher
 super + space
