@@ -35,7 +35,7 @@ polybar time --config=$K_CFG_FILE2 &
 polybar network --config=$K_CFG_FILE3 & 
 polybar battery --config=$K_CFG_FILE4
 
-elif [ "$(hostname)" = 'home2' ]; then
+elif [ "$(hostname)" = 'home2' ] || [ "$(hostname)" = 'work' ]; then
 
 K_CFG_FILE=$HOME/env/config/polybar/bar/desktop
 K_CFG_FILE2=$HOME/env/config/polybar/bar/k_time
