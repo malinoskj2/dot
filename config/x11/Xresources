@@ -1,10 +1,10 @@
 #include "/home/jesse/env/config/x11/colors.h"
-#include "/usr/home/jesse/env/config/x11/colors.h"
 
 ! Set Colors
 *.foreground:  FOREGROUND
 *.background:  BACKGROUND
 *.cursorColor: FOREGROUND
+Xcursor.size: 12
 
 ! accent 1 fg
 *.color0:      COLOR0
