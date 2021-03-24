@@ -53,3 +53,5 @@ else
 	BROWSER=firefox;      export BROWSER
 	DOWNLOAD=/media/scratch/download; export DOWNLOAD
 fi
+
+AWS_DEFAULT_PROFILE=rc; export AWS_DEFAULT_PROFILE
