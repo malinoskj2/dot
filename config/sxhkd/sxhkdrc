@@ -19,7 +19,7 @@ super + d
   /home/jesse/.local/bin/DataGrip-2020.3.2/bin/datagrip.sh
 
 super + e 
-  /home/jesse/.local/bin/idea-IU-203.7148.57/bin/idea.sh
+  /home/jesse/.local/bin/idea-IU-203.7148.57/bin/idea.sh || /home/jesse/.local/bin/PhpStorm-203.7148.74/bin/phpstorm.sh 
 
 # program launcher
 super + space
