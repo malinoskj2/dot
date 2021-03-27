@@ -1,2 +1,4 @@
 # Global git-ignore
 .idea/
+docker-compose.override.yml
+/storage/
