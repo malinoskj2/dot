@@ -37,3 +37,9 @@
 [diff]
 	# Detect copies as well as renames
 	renames = copies
+
+[url "https://github.com/"]
+	insteadOf = git@github.com:
+
+[url "https://"]
+	insteadOf = git://
