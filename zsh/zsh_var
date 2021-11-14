@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-EDITOR=vim;           export EDITOR
+EDITOR=nvim;           export EDITOR
 PAGER='less -R';      export PAGER
 TERMINAL=alacritty;   export TERMINAL
 
