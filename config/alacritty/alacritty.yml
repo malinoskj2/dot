@@ -130,56 +130,43 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
-# Colors (Tomorrow Night Bright)
+# Colors (Catppuccin)
 colors:
   # Default colors
   primary:
-    background: '0x300a24'
-    foreground: '0xffffff'
+    background: '0x1E1E28'
+    foreground: '0xD7DAE0'
 
-    # Bright and dim foreground colors
-    #
-    # The dimmed f000000und color is calculated automatically if it is not present.
-    # If the bright foreground color is not set, or `draw_bold_text_with_bright_colors`
-    # is `false`, the normal foreground color will be used.
-    #dim_foreground: '0x9a9a9a'
-    #bright_foreground: '0xffffff'
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text: '0x1E1E28'
+    cursor: '0xB3E1A3'
 
-  # Cursor colors
-  #
-  # Colors which should be used to draw the terminal cursor. If these are unset,
-  # the cursor color will be the inverse of the cell color.
-  #cursor:
-  #  text: '0x000000'
-  #  cursor: '0xffffff'
-    # Indexed Colors
-  #
-  # The indexed colors include all colors from 16 to 256.
-  # When these are not set, they're filled with sensible defaults.
-  #indexed_colors:
-  #  - { index: 16, color: '0x000000' }
-  
   # Normal colors
   normal:
-    black:   '0x10100E'
-    red:     '0xC40233'
-    green:   '0x009F6B'
-    yellow:  '0xFFD700'
-    blue:    '0x3277BA'
-    magenta: '0xFF6663'
-    cyan:    '0x20B2AA'
-    white:   '0xC6C6C4'
+    black:   '0x6E6C7C'
+    red:     '0xE28C8C'
+    green:   '0xB3E1A3'
+    yellow:  '0xEADDA0'
+    blue:    '0xA4B9EF'
+    magenta: '0xC6AAE8'
+    cyan:    '0xF0AFE1'
+    white:   '0xD7DAE0'
 
   # Bright colors
   bright:
-    black:   '0x696969'
-    red:     '0xFF2400'
-    green:   '0x03C03C'
-    yellow:  '0xFDFF00'
-    blue:    '0x007FFF'
-    magenta: '0xFF1493'
-    cyan:    '0x00CCCC'
-    white:   '0xFFFAFA'
+    black:   '0x6E6C7C'
+    red:     '0xE28C8C'
+    green:   '0xB3E1A3'
+    yellow:  '0xEADDA0'
+    blue:    '0xA4B9EF'
+    magenta: '0xC6AAE8'
+    cyan:    '0xF0AFE1'
+    white:   '0xD7DAE0'
+
+  indexed_colors:
+    - { index: 16, color: '0xECBFBD' }
+    - { index: 17, color: '0x3E4058' }
 
 # Visual Bell
 #
