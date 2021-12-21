@@ -4,7 +4,7 @@
 ## variable ##
 ##############
 # paths
-default_wallpaper="$HOME/.wallpapers/default.png"
+default_wallpaper="$HOME/.wallpapers/default"
 bar_launch_script="$HOME/env/config/polybar/launch"
 
 # styling
