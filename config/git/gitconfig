@@ -8,6 +8,7 @@
 	cloners = clone --recurse-submodules
 	ruop = remote update origin --prune
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  subupdate = submodule update --remote
 
 [color]
 	ui = auto
