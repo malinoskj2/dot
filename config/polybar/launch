@@ -6,44 +6,9 @@ killall -q polybar
 # Wait until the processes have been shut down
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
-# use modules with sizing/position for 1920x1080 screen
-if [ "$(hostname)" = 'home' ]; then
-
 CFG_FILE=$HOME/env/config/polybar/bar/desktop
-CFG_FILE2=$HOME/env/config/polybar/bar/time
-CFG_FILE3=$HOME/env/config/polybar/bar/music
-CFG_FILE4=$HOME/env/config/polybar/bar/network
 
 # Launch bar1 and bar2
 polybar desktop --config=$CFG_FILE 
-# polybar time --config=$CFG_FILE2 
-# polybar music --config=$CFG_FILE3 &
-# polybar network --config=$CFG_FILE4
-
-
-# use modules with sizing/positioning for 1366x768 screen
-elif [ "$(hostname)" = 'katana' ]; then
-
-K_CFG_FILE=$HOME/env/config/polybar/bar/desktop
-K_CFG_FILE2=$HOME/env/config/polybar/bar/k_time
-K_CFG_FILE3=$HOME/env/config/polybar/bar/k_network
-K_CFG_FILE4=$HOME/env/config/polybar/bar/k_battery
-
-# Launch bar1 and bar2
-polybar desktop --config=$K_CFG_FILE &
-polybar time --config=$K_CFG_FILE2 & 
-polybar network --config=$K_CFG_FILE3 & 
-polybar battery --config=$K_CFG_FILE4
-
-elif [ "$(hostname)" = 'home2' ] || [ "$(hostname)" = 'work' ]; then
-
-K_CFG_FILE=$HOME/env/config/polybar/bar/desktop
-K_CFG_FILE2=$HOME/env/config/polybar/bar/k_time
-K_CFG_FILE3=$HOME/env/config/polybar/bar/l_network
-
-# Launch bar1 and bar2
-polybar desktop --config=$K_CFG_FILE 
-
-fi
 
 echo "Bars launched..."
