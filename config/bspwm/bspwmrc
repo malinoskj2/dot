@@ -17,7 +17,7 @@ gapless_monocle='true'
 focus_follows_pointer='false'
 
 # colors
-focused_border_color='#E95420'
+focused_border_color='#C6AAE8'
 # normal_border_color='#6FE6E4'
 
 ## deps
