@@ -56,7 +56,7 @@ super + minus
 	bspc desktop "$(bspc query -D -d)" -r
 
 # focus/swapnode in the given direction
-super + {_,shift + }{j,k,i,l}
+super + {_,shift + }{h,j,k,l}
 	$HOME/env/script/wm/change_focus {f,s} {west,south,north,east}
 
 # focus prev/next desktop 
