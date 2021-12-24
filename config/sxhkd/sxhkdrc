@@ -60,7 +60,7 @@ super + {_,shift + }{h,j,k,l}
 	$HOME/env/script/wm/change_focus {f,s} {west,south,north,east}
 
 # focus prev/next desktop 
-super + {u,o}
+super + {y,o}
 	bspc desktop -f {prev,next}.local
 
 # send to prev or next desktop
