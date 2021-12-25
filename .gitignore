@@ -1,6 +1,7 @@
 scripts/temp/*
 script/bin/*
 scripts/js/*/node_modules/*
+config/nvim/plugin
 
 *.env
 
