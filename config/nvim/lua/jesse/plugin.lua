@@ -69,6 +69,7 @@ use 'windwp/nvim-autopairs'
 
 -- Language
 use 'neovim/nvim-lspconfig'
+use 'williamboman/nvim-lsp-installer'
 use {
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
