@@ -38,11 +38,11 @@ cmp.setup {
 
   -- Sources (priority determined by order)
   sources = {
-    { name = "nvim_lua" },
     { name = "nvim_lsp" },
+    { name = "buffer", keyword_length = 5 },
+    { name = "nvim_lua" },
     { name = "path" },
     { name = "luasnip" },
-    { name = "buffer", keyword_length = 5 },
   },
 
   -- Snippet
