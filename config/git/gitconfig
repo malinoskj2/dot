@@ -18,7 +18,7 @@
 	whitespace = fix
 
 [core]
-	editor = vim
+	editor = nvim
 	pager = less -R
 	autocrlf = false
 	excludesfile = /home/jesse/env/config/git/gitignore_global
