@@ -10,3 +10,7 @@ vim.g.maplocalleader = " "
 -- Use jk/kj to exit Insert mode
 vim.api.nvim_set_keymap("i", "jk", "<ESC>", opts)
 vim.api.nvim_set_keymap("i", "kj", "<ESC>", opts)
+
+-- Navigate buffers
+vim.api.nvim_set_keymap("n", "<S-l>", ":bnext<CR>", opts)
+vim.api.nvim_set_keymap("n", "<S-h>", ":bprevious<CR>", opts)
