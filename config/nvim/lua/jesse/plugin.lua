@@ -65,6 +65,7 @@ use 'hrsh7th/cmp-path'
 use 'hrsh7th/cmp-nvim-lua'
 use 'hrsh7th/cmp-nvim-lsp'
 use 'windwp/nvim-ts-autotag'
+use 'windwp/nvim-autopairs'
 
 -- Language
 use 'neovim/nvim-lspconfig'
@@ -98,5 +99,6 @@ require "jesse.plugin.catppuccin"
 vim.cmd[[colorscheme catppuccin]]
 require "jesse.plugin.treesitter"
 require "jesse.plugin.nvim-ts-autotag"
+require "jesse.plugin.nvim-autopairs"
 require "jesse.plugin.nvim-notify"
 require "jesse.plugin.lualine"
