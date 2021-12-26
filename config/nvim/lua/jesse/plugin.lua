@@ -1,5 +1,4 @@
 -- Plugins
-
 local fn = vim.fn
 
 -- Automatically install packer
@@ -17,8 +16,23 @@ if fn.empty(fn.glob(install_path)) > 0 then
   vim.cmd [[packadd packer.nvim]]
 end
 
--- Install plugins
-require('packer').startup({function() 
+-- Use a protected call so we don't error out on first use
+local status_ok, packer = pcall(require, "packer")
+if not status_ok then
+  return
+end
+
+-- Init
+packer.init {
+  display = {
+    open_fn = function()
+      return require("packer.util").float { border = "rounded" }
+    end,
+  },
+}
+
+-- Install 
+packer.startup(function() 
 
 -- use 'jose-elias-alvarez/null-ls.nvim'
 -- Util
@@ -73,15 +87,8 @@ use({
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end
-
-end,
-config = {
-  display = {
-    open_fn = function()
-      return require('packer.util').float({ border = 'single' })
-    end
-  }
-}})
+end
+)
 
 -- Setup plugins
 -- require "plugin/null-ls"
