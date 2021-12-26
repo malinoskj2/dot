@@ -1,6 +1,5 @@
 -- General
 
-vim.g.mapleader = ' '
 vim.cmd [[set iskeyword+=-]] -- treat split by "-" as single word
 vim.cmd [[syntax on]] 
 
