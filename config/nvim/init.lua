@@ -4,6 +4,7 @@ require "jesse.performance"
 require "jesse.mapping"
 require "jesse.tab"
 require "jesse.plugin"
+require "jesse.util"
 
 -- Vertically center document when entering Insert mode
 vim.cmd [[
