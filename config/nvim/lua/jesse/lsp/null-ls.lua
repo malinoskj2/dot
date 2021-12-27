@@ -10,6 +10,7 @@ null_ls.setup({
 			prefer_local = "node_modules/.bin",
 		}),
 		formatting.stylua,
+		diagnostics.eslint_d,
 	},
 	on_attach = function(client)
 		if client.resolved_capabilities.document_formatting then
