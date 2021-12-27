@@ -99,6 +99,7 @@ require "jesse.plugin.cmp"
 require "jesse.plugin.catppuccin"
 vim.cmd[[colorscheme catppuccin]]
 require "jesse.plugin.treesitter"
+require "jesse.plugin.telescope"
 require "jesse.plugin.nvim-ts-autotag"
 require "jesse.plugin.nvim-autopairs"
 require "jesse.plugin.nvim-notify"
