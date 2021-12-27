@@ -1,7 +1,7 @@
 -- Lsp Installer
 local lsp_installer = require "nvim-lsp-installer"
 
-local lsp_servers = { "sumneko_lua", "tsserver", "tailwindcss" }
+local lsp_servers = { "sumneko_lua", "tsserver", "tailwindcss", "jsonls" }
 
 -- Install servers
 for _, name in ipairs(lsp_servers) do
@@ -21,10 +21,14 @@ lsp_installer.on_server_ready(function(server)
 		capabilities = require("jesse.lsp.handlers").capabilities,
 	}
 
+   if server.name == "jsonls" then
+	 	local jsonls_opts = require("jesse.lsp.settings.jsonls")
+	 	opts = vim.tbl_deep_extend("force", jsonls_opts, opts)
+	 end
+
 	 if server.name == "sumneko_lua" then
 	 	local sumneko_opts = require("jesse.lsp.settings.sumneko_lua")
-	 	opts = vim.tbl_deep_extend("force", sumneko_opts, opts)
-	 end
+	 	opts = vim.tbl_deep_extend("force", sumneko_opts, opts) end
 
 	-- This setup() function is exactly the same as lspconfig's setup function.
 	-- Refer to https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md

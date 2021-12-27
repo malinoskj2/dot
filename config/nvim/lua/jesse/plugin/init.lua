@@ -74,6 +74,7 @@ use {
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
     }
+use 'b0o/schemastore.nvim'
 
 -- Snippets
 use 'L3MON4D3/LuaSnip'
