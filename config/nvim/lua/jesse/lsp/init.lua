@@ -5,4 +5,4 @@ end
 
 require("jesse.lsp.lsp-installer")
 require("jesse.lsp.handlers").setup()
-require "jesse.lsp.null-ls"
+require("jesse.lsp.null-ls")
