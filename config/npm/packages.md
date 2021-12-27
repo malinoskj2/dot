@@ -4,3 +4,4 @@
 * diagnostic-languageserver
 * eslint_d
 * n
+* neovim
