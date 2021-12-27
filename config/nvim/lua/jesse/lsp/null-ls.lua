@@ -9,6 +9,7 @@ null_ls.setup({
     formatting.prettier.with({
         prefer_local = "node_modules/.bin",
     }),
+    formatting.stylua
 	},
   on_attach = function(client)
         if client.resolved_capabilities.document_formatting then
