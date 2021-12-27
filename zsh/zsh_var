@@ -29,6 +29,7 @@ CMAKE_CXX_COMPILER=clang++; export CMAKE_CXX_COMPILER
 
 # node
 NODE_PATH="/home/jesse/.npm/global/lib/node_modules"; export NODE_PATH
+N_PREFIX="/home/jesse/.local"; export N_PREFIX
 
 # java
 export _JAVA_AWT_WM_NONREPARENTING=1
