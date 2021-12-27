@@ -1,7 +1,7 @@
 -- Lsp Installer
 local lsp_installer = require "nvim-lsp-installer"
 
-local lsp_servers = { "sumneko_lua", "tsserver" }
+local lsp_servers = { "sumneko_lua", "tsserver", "tailwindcss" }
 
 -- Install servers
 for _, name in ipairs(lsp_servers) do
