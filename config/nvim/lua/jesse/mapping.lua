@@ -8,6 +8,7 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- Use jk/kj to exit Insert mode
+vim.api.nvim_set_keymap("i", "<ESC>", "<Nop>", opts)
 vim.api.nvim_set_keymap("i", "jk", "<ESC>", opts)
 vim.api.nvim_set_keymap("i", "kj", "<ESC>", opts)
 
