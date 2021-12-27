@@ -31,13 +31,13 @@ packer.init {
   },
 }
 
--- Install 
-packer.startup(function() 
+-- Install
+packer.startup(function()
 
 -- use 'jose-elias-alvarez/null-ls.nvim'
 -- Util
-use 'wbthomason/packer.nvim'  
-use 'nvim-lua/plenary.nvim'  
+use 'wbthomason/packer.nvim'
+use 'nvim-lua/plenary.nvim'
 use 'rcarriga/nvim-notify'
 use 'kyazdani42/nvim-web-devicons'
 
