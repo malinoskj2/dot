@@ -2,6 +2,7 @@
 require "jesse.general"
 require "jesse.performance"
 require "jesse.mapping"
+require "jesse.lsp"
 require "jesse.tab"
 require "jesse.plugin"
 require "jesse.util"

@@ -94,7 +94,6 @@ end
 
 -- Setup plugins
 -- require "plugin/null-ls"
-require "jesse.plugin.lspconfig"
 require "jesse.plugin.cmp"
 require "jesse.plugin.catppuccin"
 vim.cmd[[colorscheme catppuccin]]
