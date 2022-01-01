@@ -56,3 +56,7 @@ else
 fi
 
 AWS_DEFAULT_PROFILE=rc; export AWS_DEFAULT_PROFILE
+
+# Ask for password in terminal
+SSH_ASKPASS=""; export SSH_ASKPASS
+GIT_ASKPASS=""; export GIT_ASKPASS
