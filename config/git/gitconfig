@@ -1,7 +1,7 @@
 [user]
 	name = Jesse Malinosky
 	email = jesse@malinoskj2.dev
-	signingkey = D3A582B1949A39501D3913E387E5ECE8E0493976
+	signingkey = 6E46C98F55BE7FF3
 
 [alias]
 	pom = push origin master
@@ -27,7 +27,7 @@
 	ff = yes
 
 [commit]
-	gpgsign = false
+	gpgsign = true
 
 [gpg]
 	program = gpg2
