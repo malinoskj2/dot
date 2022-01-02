@@ -30,11 +30,11 @@ super + Escape
 	pkill -USR1 -x sxhkd
 
 # take screenshot and save to screenshot dir 
-Print
+super + p
 	$HOME/env/script/sys/screenshot.zsh save $SS_DIR
 
 # take screenshot, save to screenshot dir, and upload
-super + p
+super + shift + p
 	$HOME/env/script/sys/screenshot.zsh upload $SS_DIR
 
 # bspwm hotkeys
