@@ -86,6 +86,17 @@ packer.startup(function()
 		as = "catppuccin",
 	})
 
+	-- Git
+	use({
+		"lewis6991/gitsigns.nvim",
+		requires = {
+			"nvim-lua/plenary.nvim",
+		},
+		config = function()
+			require("gitsigns").setup()
+		end,
+	})
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
