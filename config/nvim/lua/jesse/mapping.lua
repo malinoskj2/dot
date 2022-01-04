@@ -15,3 +15,6 @@ vim.api.nvim_set_keymap("i", "kj", "<ESC>", opts)
 -- Navigate buffers
 vim.api.nvim_set_keymap("n", "<S-l>", ":bnext<CR>", opts)
 vim.api.nvim_set_keymap("n", "<S-h>", ":bprevious<CR>", opts)
+
+-- Nvimtree
+vim.api.nvim_set_keymap("n", "<leader>t", ":NvimTreeToggle<cr>", opts)
