@@ -16,6 +16,7 @@ local options = {
 	undofile = false,
 	undodir = "/tmp/nvim/undodir",
 	signcolumn = "yes",
+	cmdheight = 1,
 }
 
 for k, v in pairs(options) do
