@@ -1,4 +1,6 @@
 return {
 	name = "PHP",
-	language_server = "intelephense",
+	language_server = {
+		name = "intelephense",
+	},
 }

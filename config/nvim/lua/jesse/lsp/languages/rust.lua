@@ -1,4 +1,6 @@
 return {
 	name = "Rust",
-	language_server = "rust_analyzer",
+	language_server = {
+		name = "rust_analyzer",
+	},
 }

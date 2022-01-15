@@ -5,7 +5,7 @@ local languages = require("jesse.lsp.languages")
 
 -- Install servers
 for _, language in pairs(languages) do
-	local ok, server = require("nvim-lsp-installer.servers").get_server(language.language_server)
+	local ok, server = require("nvim-lsp-installer.servers").get_server(language.language_server["name"])
 
 	if ok and not server:is_installed() then
 		print("Installing LSP server " .. language.name)

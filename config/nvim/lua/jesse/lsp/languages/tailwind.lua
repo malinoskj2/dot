@@ -1,4 +1,6 @@
 return {
 	name = "Tailwind CSS",
-	language_server = "tailwindcss",
+	language_server = {
+		name = "tailwindcss",
+	},
 }

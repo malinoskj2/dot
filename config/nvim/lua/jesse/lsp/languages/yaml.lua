@@ -1,4 +1,6 @@
 return {
 	name = "YAML",
-	language_server = "yamlls",
+	language_server = {
+		name = "yamlls",
+	},
 }

@@ -1,6 +1,8 @@
 return {
 	name = "Lua",
-	language_server = "sumneko_lua",
+	language_server = {
+		name = "sumneko_lua",
+	},
 	null_language_servers = {
 		formatting = { "stylua" },
 	},
