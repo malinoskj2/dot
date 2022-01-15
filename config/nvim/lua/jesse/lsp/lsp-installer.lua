@@ -1,23 +1,14 @@
 -- Lsp Installer
 local lsp_installer = require("nvim-lsp-installer")
 
-local lsp_servers = {
-	"sumneko_lua",
-	"tsserver",
-	"tailwindcss",
-	"jsonls",
-	"jdtls",
-	"rust_analyzer",
-	"intelephense",
-	"yamlls",
-}
+local languages = require("jesse.lsp.languages")
 
 -- Install servers
-for _, name in ipairs(lsp_servers) do
-	local ok, server = require("nvim-lsp-installer.servers").get_server(name)
+for _, language in pairs(languages) do
+	local ok, server = require("nvim-lsp-installer.servers").get_server(language.language_server)
 
 	if ok and not server:is_installed() then
-		print("Installing LSP server " .. name)
+		print("Installing LSP server " .. language.name)
 		server:install()
 	end
 end
