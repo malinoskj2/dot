@@ -2,6 +2,7 @@
 local lsp_installer = require("nvim-lsp-installer")
 
 local languages = require("jesse.lsp.languages")
+local servers = require("jesse.lsp.servers")
 
 -- Install servers
 for _, language in pairs(languages) do
@@ -14,27 +15,14 @@ for _, language in pairs(languages) do
 end
 
 -- Register a handler that will be called for all installed servers.
--- Alternatively, you may also register handlers on specific server instances instead (see example below).
 lsp_installer.on_server_ready(function(server)
 	local opts = {
 		on_attach = require("jesse.lsp.handlers").on_attach,
 		capabilities = require("jesse.lsp.handlers").capabilities,
 	}
 
-	if server.name == "jsonls" then
-		local jsonls_opts = require("jesse.lsp.settings.jsonls")
-		opts = vim.tbl_deep_extend("force", jsonls_opts, opts)
-	end
-
-	if server.name == "sumneko_lua" then
-		local sumneko_opts = require("jesse.lsp.settings.sumneko_lua")
-		opts = vim.tbl_deep_extend("force", sumneko_opts, opts)
-	end
-
-	if server.name == "tailwindcss" then
-		local tailwindcss_opts = require("jesse.lsp.settings.tailwindcss")
-		opts = vim.tbl_deep_extend("force", tailwindcss_opts, opts)
-	end
+	-- Load server specific options if file exists in servers directory
+	opts = vim.tbl_deep_extend("force", servers[server.name] or {}, opts)
 
 	-- This setup() function is exactly the same as lspconfig's setup function.
 	-- Refer to https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
