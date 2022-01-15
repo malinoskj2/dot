@@ -1,6 +1,8 @@
 -- Lsp Handlers
 local M = {}
 
+local servers = require("jesse.lsp.servers")
+
 M.setup = function()
 	local signs = {
 		{ name = "DiagnosticSignError", text = "" },
@@ -83,8 +85,16 @@ local function lsp_keymaps(bufnr)
 end
 
 M.on_attach = function(client, bufnr)
-	if client.name == "tsserver" then
-		client.resolved_capabilities.document_formatting = false
+	-- if client.name == "tsserver" then
+	-- client.resolved_capabilities.document_formatting = false
+	-- end
+	local server_config = servers[client.name]
+
+	if server_config and server_config["capabilities"] then
+		if server_config["capabilities"]["formatting"] ~= nil then
+			client.resolved_capabilities.document_formatting = server_config.capabilities.formatting
+			client.resolved_capabilities.document_range_formatting = server_config.capabilities.formatting
+		end
 	end
 
 	lsp_keymaps(bufnr)
