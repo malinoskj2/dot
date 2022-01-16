@@ -29,7 +29,13 @@ packer.startup(function()
 	use("nvim-telescope/telescope-fzy-native.nvim")
 
 	-- Completion
-	use("hrsh7th/nvim-cmp")
+	use({
+		"hrsh7th/nvim-cmp",
+		requires = { { "onsails/lspkind-nvim" }, { "L3MON4D3/LuaSnip" } },
+		config = function()
+			require("jesse.plugin.config.cmp")
+		end,
+	})
 	use("onsails/lspkind-nvim")
 	use("hrsh7th/cmp-buffer")
 	use("hrsh7th/cmp-path")
@@ -94,8 +100,6 @@ packer.startup(function()
 end)
 
 -- Setup plugins
--- require "plugin/null-ls"
-require("jesse.plugin.cmp")
 require("jesse.plugin.catppuccin")
 vim.cmd([[colorscheme catppuccin]])
 require("jesse.plugin.telescope")
