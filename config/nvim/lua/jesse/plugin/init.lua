@@ -16,6 +16,14 @@ packer.startup(function()
 	})
 	use("kyazdani42/nvim-web-devicons")
 
+	-- Dashboard
+	use({
+		"glepnir/dashboard-nvim",
+		config = function()
+			require("jesse.plugin.config.dashboard")
+		end,
+	})
+
 	-- Line
 	use({
 		"nvim-lualine/lualine.nvim",
