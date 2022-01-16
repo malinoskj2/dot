@@ -5,17 +5,24 @@ local use = packer.use
 
 -- Install
 packer.startup(function()
-	-- use 'jose-elias-alvarez/null-ls.nvim'
 	-- Util
 	use("wbthomason/packer.nvim")
 	use("nvim-lua/plenary.nvim")
-	use("rcarriga/nvim-notify")
+	use({
+		"rcarriga/nvim-notify",
+		config = function()
+			require("jesse.plugin.config.nvim-notify")
+		end,
+	})
 	use("kyazdani42/nvim-web-devicons")
 
 	-- Line
 	use({
 		"nvim-lualine/lualine.nvim",
 		requires = { "kyazdani42/nvim-web-devicons", opt = true },
+		config = function()
+			require("jesse.plugin.config.lualine")
+		end,
 	})
 
 	-- Navigation
@@ -44,8 +51,18 @@ packer.startup(function()
 	use("hrsh7th/cmp-path")
 	use("hrsh7th/cmp-nvim-lua")
 	use("hrsh7th/cmp-nvim-lsp")
-	use("windwp/nvim-ts-autotag")
-	use("windwp/nvim-autopairs")
+	use({
+		"windwp/nvim-ts-autotag",
+		config = function()
+			require("jesse.plugin.config.nvim-ts-autotag")
+		end,
+	})
+	use({
+		"windwp/nvim-autopairs",
+		config = function()
+			require("jesse.plugin.config.nvim-autopairs")
+		end,
+	})
 
 	-- Language
 	use("neovim/nvim-lspconfig")
@@ -105,9 +122,3 @@ packer.startup(function()
 		require("packer").sync()
 	end
 end)
-
--- Setup plugins
-require("jesse.plugin.nvim-ts-autotag")
-require("jesse.plugin.nvim-autopairs")
-require("jesse.plugin.nvim-notify")
-require("jesse.plugin.lualine")
