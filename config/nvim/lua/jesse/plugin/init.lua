@@ -25,6 +25,9 @@ packer.startup(function()
 	use({
 		"nvim-telescope/telescope.nvim",
 		requires = { { "nvim-lua/plenary.nvim" } },
+		config = function()
+			require("jesse.plugin.config.telescope")
+		end,
 	})
 	use("nvim-telescope/telescope-fzy-native.nvim")
 
@@ -104,7 +107,6 @@ packer.startup(function()
 end)
 
 -- Setup plugins
-require("jesse.plugin.telescope")
 require("jesse.plugin.nvim-ts-autotag")
 require("jesse.plugin.nvim-autopairs")
 require("jesse.plugin.nvim-notify")

@@ -18,7 +18,7 @@ require("telescope").load_extension("fzy_native")
 vim.api.nvim_set_keymap(
 	"n",
 	"<Leader>f",
-	"<CMD>lua require'jesse.plugin.telescope'.git_or_find_files()<CR>",
+	"<CMD>lua require'jesse.plugin.config.telescope'.git_or_find_files()<CR>",
 	{ noremap = true, silent = true }
 )
 
