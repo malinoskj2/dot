@@ -9,7 +9,7 @@ bar_launch_script="$HOME/env/config/polybar/launch"
 
 # styling
 border_width='2'
-border_radius='6'
+border_radius='10'
 window_gap='12'
 split_ratio='0.56'
 borderless_monocle='true'
