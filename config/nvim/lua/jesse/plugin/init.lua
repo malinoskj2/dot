@@ -18,9 +18,9 @@ packer.startup(function()
 
 	-- Dashboard
 	use({
-		"glepnir/dashboard-nvim",
+		"goolord/alpha-nvim",
 		config = function()
-			require("jesse.plugin.config.dashboard")
+			require("alpha").setup(require("alpha.themes.dashboard").opts)
 		end,
 	})
 
