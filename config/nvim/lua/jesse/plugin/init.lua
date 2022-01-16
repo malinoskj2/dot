@@ -45,6 +45,9 @@ packer.startup(function()
 	use({
 		"nvim-treesitter/nvim-treesitter",
 		run = ":TSUpdate",
+		config = function()
+			require("jesse.plugin.config.treesitter")
+		end,
 	})
 	use("b0o/schemastore.nvim")
 
@@ -95,7 +98,6 @@ end)
 require("jesse.plugin.cmp")
 require("jesse.plugin.catppuccin")
 vim.cmd([[colorscheme catppuccin]])
-require("jesse.plugin.treesitter")
 require("jesse.plugin.telescope")
 require("jesse.plugin.nvim-ts-autotag")
 require("jesse.plugin.nvim-autopairs")
