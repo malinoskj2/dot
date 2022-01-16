@@ -30,7 +30,7 @@ catppuccin.setup({
 		lsp_trouble = false,
 		lsp_saga = false,
 		gitgutter = false,
-		gitsigns = false,
+		gitsigns = true,
 		telescope = true,
 		nvimtree = {
 			enabled = false,

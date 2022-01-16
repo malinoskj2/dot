@@ -106,7 +106,7 @@ packer.startup(function()
 			"nvim-lua/plenary.nvim",
 		},
 		config = function()
-			require("gitsigns").setup()
+			require("jesse.plugin.config.gitsigns")
 		end,
 	})
 
