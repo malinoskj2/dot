@@ -2,6 +2,9 @@
 local M = {}
 
 require("telescope").setup({
+	defaults = {
+		layout_config = { preview_cutoff = 160 },
+	},
 	pickers = {
 		find_files = {
 			find_command = { "fd", "--type", "f", "--strip-cwd-prefix" },
