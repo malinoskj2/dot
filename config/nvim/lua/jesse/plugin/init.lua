@@ -65,6 +65,10 @@ packer.startup(function()
 	use({
 		"catppuccin/nvim",
 		as = "catppuccin",
+		config = function()
+			require("jesse.plugin.config.catppuccin")
+			vim.cmd([[colorscheme catppuccin]])
+		end,
 	})
 
 	-- Git
@@ -100,8 +104,6 @@ packer.startup(function()
 end)
 
 -- Setup plugins
-require("jesse.plugin.catppuccin")
-vim.cmd([[colorscheme catppuccin]])
 require("jesse.plugin.telescope")
 require("jesse.plugin.nvim-ts-autotag")
 require("jesse.plugin.nvim-autopairs")
