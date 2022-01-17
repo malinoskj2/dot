@@ -11,6 +11,7 @@ null_ls.setup({
 		}),
 		formatting.stylua,
 		diagnostics.eslint_d,
+		formatting.nixfmt,
 	},
 	on_attach = function(client)
 		if client.resolved_capabilities.document_formatting then
