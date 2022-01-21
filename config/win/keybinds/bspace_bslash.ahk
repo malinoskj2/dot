@@ -1,5 +1,0 @@
-; Backspace -> \
-Backspace::\
-
-; \ -> Backspace
-\::Backspace
