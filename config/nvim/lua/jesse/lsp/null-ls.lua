@@ -5,7 +5,7 @@ local diagnostics = null_ls.builtins.diagnostics
 
 -- Setup Sources
 local languages = require("jesse.lsp.languages")
-local servers = require("jesse.lsp.null_servers")
+local servers = require("jesse.lsp.null_language_servers")
 local sources = {}
 
 -- Do this diff later with lua_fun
