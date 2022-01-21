@@ -2,6 +2,7 @@ scripts/temp/*
 script/bin/*
 scripts/js/*/node_modules/*
 config/nvim/plugin
+config/nvim/lua/packer_compiled.lua
 
 *.env
 
