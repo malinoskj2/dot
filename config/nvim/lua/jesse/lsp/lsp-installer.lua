@@ -2,7 +2,7 @@
 local lsp_installer = require("nvim-lsp-installer")
 
 local languages = require("jesse.lsp.languages")
-local servers = require("jesse.lsp.servers")
+local servers = require("jesse.lsp.language_servers")
 
 -- Install servers
 for _, language in pairs(vim.tbl_filter(function(language)

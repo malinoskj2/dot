@@ -1,7 +1,7 @@
 -- Lsp Handlers
 local M = {}
 
-local servers = require("jesse.lsp.servers")
+local servers = require("jesse.lsp.language_servers")
 
 M.setup = function()
 	local signs = {
