@@ -8,16 +8,24 @@ local languages = require("jesse.lsp.languages")
 local servers = require("jesse.lsp.null_servers")
 local sources = {}
 
+-- Do this diff later with lua_fun
+for _, language in pairs(languages) do
+	if language.null_language_servers ~= nil then
+		for _, null_language_server in pairs(language.null_language_servers) do
+			local target_server = servers[null_language_server]
+			if target_server.formatting then
+				table.insert(sources, formatting[null_language_server])
+			end
+			if target_server.diagnostics then
+				table.insert(sources, diagnostics[null_language_server])
+			end
+		end
+	end
+end
+
 null_ls.setup({
 	debug = false,
-	sources = {
-		formatting.prettier.with({
-			prefer_local = "node_modules/.bin",
-		}),
-		formatting.stylua,
-		diagnostics.eslint_d,
-		formatting.nixfmt,
-	},
+	sources = sources,
 	on_attach = function(client)
 		if client.resolved_capabilities.document_formatting then
 			vim.cmd("autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting()")

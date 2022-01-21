@@ -2,6 +2,7 @@
 
 local packer = require("jesse.plugin.packer")
 local use = packer.use
+local use_rocks = packer.use_rocks
 
 -- Install
 packer.startup(function()
@@ -15,6 +16,7 @@ packer.startup(function()
 		end,
 	})
 	use("kyazdani42/nvim-web-devicons")
+	-- use_rocks("lua_fun")
 
 	-- Colors
 	use({
