@@ -3,6 +3,11 @@ local null_ls = require("null-ls")
 local formatting = null_ls.builtins.formatting
 local diagnostics = null_ls.builtins.diagnostics
 
+-- Setup Sources
+local languages = require("jesse.lsp.languages")
+local servers = require("jesse.lsp.null_servers")
+local sources = {}
+
 null_ls.setup({
 	debug = false,
 	sources = {
