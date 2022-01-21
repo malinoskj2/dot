@@ -16,6 +16,16 @@ packer.startup(function()
 	})
 	use("kyazdani42/nvim-web-devicons")
 
+	-- Colors
+	use({
+		"catppuccin/nvim",
+		as = "catppuccin",
+		config = function()
+			require("jesse.plugin.config.catppuccin")
+			vim.cmd([[colorscheme catppuccin]])
+		end,
+	})
+
 	-- Dashboard
 	use({
 		"goolord/alpha-nvim",
@@ -35,8 +45,12 @@ packer.startup(function()
 
 	-- Navigation
 	use("farmergreg/vim-lastplace")
-
-	-- Fuzzy
+	use({
+		"petertriho/nvim-scrollbar",
+		config = function()
+			require("jesse.plugin.config.nvim-scrollbar")
+		end,
+	})
 	use({
 		"nvim-telescope/telescope.nvim",
 		requires = { { "nvim-lua/plenary.nvim" } },
@@ -88,16 +102,6 @@ packer.startup(function()
 	-- Snippets
 	use("L3MON4D3/LuaSnip")
 	use("saadparwaiz1/cmp_luasnip")
-
-	-- Colors
-	use({
-		"catppuccin/nvim",
-		as = "catppuccin",
-		config = function()
-			require("jesse.plugin.config.catppuccin")
-			vim.cmd([[colorscheme catppuccin]])
-		end,
-	})
 
 	-- Git
 	use({
