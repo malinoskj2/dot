@@ -33,8 +33,8 @@ catppuccin.setup({
 		gitsigns = true,
 		telescope = true,
 		nvimtree = {
-			enabled = false,
-			show_root = false,
+			enabled = true,
+			show_root = true,
 		},
 		which_key = false,
 		indent_blankline = {
