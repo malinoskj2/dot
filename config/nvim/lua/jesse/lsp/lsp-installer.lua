@@ -5,7 +5,9 @@ local languages = require("jesse.lsp.languages")
 local servers = require("jesse.lsp.servers")
 
 -- Install servers
-for _, language in pairs(languages) do
+for _, language in pairs(vim.tbl_filter(function(language)
+	return language.language_server ~= nil
+end, languages)) do
 	local ok, server = require("nvim-lsp-installer.servers").get_server(language.language_server["name"])
 
 	if ok and not server:is_installed() then
