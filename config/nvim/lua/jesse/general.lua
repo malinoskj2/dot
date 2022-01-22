@@ -1,4 +1,5 @@
 -- General
+local tablex = require "pl.tablex"
 
 vim.cmd [[set iskeyword+=-]]
 vim.cmd [[syntax on]]
@@ -19,6 +20,6 @@ local options = {
   cmdheight = 1,
 }
 
-for k, v in pairs(options) do
-  vim.opt[k] = v
-end
+tablex.foreach(options, function(value, key)
+  vim.opt[key] = value
+end)

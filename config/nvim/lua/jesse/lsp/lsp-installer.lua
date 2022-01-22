@@ -1,20 +1,23 @@
 -- Lsp Installer
 local lsp_installer = require "nvim-lsp-installer"
+local List = require "pl.List"
 
 local languages = require "jesse.lsp.languages"
 local servers = require "jesse.lsp.language_servers"
 
 -- Install servers
-for _, language in pairs(vim.tbl_filter(function(language)
-  return language.language_server ~= nil
-end, languages)) do
-  local ok, server = require("nvim-lsp-installer.servers").get_server(language.language_server["name"])
-
-  if ok and not server:is_installed() then
-    print("Installing LSP server " .. language.name)
+List(languages)
+  :filter(function(language)
+    return language.language_server
+  end)
+  :filter(function(language)
+    local ok, server = require("nvim-lsp-installer.servers").get_server(language.language_server["name"])
+    return ok and not server:is_installed()
+  end)
+  :foreach(function(language)
+    local _, server = require("nvim-lsp-installer.servers").get_server(language.language_server["name"])
     server:install()
-  end
-end
+  end)
 
 -- Register a handler that will be called for all installed servers.
 lsp_installer.on_server_ready(function(server)

@@ -1,4 +1,6 @@
 local null_ls = require "null-ls"
+local tablex = require "pl.tablex"
+local List = require "pl.List"
 
 local formatting = null_ls.builtins.formatting
 local diagnostics = null_ls.builtins.diagnostics
@@ -6,22 +8,29 @@ local diagnostics = null_ls.builtins.diagnostics
 -- Setup Sources
 local languages = require "jesse.lsp.languages"
 local servers = require "jesse.lsp.null_language_servers"
-local sources = {}
 
--- Do this diff later with lua_fun
-for _, language in pairs(languages) do
-  if language.null_language_servers ~= nil then
-    for _, null_language_server in pairs(language.null_language_servers) do
-      local target_server = servers[null_language_server]
-      if target_server.formatting then
-        table.insert(sources, formatting[null_language_server])
-      end
-      if target_server.diagnostics then
-        table.insert(sources, diagnostics[null_language_server])
-      end
-    end
-  end
-end
+local sources = List(languages)
+  :map(function(language)
+    return language.null_language_servers
+  end)
+  :filter(function(null_language_servers)
+    return null_language_servers
+  end)
+  :reduce(function(acc, cur)
+    return List(acc):extend(List(cur))
+  end, List())
+  :map(function(null_language_server)
+    return List {
+      servers[null_language_server].diagnostics and diagnostics[null_language_server] or false,
+      servers[null_language_server].formatting and formatting[null_language_server] or false,
+    }
+  end)
+  :reduce(function(acc, cur)
+    return List(acc):extend(List(cur))
+  end, List())
+  :filter(function(source)
+    return source
+  end)
 
 null_ls.setup {
   debug = false,

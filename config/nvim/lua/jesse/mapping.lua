@@ -1,20 +1,26 @@
 -- Mappings
+local List = require "pl.List"
 
-local opts = { noremap = true, silent = true }
-
--- Remap space as leader key
-vim.api.nvim_set_keymap("", "<Space>", "<Nop>", opts)
+-- Space as leader key
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
--- Use jk/kj to exit Insert mode
-vim.api.nvim_set_keymap("i", "<ESC>", "<Nop>", opts)
-vim.api.nvim_set_keymap("i", "jk", "<ESC>", opts)
-vim.api.nvim_set_keymap("i", "kj", "<ESC>", opts)
+local mappings = {
+  -- Disable ESC to exit Insert mode
+  { "", "<Space>", "<Nop>" },
+  -- Use jk/kj to exit Insert mode
+  { "i", "<ESC>", "<Nop>" },
+  { "i", "jk", "<ESC>" },
+  { "i", "kj", "<ESC>" },
+  -- Navigate buffers
+  { "n", "<S-l>", ":bnext<CR>" },
+  { "n", "<S-h>", ":bprevious<CR>" },
+  -- Nvimtree
+  { "n", "<leader>t", ":NvimTreeToggle<cr>" },
+}
 
--- Navigate buffers
-vim.api.nvim_set_keymap("n", "<S-l>", ":bnext<CR>", opts)
-vim.api.nvim_set_keymap("n", "<S-h>", ":bprevious<CR>", opts)
+local opts = { noremap = true, silent = true }
 
--- Nvimtree
-vim.api.nvim_set_keymap("n", "<leader>t", ":NvimTreeToggle<cr>", opts)
+List(mappings):foreach(function(mapping)
+  vim.api.nvim_set_keymap(mapping[1], mapping[2], mapping[3], opts)
+end)
