@@ -1,6 +1,6 @@
 return {
-	name = "JSON",
-	language_server = {
-		name = "jsonls",
-	},
+  name = "JSON",
+  language_server = {
+    name = "jsonls",
+  },
 }

@@ -1,5 +1,5 @@
 return {
-	capabilities = {
-		formatting = false,
-	},
+  capabilities = {
+    formatting = false,
+  },
 }

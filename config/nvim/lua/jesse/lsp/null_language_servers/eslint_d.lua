@@ -1,4 +1,4 @@
 return {
-	formatting = false,
-	diagnostics = true,
+  formatting = false,
+  diagnostics = true,
 }

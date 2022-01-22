@@ -1,6 +1,6 @@
 return {
-	name = "Nix",
-	null_language_servers = {
-		"nixfmt",
-	},
+  name = "Nix",
+  null_language_servers = {
+    "nixfmt",
+  },
 }
