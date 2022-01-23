@@ -4,7 +4,6 @@ local List = require "pl.List"
 
 local modules = List {
   "jesse.core",
-  "jesse.performance",
   "jesse.mapping",
   "jesse.lsp",
   "jesse.tab",
