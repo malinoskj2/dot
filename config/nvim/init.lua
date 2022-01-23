@@ -8,7 +8,6 @@ local modules = List {
   "jesse.lsp",
   "jesse.tab",
   "jesse.plugin",
-  "jesse.util",
 }
 
 modules:foreach(function(module)
