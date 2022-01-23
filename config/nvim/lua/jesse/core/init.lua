@@ -1,4 +1,13 @@
-require "jesse.core.general"
-require "jesse.core.performance"
-require "jesse.core.util"
-require "jesse.core.tab"
+-- Core
+local List = require "pl.List"
+
+local modules = List {
+  "jesse.core.general",
+  "jesse.core.performance",
+  "jesse.core.util",
+  "jesse.core.tab",
+}
+
+modules:foreach(function(module)
+  require(module)
+end)
