@@ -136,8 +136,13 @@ packer.startup {
     }
 
     -- Comment
-    use "numToStr/Comment.nvim"
-    use "JoosepAlviste/nvim-ts-context-commentstring"
+    use {
+      "numToStr/Comment.nvim",
+      config = function()
+        require("Comment").setup()
+      end,
+    }
+    -- use "JoosepAlviste/nvim-ts-context-commentstring"
 
     -- Automatically set up your configuration after cloning packer.nvim
     if PACKER_BOOTSTRAP then
