@@ -15,7 +15,7 @@ local mappings = {
   -- Navigate buffers
   { "n", "<S-l>", ":bnext<CR>" },
   { "n", "<S-h>", ":bprevious<CR>" },
-  -- Nvimtree
+  -- Nvimtree toggle
   { "n", "<leader>t", ":NvimTreeToggle<cr>" },
 }
 
