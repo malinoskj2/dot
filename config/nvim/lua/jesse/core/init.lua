@@ -2,10 +2,11 @@
 local List = require "pl.List"
 
 local modules = List {
+  "jesse.core.auto",
   "jesse.core.general",
   "jesse.core.performance",
-  "jesse.core.util",
   "jesse.core.tab",
+  "jesse.core.util",
 }
 
 modules:foreach(function(module)

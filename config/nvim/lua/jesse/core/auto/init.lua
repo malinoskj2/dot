@@ -1,12 +1,8 @@
--- Jesse's Neovim config :)
-
 local List = require "pl.List"
 
 local modules = List {
-  "jesse.core",
-  "jesse.mapping",
-  "jesse.lsp",
-  "jesse.plugin",
+  "jesse.core.auto.insert_enter",
+  "jesse.core.auto.vim_leave",
 }
 
 modules:foreach(function(module)
