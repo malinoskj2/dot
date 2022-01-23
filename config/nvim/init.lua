@@ -1,11 +1,20 @@
 -- Jesse's Neovim config :)
-require "jesse.general"
-require "jesse.performance"
-require "jesse.mapping"
-require "jesse.lsp"
-require "jesse.tab"
-require "jesse.plugin"
-require "jesse.util"
+
+local List = require "pl.List"
+
+local modules = List {
+  "jesse.general",
+  "jesse.performance",
+  "jesse.mapping",
+  "jesse.lsp",
+  "jesse.tab",
+  "jesse.plugin",
+  "jesse.util",
+}
+
+modules:foreach(function(module)
+  require(module)
+end)
 
 -- Vertically center document when entering Insert mode
 vim.cmd [[
