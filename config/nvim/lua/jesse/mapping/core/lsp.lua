@@ -3,7 +3,6 @@ local List = require "pl.List"
 
 local M = {}
 
---vim.cmd [[ command! Format execute 'lua vim.lsp.buf.formatting()' ]]
 local opts = { noremap = true, silent = true }
 
 local mappings = {
