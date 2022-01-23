@@ -6,7 +6,6 @@ local modules = List {
   "jesse.core",
   "jesse.mapping",
   "jesse.lsp",
-  "jesse.tab",
   "jesse.plugin",
 }
 
