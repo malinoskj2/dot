@@ -1,4 +1,6 @@
 return {
   name = "Java",
-  language_server = "jdtls",
+  language_server = {
+    name = "jdtls",
+  },
 }
