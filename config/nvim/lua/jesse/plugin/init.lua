@@ -17,7 +17,6 @@ packer.startup {
       end,
     }
     use "kyazdani42/nvim-web-devicons"
-    -- use_rocks("lua_fun")
 
     -- Performance
     use "lewis6991/impatient.nvim"
