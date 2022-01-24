@@ -3,7 +3,7 @@
 local List = require "pl.List"
 
 local modules = List {
-  "jesse.mapping.plugin.general",
+  "jesse.mapping.plugin.nvim-tree",
 }
 
 modules:foreach(function(module)

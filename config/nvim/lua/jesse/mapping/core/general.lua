@@ -15,8 +15,6 @@ local mappings = {
   -- Navigate buffers
   { "n", "<S-l>", ":bnext<CR>" },
   { "n", "<S-h>", ":bprevious<CR>" },
-  -- Nvimtree toggle
-  { "n", "<leader>t", ":NvimTreeToggle<cr>" },
 }
 
 local opts = { noremap = true, silent = true }
