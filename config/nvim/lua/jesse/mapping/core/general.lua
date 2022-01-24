@@ -1,5 +1,6 @@
 -- Mappings
 local List = require "pl.List"
+local close_all = require("jesse.core.util").close_all
 
 -- Space as leader key
 vim.g.mapleader = " "
@@ -15,6 +16,14 @@ local mappings = {
   -- Navigate buffers
   { "n", "<S-l>", ":bnext<CR>" },
   { "n", "<S-h>", ":bprevious<CR>" },
+  -- Close Stuff
+  {
+    "n",
+    "<C-c>",
+    function()
+      close_all()
+    end,
+  },
 }
 
 local opts = { noremap = true, silent = true }
