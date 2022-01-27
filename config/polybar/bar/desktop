@@ -29,7 +29,7 @@ type = internal/bspwm
 ;ws-icon-0 = a;A 
 ;ws-icon-1 = b;B 
 ;ws-icon-2 = c;C 
-ws-icon-default = 
+;ws-icon-default = 
 
 pin-workspaces = true
 
