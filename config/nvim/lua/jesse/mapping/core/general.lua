@@ -22,5 +22,5 @@ local mappings = {
 local opts = { noremap = true, silent = true }
 
 List(mappings):foreach(function(mapping)
-  vim.api.nvim_set_keymap(mapping[1], mapping[2], mapping[3], opts)
+  vim.keymap.set(mapping[1], mapping[2], mapping[3], opts)
 end)
