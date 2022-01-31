@@ -19,7 +19,7 @@ packer.startup {
     use "kyazdani42/nvim-web-devicons"
 
     -- Performance
-    use "lewis6991/impatient.nvim"
+    -- use "lewis6991/impatient.nvim"
 
     -- Colors
     use {
@@ -149,10 +149,4 @@ packer.startup {
       require("packer").sync()
     end
   end,
-  config = {
-    -- Move to lua dir so impatient.nvim can cache it
-    compile_path = vim.fn.stdpath "config" .. "/lua/packer_compiled.lua",
-  },
 }
-
-require "packer_compiled"
