@@ -8,7 +8,7 @@ local opts = { noremap = true, silent = true, buffer = 0 }
 local mappings = {
   { "n", "gD", vim.lsp.buf.declaration },
   { "n", "gd", vim.lsp.buf.definition },
-  { "n", "gk", vim.lsp.buf.hover },
+  { "n", "K", vim.lsp.buf.hover },
   { "n", "gi", vim.lsp.buf.implementation },
   { "n", "<C-k>", vim.lsp.buf.signature_help },
   { "n", "<leader>rn", vim.lsp.buf.rename },
