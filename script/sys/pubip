@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+# Outputs current public ip
+
+SOURCE='checkip.amazonaws.com'
+
+curl "$SOURCE"
