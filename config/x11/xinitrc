@@ -1,5 +1,4 @@
-~/env/config/x11/bind/map_keys.sh
-xrdb -merge ~/.Xresources
+~/env/config/x11/x230_binds.sh
 xsetroot -cursor_name left_ptr 
 xset r rate 260 55
 xset dpms 0 0 0 && xset s noblank && xset s off
