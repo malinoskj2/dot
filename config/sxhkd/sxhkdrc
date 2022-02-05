@@ -64,7 +64,7 @@ super + {y,o}
 	bspc desktop -f {prev,next}.local
 
 # send to prev or next desktop
-super + shift + {u,o}
+super + shift + {y,o}
 	bspc node -d {prev,next}.local 
 
 # resize
