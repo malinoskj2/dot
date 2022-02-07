@@ -3,3 +3,5 @@
 bindkey -r "^S"
 bindkey -r "^A"
 bindkey "^A" clear-screen
+
+bindkey '^l' autosuggest-accept
