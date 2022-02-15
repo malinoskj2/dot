@@ -12,7 +12,7 @@ super + f
 
 # launch chrome browser
 super + c
-	chromium-browser || google-chrome || chromium
+	chromium-browser || google-chrome || chromium || google-chrome-stable
 
 # launch
 super + d 
