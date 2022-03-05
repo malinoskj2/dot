@@ -3,7 +3,7 @@
 bindkey -r "^S"
 bindkey -r "^A"
 bindkey "^A" clear-screen
-bindkey '^L' autosuggest-accept
-bindkey '^K' up-line-or-history 
+bindkey '^H' backward-char
 bindkey '^J' down-line-or-history 
-
+bindkey '^K' up-line-or-history 
+bindkey '^L' autosuggest-accept
