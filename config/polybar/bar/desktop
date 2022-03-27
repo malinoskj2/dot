@@ -2,21 +2,20 @@
 modules-left = bspwm 
 modules-right = date
 
-bottom = true
-width = 18%
-padding = 1
-height = 32
-offset-x = .5%
-offset-y = .8%
+bottom = false
+width = 100%
+padding = 0
+height = 24
+offset-x = 0%
+offset-y = 0%
 
-font-0 = "Fira Mono:size=10;2"
+font-0 = "SF Pro:size=10;2"
 font-1 = FontAwesome:size=10;2
 
 background = #1E1E28
 foreground = #D7DAE0
 
-;background-radius = 3
-radius = 12
+radius = 0 
 
 locale = en_US.UTF-8
 
@@ -40,6 +39,7 @@ reverse-scroll = false
 fuzzy-match = true
 
 format = <label-state>
+format-padding = 4
 label-focused = %name% %icon%
 label-occupied = 
 label-occupied-foreground = #FFFFFF
@@ -50,7 +50,7 @@ type = internal/date
 date = %I:%M
 interval = 60.0
 
-label-padding-right = 0%
+label-padding-right = 5%
 label-padding-left = 0%
 
 label-active-font = 0
