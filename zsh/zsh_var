@@ -22,10 +22,10 @@ RESOURCE_BUCKET=malinoskj2-resource; export RESOURCE_BUCKET;
 JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64; export JAVA_HOME
 
 # Compilation
-CC=clang; export CC
-CXX=clang++; export CXX
-CMAKE_C_COMPILER=clang; export CMAKE_C_COMPILER
-CMAKE_CXX_COMPILER=clang++; export CMAKE_CXX_COMPILER
+# CC=clang; export CC
+# CXX=clang++; export CXX
+# CMAKE_C_COMPILER=clang; export CMAKE_C_COMPILER
+# CMAKE_CXX_COMPILER=clang++; export CMAKE_CXX_COMPILER
 
 # node
 NODE_PATH="/home/jesse/.npm/global/lib/node_modules"; export NODE_PATH
