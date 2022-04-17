@@ -54,6 +54,7 @@ label-padding-left = 4%
 
 [module/title]
 type = internal/xwindow
+label-maxlen = 50 
                               
 [module/polybar-network]
 type = custom/script
