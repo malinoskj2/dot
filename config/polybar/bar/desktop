@@ -39,7 +39,7 @@ reverse-scroll = false
 fuzzy-match = true
 
 format = <label-state>
-format-padding = 4
+format-padding = 2
 label-focused = %name% %icon%
 label-occupied = 
 label-occupied-foreground = #FFFFFF
@@ -47,10 +47,10 @@ label-empty =
 
 [module/date]
 type = internal/date
-date = %I:%M
+date = %a, %b %d %I:%M %p
 interval = 60.0
 
-label-padding-right = 5%
+label-padding-right = 2%
 label-padding-left = 0%
 
 label-active-font = 0
