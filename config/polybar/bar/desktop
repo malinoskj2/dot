@@ -1,6 +1,6 @@
 [bar/desktop]
 modules-left = bspwm 
-modules-right = date
+modules-right = polybar-network date
 
 bottom = false
 width = 100%
@@ -10,6 +10,7 @@ offset-x = 0%
 offset-y = 0%
 
 font-0 = "SF Pro Text:size=10;2"
+font-1 = "FiraCode Nerd Font:size=10;2"
 
 background = #1A1826
 foreground = #D7DAE0
@@ -50,7 +51,19 @@ date = %a, %b %d %I:%M %p
 interval = 60.0
 
 label-padding-right = 2%
-label-padding-left = 0%
+label-padding-left = 4%
 
 label-active-font = 0
                               
+[module/network]
+type = internal/network
+interface = enp3s0
+interval = 60
+accumulate-stats = false
+label-connected = 
+label-disconnected =  
+
+[module/polybar-network]
+type = custom/script
+exec = /home/jesse/env/script/bar/polybar-network
+interval = 60
