@@ -1,5 +1,6 @@
 [bar/desktop]
-modules-left = bspwm 
+modules-left = logo bspwm 
+modules-center = title
 modules-right = polybar-network date
 
 bottom = false
@@ -9,8 +10,11 @@ height = 24
 offset-x = 0%
 offset-y = 0%
 
-font-0 = "SF Pro Text:size=10;2"
+; Value after semicolon is vertical offset
+font-0 = "SF Pro Text:style=Semibold:size=10;2"
 font-1 = "FiraCode Nerd Font:size=10;2"
+font-2 = "SF Pro Display:style=Black Italic:size=10;2.8"
+font-3 = "FiraCode Nerd Font:size=14;3"
 
 background = #1A1826
 foreground = #D9E0EE
@@ -22,28 +26,23 @@ locale = en_US.UTF-8
 ;line-size = 4
  wm-restack = bspwm
 
+[module/logo]
+type = custom/text
+content = %{T4} 
+content-padding = 1
+;content-foreground = #C5AAE8
+content-foreground = #D4DBF7
+
 [module/bspwm]
 type = internal/bspwm
-
-;ws-icon-0 = a;A 
-;ws-icon-1 = b;B 
-;ws-icon-2 = c;C 
-;ws-icon-default = 
-
-pin-workspaces = true
-
-;inline-mode = false
-enable-click = true
-enable-scroll = false
-reverse-scroll = false
-fuzzy-match = true
-
-format = <label-state>
-format-padding = 2
-label-focused = %name% %icon%
-label-occupied = 
-label-occupied-foreground = #FFFFFF
+label-focused = %name%
 label-empty =
+label-occupied =
+label-urgent = 
+format = <label-state>
+format-font = 3
+format-padding = 0 
+fuzzy-match = true
 
 [module/date]
 type = internal/date
@@ -53,7 +52,8 @@ interval = 60.0
 label-padding-right = 2%
 label-padding-left = 4%
 
-label-active-font = 0
+[module/title]
+type = internal/xwindow
                               
 [module/polybar-network]
 type = custom/script
