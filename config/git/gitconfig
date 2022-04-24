@@ -49,4 +49,4 @@
 	recurse = true
 
 [safe]
-    directory = *
+    directory = /home/jesse/nix
