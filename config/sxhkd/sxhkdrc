@@ -18,9 +18,6 @@ super + c
 super + d 
   datagrip
 
-super + e 
-  /home/jesse/.local/bin/idea-IU-203.7148.57/bin/idea.sh || /home/jesse/.local/bin/PhpStorm-203.7148.74/bin/phpstorm.sh 
-
 # program launcher
 super + space
 	ulauncher --no-window-shadow
