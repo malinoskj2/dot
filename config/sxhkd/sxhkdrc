@@ -2,6 +2,10 @@
 # wm independent hotkeys
 #
 
+# lock screen
+super + BackSpace
+	xsecurelock
+
 # launch terminal emulator
 super + Return 
 	$TERMINAL
