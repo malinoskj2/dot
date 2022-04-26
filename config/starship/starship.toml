@@ -73,6 +73,9 @@ untracked = "!"
 modified = "!"
 staged = "!"
 stashed = ""
+ahead = ""
+behind = ""
+diverged = ""
 
 [golang]
 disabled = true
