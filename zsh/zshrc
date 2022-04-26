@@ -25,6 +25,7 @@ for cfg_file ($cfg_files) {
 cfg_modules=(
 	${ZSH_MOD_DIR}/z/zsh-z.plugin.zsh
 	${ZSH_MOD_DIR}/prompt_j2/prompt_j2_loader
+	${ZSH_MOD_DIR}/zsh-autosuggestions/zsh-autosuggestions.zsh
 )
 
 for cfg_module ($cfg_modules) {
@@ -35,6 +36,5 @@ for cfg_module ($cfg_modules) {
   fi
 }
 
-# load zsh-autosuggestions
+# ZSH_AUTOSUGGEST_CONFIG
 ZSH_AUTOSUGGEST_USE_ASYNC=true;
-source "$HOME/env/zsh/mod/zsh-autosuggestions/zsh-autosuggestions.zsh"
