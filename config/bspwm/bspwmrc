@@ -62,12 +62,12 @@ check_dependencies () {
 # set rules for home hostname
 set_home () {
   # set display config
-  xrandr --output DP-4 --primary --mode 1920x1080 --rotate normal --rate 360.0 --dpi 92 \
-	  --output HDMI-0 --left-of DVI-D-0 --mode 1920x1080 --rotate left --rate 60.0
+  xrandr --output DP-1 --primary --mode 1920x1080 --rotate normal --rate 360.0 --dpi 92 \
+	  --output HDMI-1 --left-of DP-1 --mode 1920x1080 --rotate left --rate 60.0
   
   # add desktops
-  bspc monitor 'HDMI-0' -a 'lg_a' 
-  bspc monitor 'DP-4' -a 'A' 'B' 'C' 
+  bspc monitor 'HDMI-1' -a 'lg_a' 
+  bspc monitor 'DP-1' -a 'A' 'B' 'C' 
 }
 
 # set rules for katana hostname
