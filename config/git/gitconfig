@@ -3,6 +3,10 @@
 	email = jesse@malinoskj2.dev
 	signingkey = 6E46C98F55BE7FF3
 
+
+[includeIf "gitdir:~/projects/work/"]
+    path = ~/env/config/git/work_gitconfig
+
 [alias]
 	pom = push origin master
 	cloners = clone --recurse-submodules

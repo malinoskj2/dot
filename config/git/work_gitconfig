@@ -1,0 +1,6 @@
+[user]
+    name = Jesse Malinosky
+    email = jmalinosky@insiderealestate.com
+
+[commit]
+    gpgsign = false
