@@ -44,7 +44,7 @@ LS_COLORS="di=34:ex=35"; export LS_COLORS
 ZSHZ_CMD=j; export ZSHZ_CMD
 LIBGIT2_SYS_USE_PKG_CONFIG=1; export LIBGIT2_SYS_USE_PKG_CONFIG
 
-#firefox
+# firefox
 MOZ_WEBRENDER=1; export MOZ_WEBRENDER
 
 if [ "$(uname)" = 'Darwin' ]; then
@@ -54,6 +54,11 @@ else
 	BROWSER=firefox;      export BROWSER
 	DOWNLOAD=/media/scratch/download; export DOWNLOAD
 fi
+
+# nix
+NIXPKGS_ALLOW_INSECURE=1
+
+# aws
 
 AWS_DEFAULT_PROFILE=rc; export AWS_DEFAULT_PROFILE
 

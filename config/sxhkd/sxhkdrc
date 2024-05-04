@@ -20,7 +20,7 @@ super + f
 super + c
 	chromium-browser || google-chrome || chromium || google-chrome-stable
 
-# launch
+# launch datagrip
 super + d 
   datagrip
 

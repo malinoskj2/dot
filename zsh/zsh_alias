@@ -15,12 +15,12 @@ alias ldate='date +"%I:%M %p"'
 alias lsblk='lsblk -o NAME,SIZE,TYPE,FSTYPE,LABEL,MOUNTPOINT'
 
 # Overrides
-alias ls='exa -1F'
-alias ll='exa -llh'
-alias tree="exa --long --tree --level=4"
+alias ls='eza -1F'
+alias ll='eza -llh'
+alias tree="eza --long --tree --level=4"
 alias cat='bat'
 alias neofetch="neofetch --disable Theme --disable Icons --disable Packages"
-alias vim='nvim'
+alias vim='vim'
 
 # for x230
 alias zzz='/usr/local/bin/sudo /usr/sbin/zzz'

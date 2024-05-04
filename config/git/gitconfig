@@ -22,7 +22,7 @@
 	whitespace = fix
 
 [core]
-	editor = nvim
+	editor = vim
 	pager = less -R
 	autocrlf = false
 	excludesfile = /home/jesse/env/config/git/gitignore_global
@@ -31,7 +31,7 @@
 	ff = yes
 
 [commit]
-	gpgsign = true
+	gpgsign = false
 
 [gpg]
 	program = gpg2

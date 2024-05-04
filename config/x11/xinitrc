@@ -8,7 +8,4 @@ if [ "$(hostname)" = 'work' ]; then
 fi
 
 sxhkd &
-compton &
-dunst &
-
 exec bspwm 
