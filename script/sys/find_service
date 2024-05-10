@@ -1,0 +1,17 @@
+#!/usr/bin/env sh
+
+NETWORK="192.168.1.0/24"
+UNKNOWN_MESSAGE="Unknown Service"
+PORT=
+
+if [ "$1" = "plex" ]; then 
+  PORT=32400
+elif [ "$1" = "qbittorrent" ]; then
+  PORT=8080
+fi;
+
+if [ -z "$PORT" ]; then
+  echo "$UNKNOWN_MESSAGE" 
+else
+  nmap --open -p $PORT $NETWORK | sed -e '/.*scan report/!d' | awk '{print $5}'
+fi;
