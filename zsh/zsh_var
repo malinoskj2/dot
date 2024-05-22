@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-EDITOR=nvim;           export EDITOR
+EDITOR=phpstorm;           export EDITOR
 PAGER='less -R';      export PAGER
 TERMINAL=alacritty;   export TERMINAL
 
