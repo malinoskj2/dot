@@ -16,6 +16,10 @@ super + Return
 super + f
 	$BROWSER
 
+# launch browser
+super + e
+	$EDITOR
+
 # launch chrome browser
 super + c
 	chromium-browser || google-chrome || chromium || google-chrome-stable
