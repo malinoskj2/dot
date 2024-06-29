@@ -7,6 +7,3 @@
 [submodule "zsh/mod/zsh-autosuggestions"]
 	path = zsh/mod/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
-[submodule "config/nvim"]
-	path = config/nvim
-	url = https://github.com/malinoskj2/j2-nvim
