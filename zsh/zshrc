@@ -14,25 +14,17 @@ cfg_files=(
 
 # compile and load cfg files
 for cfg_file ($cfg_files) {
-  if [ -f $cfg_file ]; then
     source $cfg_file;
-  else
-    echo "$cfg_file does not exist"
-  fi
 }
 
 # load module functions
 cfg_modules=(
-	${ZSH_MOD_DIR}/z/zsh-z.plugin.zsh
-	${ZSH_MOD_DIR}/zsh-autosuggestions/zsh-autosuggestions.zsh
+    ${ZSH_MOD_DIR}/z/zsh-z.plugin.zsh
+    ${ZSH_MOD_DIR}/zsh-autosuggestions/zsh-autosuggestions.zsh
 )
 
 for cfg_module ($cfg_modules) {
-  if [ -f $cfg_module ]; then
     source $cfg_module;
-  else
-    echo "$cfg_module does not exist"
-  fi
 }
 
 # ZSH_AUTOSUGGEST_CONFIG
