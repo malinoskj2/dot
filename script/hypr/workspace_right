@@ -1,0 +1,20 @@
+#!/usr/bin/env sh
+
+WORKSPACE_COUNT=5
+IS_MAIN_FOCUSED=$(hyprctl monitors | awk '/DP-2/,EOF' | sed -e '/focused: yes/!d')
+FOCUSED_WORKSPACE_ID=$(hyprctl monitors | awk '/DP-2/,EOF' | sed -e '/active workspace/!d' | cut -c 20)
+
+if [ -n "$IS_MAIN_FOCUSED"  ] 
+then
+  echo "Main is focused"
+else
+  exit 1
+fi
+
+TARGET_WORKSPACE=$(( $FOCUSED_WORKSPACE_ID + 1 ))
+
+if [ $TARGET_WORKSPACE -gt $WORKSPACE_COUNT ]; then
+  TARGET_WORKSPACE=1;
+fi
+
+hyprctl dispatch focusworkspaceoncurrentmonitor $TARGET_WORKSPACE
