@@ -6,31 +6,10 @@ DEFAULT_WORKSPACE="A"
 echo $DEFAULT_WORKSPACE 
 
 handle() {
-   OUTPUT=$(echo $1 | sed  \
-     -e '/workspace>>/!d' \
-     -e '/[^0-9]*/!d' \
-     -e 's/workspace>>//g' |
-     tr '12345' 'ABCDE')
-   
-   if [ "$OUTPUT" = "A" ]; then
-     echo $OUTPUT
-   fi
-
-   if [ "$OUTPUT" = "B" ]; then
-     echo $OUTPUT
-   fi
-
-   if [ "$OUTPUT" = "C" ]; then
-     echo $OUTPUT
-   fi
-
-   if [ "$OUTPUT" = "D" ]; then
-     echo $OUTPUT
-   fi
-
-   if [ "$OUTPUT" = "E" ]; then
-     echo $OUTPUT
-   fi
+  case $1 in
+    workspace\>\>*) echo $1 | sed 's/workspace>>//g' | tr '12345' 'ABCDE' ;;
+    workspacev2\>\>) echo $1 | sed 's/workspacev2>>//g' | tr '12345' 'ABCDE' ;;
+  esac
 }
 
 nc -U $SOCKET | while read -r line; do handle "$line"; done
