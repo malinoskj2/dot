@@ -21,8 +21,8 @@
 
 /* The whole bar */
 #waybar {
-    background: #1A1826;
-    color: #D9E0EE;
+    background: linear-gradient(90deg, rgba(116,199,236,.3) 10%, rgba(250,179,135,.35) 73%);
+    color: #FFFAFE;
     font-family: SF Pro Display;
     font-size: 13px;
 }
@@ -48,19 +48,16 @@
 
 #custom-logo {
     padding-left: 4px;
-    color: #cdd6f4;
     font-size: 18px;
 }
 
 #custom-active {
     padding-left: 12px;
     font-weight: bold; 
-    font-family: SF Pro Display;
     font-size: 13px;
 }
 
 #window {
     font-weight: bold;
-    font-family: SF Pro Text;
 }
 
