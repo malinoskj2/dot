@@ -1,7 +1,0 @@
-#!/bin/sh
-
-if [ "$1" = 'underscore' ]; then
-  printf '\e[0 q'
-elif [ "$1" = 'beam' ]; then
-  printf '\033[6 q'
-fi  

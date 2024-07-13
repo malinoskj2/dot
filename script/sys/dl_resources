@@ -1,8 +1,0 @@
-#!/usr/bin/env sh
-
-# fonts
-aws s3 sync s3://${RESOURCE_BUCKET}/fonts $HOME/.fonts > /dev/null 2>&1
-
-# wallpapers
-aws s3 sync s3://${RESOURCE_BUCKET}/wallpaper $HOME/.wallpapers > /dev/null 2>&1
-
