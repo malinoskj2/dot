@@ -15,7 +15,7 @@ fi
 [ -e "$SS_DIR" ] || mkdir -p $SS_DIR 
 
 ## Take the SS and save
-FILE_NAME="$(date +%s).jpg"
+FILE_NAME="$(date +%s).png"
 FILE_PATH="${SS_DIR}/${FILE_NAME}"
 grim -g "$(slurp)" $FILE_PATH
 
