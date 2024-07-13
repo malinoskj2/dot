@@ -1,0 +1,66 @@
+/* =============================================================================
+ *
+ * Waybar configuration
+ *
+ * Configuration reference: https://github.com/Alexays/Waybar/wiki/Configuration
+ *
+ * =========================================================================== */
+
+/* -----------------------------------------------------------------------------
+ * Base styles
+ * -------------------------------------------------------------------------- */
+
+/* Reset all styles */
+* {
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* The whole bar */
+#waybar {
+    background: #1A1826;
+    color: #D9E0EE;
+    font-family: SF Pro Display;
+    font-size: 13px;
+}
+
+/* Each module */
+#clock,
+
+/* -----------------------------------------------------------------------------
+ * Module styles
+ * -------------------------------------------------------------------------- */
+
+#clock {
+    font-weight: bold;
+}
+
+#clock.date {
+    padding-right: 4px;
+}
+
+#clock.time {
+    padding-right: 4px;
+}
+
+#custom-logo {
+    padding-left: 4px;
+    color: #cdd6f4;
+    font-size: 18px;
+}
+
+#custom-active {
+    padding-left: 12px;
+    font-weight: bold; 
+    font-family: SF Pro Display;
+    font-size: 13px;
+}
+
+#window {
+    font-weight: bold;
+    font-family: SF Pro Text;
+}
+

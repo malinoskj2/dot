@@ -1,0 +1,56 @@
+// =============================================================================
+//
+// Waybar configuration
+//
+// Configuration reference: https://github.com/Alexays/Waybar/wiki/Configuration
+//
+// =============================================================================
+
+{
+    // -------------------------------------------------------------------------
+    // Global configuration
+    // -------------------------------------------------------------------------
+
+    "output": [ "DP-2" ],
+    "layer": "top",
+    "position": "top",
+    "height": 24,
+
+    "modules-left": [
+        "custom/logo",
+        "custom/active"
+    ],
+    "modules-center": [
+        "hyprland/window", 
+    ],
+    "modules-right": [
+        "clock#date",
+        "clock#time"
+    ],
+
+    // -------------------------------------------------------------------------
+    // Modules
+    // -------------------------------------------------------------------------
+
+
+    "clock#time": {
+        "interval": 60,
+        "format": "{:%I:%M %p}",
+        "tooltip": false
+    },
+
+    "clock#date": {
+      "interval": 10,
+      "format": "{:%a, %b %e}", 
+    },
+
+    "custom/logo": {
+      "format": "", 
+    },
+
+    "custom/active": {
+      "return-type": "string",
+      "format": "{}", 
+      "exec": "~/env/script/hypr/listen_workspace_change",
+    },
+}
