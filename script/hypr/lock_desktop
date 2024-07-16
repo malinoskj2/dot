@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+SCREENSAVER=~/.screensavers/desert.mov
+
+mpv --loop --fullscreen --no-osd-bar $SCREENSAVER &
+hyprlock
+pkill mpv
