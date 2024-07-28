@@ -27,9 +27,6 @@
     font-size: 13px;
 }
 
-/* Each module */
-#clock,
-
 /* -----------------------------------------------------------------------------
  * Module styles
  * -------------------------------------------------------------------------- */
@@ -44,6 +41,17 @@
 
 #clock.time {
     padding-right: 4px;
+}
+
+#workspaces button {
+    color: #FFFAF9;
+    font-family: SF Pro Display;
+    font-size: 11px;
+}
+
+#workspaces button.active {
+    font-size: 14px;
+    color: #FFFAF9;
 }
 
 #custom-logo {
