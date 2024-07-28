@@ -21,7 +21,7 @@
 
 /* The whole bar */
 #waybar {
-    background: linear-gradient(90deg, rgba(116,199,236,.5) 10%, rgba(242, 205,205,.55) 73%);
+    background: linear-gradient(90deg, rgba(116,199,236,.8) 10%, rgba(242, 205,205,.85) 73%);
     color: #FFFAFE;
     font-family: SF Pro Display;
     font-size: 13px;
