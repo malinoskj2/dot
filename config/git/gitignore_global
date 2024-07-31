@@ -2,3 +2,5 @@
 .idea/
 docker-compose.override.yml
 /storage/
+phpcs.xml
+phpmd.xml
