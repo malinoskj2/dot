@@ -592,7 +592,6 @@ multiplier = 3
 [window]
 decorations = "none"
 dynamic_padding = true
-opacity = 0.99
 
 [window.dimensions]
 columns = 80
