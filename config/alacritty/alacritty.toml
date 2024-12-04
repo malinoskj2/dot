@@ -600,5 +600,3 @@ lines = 40
 x = 13
 y = 13
 
-[general]
-live_config_reload = false
