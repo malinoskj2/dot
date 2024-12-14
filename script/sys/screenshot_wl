@@ -12,7 +12,6 @@ echo "screenshot saved @ ${FILE_PATH}"
 
 # Notify
 notify-send -t 5000 'Capture Finished!' "${FILE_PATH}" -i ${FILE_PATH}
-  echo $FILE_PATH | tr -d '\n' | xclip -selection clipboard 
 
 # Copy to clipboard
 wl-copy < $FILE_PATH
