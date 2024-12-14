@@ -58,10 +58,10 @@ fi
 # nix
 NIXPKGS_ALLOW_INSECURE=1
 
-# aws
-
-AWS_DEFAULT_PROFILE=rc; export AWS_DEFAULT_PROFILE
-
 # Ask for password in terminal
 SSH_ASKPASS=""; export SSH_ASKPASS
 GIT_ASKPASS=""; export GIT_ASKPASS
+
+# Cursor Theme
+XCURSOR_THEME="Openzone_White_Slim"
+XCURSOR_SIZE=34
