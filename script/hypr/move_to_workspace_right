@@ -1,8 +1,12 @@
 #!/usr/bin/env sh
 
+# Get display for host
+if [ $HOST -eq "home" ]; then DISPLAY="DP-2" fi
+if [ $HOST -eq "katana" ]; then DISPLAY="LVDS-1" fi
+
 WORKSPACE_COUNT=5
-IS_MAIN_FOCUSED=$(hyprctl monitors | awk '/DP-2/,EOF' | sed -e '/focused: yes/!d')
-FOCUSED_WORKSPACE_ID=$(hyprctl monitors | awk '/DP-2/,EOF' | sed -e '/active workspace/!d' | cut -c 20)
+IS_MAIN_FOCUSED=$(hyprctl monitors | awk "/$DISPLAY/,EOF" | sed -e '/focused: yes/!d')
+FOCUSED_WORKSPACE_ID=$(hyprctl monitors | awk "/$DISPLAY/,EOF" | sed -e '/active workspace/!d' | cut -c 20)
 
 if [ -n "$IS_MAIN_FOCUSED"  ] 
 then
