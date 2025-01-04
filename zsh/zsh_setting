@@ -16,7 +16,7 @@ compinit -C
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
 # History 
- [ -z "$HISTFILE" ] && HISTFILE="/tmp/.zsh_history"
+HISTFILE="/tmp/.zsh_history"
 HISTSIZE=1000
 SAVEHIST=1000
 setopt hist_ignore_dups
