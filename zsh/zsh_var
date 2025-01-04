@@ -65,3 +65,6 @@ GIT_ASKPASS=""; export GIT_ASKPASS
 # Cursor Theme
 XCURSOR_THEME="Openzone_White_Slim"
 XCURSOR_SIZE=34
+
+# Less History
+LESSHISTFILE=/tmp/lesshst
