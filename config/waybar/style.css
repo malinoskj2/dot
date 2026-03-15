@@ -43,15 +43,44 @@
   padding-right: 4px;
 }
 
+#workspaces {
+  padding-left: 6px;
+}
+
 #workspaces button {
-  color: #FFFAF9;
   font-family: SF Pro Display;
   font-size: 11px;
+  transition: color 0.2s ease;
+  opacity: 0.6;
+}
+
+#workspaces button:nth-child(1) {
+  color: #F2CDCD;
+}
+
+#workspaces button:nth-child(2) {
+  color: #F2BBAA;
+}
+
+#workspaces button:nth-child(3) {
+  color: #EFA882;
+}
+
+#workspaces button:nth-child(4) {
+  color: #EDA87A;
+}
+
+#workspaces button:nth-child(5) {
+  color: #E89060;
 }
 
 #workspaces button.active {
   font-size: 14px;
-  color: #FFFAF9;
+  opacity: 1;
+}
+
+#workspaces button:hover {
+  opacity: 0.75;
 }
 
 #custom-logo {
