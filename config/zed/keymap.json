@@ -1,0 +1,7 @@
+[
+  {
+    "bindings": {
+      "shift shift": "file_finder::Toggle"
+    }
+  }
+]
