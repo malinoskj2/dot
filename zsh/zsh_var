@@ -58,9 +58,10 @@ fi
 # nix
 NIXPKGS_ALLOW_INSECURE=1
 
-# Ask for password in terminal
-SSH_ASKPASS=""; export SSH_ASKPASS
-GIT_ASKPASS=""; export GIT_ASKPASS
+# Force SSH/Git to prompt in the terminal instead of launching a GUI modal
+unset SSH_ASKPASS
+unset GIT_ASKPASS
+export SSH_ASKPASS_REQUIRE=never
 
 # Cursor Theme
 XCURSOR_THEME="Openzone_White_Slim"
