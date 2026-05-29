@@ -1,5 +1,4 @@
 {
-  "theme": "dark",
   "permissions": {
     "allow": [
       "Bash(ls:*)",
@@ -16,5 +15,17 @@
       "Bash(nix flake show:*)",
       "Bash(nix flake check:*)"
     ]
+  },
+  "extraKnownMarketplaces": {
+    "caveman": {
+      "source": {
+        "source": "github",
+        "repo": "JuliusBrussee/caveman"
+      }
+    }
+  },
+  "theme": "dark",
+  "enabledPlugins": {
+    "caveman@caveman": true
   }
 }
