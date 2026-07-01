@@ -600,3 +600,8 @@ lines = 40
 x = 13
 y = 13
 
+
+[[keyboard.bindings]]
+key = "Return"
+mods = "Shift"
+chars = "\u001B\r"

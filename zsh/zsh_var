@@ -69,3 +69,6 @@ XCURSOR_SIZE=34
 
 # Less History
 LESSHISTFILE=/tmp/lesshst
+
+# anthropic
+ANTHROPIC_MODEL=claude-opus-4-8; export ANTHROPIC_MODEL
