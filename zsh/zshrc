@@ -19,7 +19,6 @@ for cfg_file ($cfg_files) {
 
 # load module functions
 cfg_modules=(
-    ${ZSH_MOD_DIR}/z/zsh-z.plugin.zsh
     ${ZSH_MOD_DIR}/zsh-autosuggestions/zsh-autosuggestions.zsh
 )
 
@@ -29,6 +28,9 @@ for cfg_module ($cfg_modules) {
 
 # ZSH_AUTOSUGGEST_CONFIG
 ZSH_AUTOSUGGEST_USE_ASYNC=true;
+
+# zoxide (j = jump, ji = interactive)
+eval "$(zoxide init zsh --cmd j)"
 
 # Load prompt
 eval "$(starship init zsh)"
