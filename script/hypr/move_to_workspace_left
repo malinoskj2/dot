@@ -1,12 +1,26 @@
 #!/usr/bin/env sh
 
-# Get display for host
-if [ "$HOSTNAME" = "home" ]; then DISPLAY="DP-2"; fi
-if [ "$HOSTNAME" = "katana" ]; then DISPLAY="LVDS-1"; fi
+# Main monitor: first arg wins, otherwise fall back to the per-host table.
+# The configs pass it explicitly; the table keeps already-deployed configs
+# (which pass no arg) working until they are re-copied.
+MAIN_MONITOR="$1"
+if [ -z "$MAIN_MONITOR" ]; then
+  case "$HOSTNAME" in
+    home) MAIN_MONITOR="DP-2" ;;
+    katana) MAIN_MONITOR="LVDS-1" ;;
+  esac
+fi
+
+# Fail closed. An empty monitor makes the awk range below match every line,
+# which inverts the focus guard instead of disabling it.
+if [ -z "$MAIN_MONITOR" ]; then
+  echo "usage: $(basename "$0") [monitor]" >&2
+  exit 1
+fi
 
 WORKSPACE_COUNT=5
-IS_MAIN_FOCUSED=$(hyprctl monitors | awk "/$DISPLAY/,EOF" | sed -e '/focused: yes/!d')
-FOCUSED_WORKSPACE_ID=$(hyprctl monitors | awk "/$DISPLAY/,EOF" | sed -e '/active workspace/!d' | cut -c 20)
+IS_MAIN_FOCUSED=$(hyprctl monitors | awk "/$MAIN_MONITOR/,EOF" | sed -e '/focused: yes/!d')
+FOCUSED_WORKSPACE_ID=$(hyprctl monitors | awk "/$MAIN_MONITOR/,EOF" | sed -e '/active workspace/!d' | cut -c 20)
 
 if [ -n "$IS_MAIN_FOCUSED" ]
 then
