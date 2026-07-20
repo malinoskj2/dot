@@ -16,6 +16,9 @@
       "Bash(nix flake check:*)"
     ]
   },
+  "enabledPlugins": {
+    "caveman@caveman": true
+  },
   "extraKnownMarketplaces": {
     "caveman": {
       "source": {
@@ -25,7 +28,5 @@
     }
   },
   "theme": "dark",
-  "enabledPlugins": {
-    "caveman@caveman": true
-  }
+  "skipDangerousModePermissionPrompt": true
 }
